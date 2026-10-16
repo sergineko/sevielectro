@@ -1,9 +1,12 @@
 ---
 import { clients } from '../data/content';
 import assets from '../data/static-assets.json';
+import images from '../data/responsive-media.json';
+import media from '../data/media.json';
 import { ArrowUpRight } from 'lucide-react';
 ---
-<section id="clientes" class="clients section"><div class="container"><div class="section-heading"><div><p class="eyebrow">02 / LA CONFIANZA SE CONSTRUYE</p><h2>Clientes que confían<br /><span class="muted">en nuestro trabajo.</span></h2></div><p>Nuestra entrega y dedicación en cada trabajo<br />nos han hecho merecedores de su confianza.</p></div><ul class="client-grid" aria-label="Clientes de SeviElectro">{clients.map(([,name,url,type],index)=>{
+<section id="clientes" class="clients section"><div class="container"><div class="section-heading"><div><p class="eyebrow">02 / LA CONFIANZA SE CONSTRUYE</p><h2>Clientes que confían<br /><span class="muted">en nuestro trabajo.</span></h2></div><p>Nuestra entrega y dedicación en cada trabajo<br />nos han hecho merecedores de su confianza.</p></div><ul class="client-grid" aria-label="Clientes de SeviElectro">{clients.map(([file,name,url,type],index)=>{
   const logo=assets.clients.symbols[index];
-  return <li><a class="client-link" href={url} target="_blank" rel="noopener noreferrer" aria-label={`Visitar ${type==='profile'?'el perfil oficial':'la web oficial'} de ${name} (abre en otra pestaña)`}><svg class="client-logo" width={logo.width} height={logo.height} viewBox={`0 0 ${logo.width} ${logo.height}`} aria-hidden="true" focusable="false"><use href={`${assets.clients.src}#${logo.id}`}/></svg><span class="client-external" aria-hidden="true"><ArrowUpRight size={13}/></span></a></li>;
+  const fallback=images[media[file].src];
+  return <li><a class="client-link" href={url} target="_blank" rel="noopener noreferrer" aria-label={`Visitar ${type==='profile'?'el perfil oficial':'la web oficial'} de ${name} (abre en otra pestaña)`}><svg class="client-logo" width={logo.width} height={logo.height} viewBox={`0 0 ${logo.width} ${logo.height}`} aria-hidden="true" focusable="false"><use data-client-logo={`${assets.clients.src}#${logo.id}`}/></svg><noscript><img class="client-logo" src={fallback.src} width={fallback.width} height={fallback.height} alt={name} loading="lazy" decoding="async"/></noscript><span class="client-external" aria-hidden="true"><ArrowUpRight size={13}/></span></a></li>;
 })}</ul><p class="clients-caption">La misma dedicación, en cada instalación.</p></div></section>

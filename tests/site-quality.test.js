@@ -58,8 +58,8 @@ test('los catorce clientes comparten un único recurso y mantienen sus enlaces a
   const sprite = read(`public${assets.clients.src}`);
   assert.equal(assets.clients.symbols.length,14);
   assert.equal([...sprite.matchAll(/<symbol /g)].length,14);
-  assert.equal([...home.matchAll(/<use href="([^"#]+)#client-\d+"/g)].length,14);
-  assert.equal(new Set([...home.matchAll(/<use href="([^"#]+)#client-\d+"/g)].map(match => match[1])).size,1);
+  assert.equal([...home.matchAll(/<use data-client-logo="([^"#]+)#client-\d+"/g)].length,14);
+  assert.equal(new Set([...home.matchAll(/<use data-client-logo="([^"#]+)#client-\d+"/g)].map(match => match[1])).size,1);
   for (const src of [assets.font,assets.favicon,assets.touchIcon,assets.socialImage,assets.clients.src]) {
     assert.match(src,/\/media\/static\/[a-f0-9]{12}\.[a-z0-9]+$/);
     assert.ok(existsSync(new URL(`../dist${src}`,import.meta.url)));

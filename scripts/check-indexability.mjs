@@ -57,7 +57,7 @@ for (const agent of ['Googlebot','Googlebot-Image/1.0','bingbot','OAI-SearchBot'
   }
 }
 const font = [...(home?.body || '').matchAll(/<link\b[^>]*>/g)].map(([tag]) => attributes(tag)).find(tag => tag.as === 'font')?.href;
-const clientSprite = [...(home?.body || '').matchAll(/<use href="([^"#]+)#client-\d+"/g)].map(([,src]) => src);
+const clientSprite = [...(home?.body || '').matchAll(/<use (?:href|data-client-logo)="([^"#]+)#client-\d+"/g)].map(([,src]) => src);
 const assets = [...new Set([...imageUrls.map(url => new URL(url).pathname), ...(font ? [font] : []), ...clientSprite, ...[...(home?.body || '').matchAll(/<script\b[^>]*src="([^"]+)"/g)].map(([,src]) => src)])];
 for (const path of assets) {
   const result = await get(path,'Googlebot',false);

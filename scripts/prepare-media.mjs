@@ -30,7 +30,7 @@ for (const [key, original] of sources) {
   manifest[key] = { src: preferred.src, srcset: variants.map(v => `${v.src} ${v.width}w`).join(', '), width, height, full: variants.at(-1).src };
   // Reduce the critical image payload; retain WebP for browsers without AVIF.
   if (['/media/original/SeviElectric.jpg', '/media/original/Logo-SeviElectro-1.png'].includes(original)) {
-    const quality = original.endsWith('.png') ? 60 : 55;
+    const quality = original.endsWith('.png') ? 55 : 45;
     const avifHash = createHash('sha256').update(bytes).update(`avif-v1-q${quality}-444`).digest('hex').slice(0, 12);
     const avif = [];
     for (const size of widths) {

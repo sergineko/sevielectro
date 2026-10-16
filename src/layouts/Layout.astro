@@ -42,6 +42,7 @@ const schema={'@context':'https://schema.org','@type':'Electrician','@id':new UR
     <meta name="twitter:description" content={description}/>
     <meta name="twitter:image" content={socialImage}/>
     <link rel="preload" href={assets.font} as="font" type="font/woff2" crossorigin/>
+    <noscript><style is:inline>svg.client-logo { display:none }</style></noscript>
     {!noindex && <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\\u003c')}/>}
   </head>
   <body>

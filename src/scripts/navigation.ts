@@ -38,6 +38,21 @@ if (window.location.hash) {
 }
 
 // Keep both menus in sync while retaining a clean address.
+// Defer the single client sprite until it can be seen, without adding a script request.
+const clientSection = document.getElementById('clientes');
+if (clientSection) {
+  const revealClientLogos = () => clientSection.querySelectorAll<SVGUseElement>('[data-client-logo]').forEach(logo => {
+    logo.setAttribute('href',logo.dataset.clientLogo!);
+    logo.removeAttribute('data-client-logo');
+  });
+  if ('IntersectionObserver' in window) {
+    const clientsObserver = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) { revealClientLogos(); clientsObserver.disconnect(); }
+    },{ rootMargin:'500px' });
+    clientsObserver.observe(clientSection);
+  } else revealClientLogos();
+}
+
 const sectionLinks = [...document.querySelectorAll<HTMLAnchorElement>('.header a[data-section]')];
 if (sectionLinks.length && document.getElementById('inicio')) {
   const sections = [...document.querySelectorAll<HTMLElement>('main > section')].map(element => ({

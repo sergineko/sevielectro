@@ -215,7 +215,7 @@
     "width": 500,
     "height": 123,
     "full": "/media/responsive/1796ce014bad-500.webp",
-    "avifSrcset": "/media/responsive/d1cda040eab8-160.avif 160w, /media/responsive/d1cda040eab8-320.avif 320w, /media/responsive/d1cda040eab8-500.avif 500w"
+    "avifSrcset": "/media/responsive/134ceb8253f4-160.avif 160w, /media/responsive/134ceb8253f4-320.avif 320w, /media/responsive/134ceb8253f4-500.avif 500w"
   },
   "/media/optimized/SeviElectric.jpg.webp": {
     "src": "/media/responsive/7b1cca0f9468-640.webp",
@@ -223,7 +223,7 @@
     "width": 1366,
     "height": 768,
     "full": "/media/responsive/7b1cca0f9468-1366.webp",
-    "avifSrcset": "/media/responsive/39f0de7b3de4-160.avif 160w, /media/responsive/39f0de7b3de4-320.avif 320w, /media/responsive/39f0de7b3de4-640.avif 640w, /media/responsive/39f0de7b3de4-960.avif 960w, /media/responsive/39f0de7b3de4-1280.avif 1280w, /media/responsive/39f0de7b3de4-1366.avif 1366w"
+    "avifSrcset": "/media/responsive/f245461b99fb-160.avif 160w, /media/responsive/f245461b99fb-320.avif 320w, /media/responsive/f245461b99fb-640.avif 640w, /media/responsive/f245461b99fb-960.avif 960w, /media/responsive/f245461b99fb-1280.avif 1280w, /media/responsive/f245461b99fb-1366.avif 1366w"
   },
   "/media/optimized/SeviElectric.png.webp": {
     "src": "/media/responsive/d78c938d7102-640.webp",
@@ -371,7 +371,7 @@
     "width": 500,
     "height": 123,
     "full": "/media/responsive/1796ce014bad-500.webp",
-    "avifSrcset": "/media/responsive/d1cda040eab8-160.avif 160w, /media/responsive/d1cda040eab8-320.avif 320w, /media/responsive/d1cda040eab8-500.avif 500w"
+    "avifSrcset": "/media/responsive/134ceb8253f4-160.avif 160w, /media/responsive/134ceb8253f4-320.avif 320w, /media/responsive/134ceb8253f4-500.avif 500w"
   },
   "/media/team/veronica-sevilla.jpeg": {
     "src": "/media/responsive/c382c7f90626-640.webp",
