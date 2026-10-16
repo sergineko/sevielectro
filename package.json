@@ -11,7 +11,8 @@
     "predev": "node scripts/prepare-media.mjs",
     "prebuild": "node scripts/prepare-media.mjs",
     "media:prepare": "node scripts/prepare-media.mjs",
-    "audit:indexability": "node scripts/check-indexability.mjs"
+    "audit:indexability": "node scripts/check-indexability.mjs",
+    "legal:check": "node scripts/check-legal-identity.mjs"
   },
   "dependencies": {
     "astro": "7.4.0",
