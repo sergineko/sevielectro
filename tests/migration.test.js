@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync, existsSync } from 'node:fs';
+import { clients, projects, team } from '../src/data/content.js';
+const media=JSON.parse(readFileSync(new URL('../src/data/media.json',import.meta.url),'utf8'));
+const root=new URL('../public/',import.meta.url);
+test('cada recurso original conserva su propia versión optimizada',()=>{const paths=Object.values(media).map(asset=>asset.src);assert.equal(new Set(paths).size,paths.length);});
+test('conserva clientes y trabajos originales junto al equipo actualizado',()=>{assert.equal(clients.length,14);assert.ok(projects.length>=9);assert.equal(team.length,4);const inventory=JSON.parse(readFileSync(new URL('../migration/inventory.json',import.meta.url),'utf8'));for(const url of inventory.links.filter(url=>/\/(Imagen-de-WhatsApp[^/]+|Gerente-Trabajando-1)\.jpg$/.test(url)))assert.ok(projects.some(project=>project.file===url.split('/').pop()),url);for(const file of [...clients.map(([f])=>f),...projects.map(p=>p.file)]){assert.ok(media[file],file);assert.ok(existsSync(new URL(media[file].src.slice(1),root)),file);assert.ok(existsSync(new URL(media[file].original.slice(1),root)),file);}});
+test('las anclas de la web original siguen presentes',()=>{const html=readFileSync(new URL('../dist/index.html',import.meta.url),'utf8');for(const id of ['servicios','clientes','equipos','galeria','contacto','content'])assert.ok(html.includes(`id="${id}"`),id);assert.ok(html.includes('Quito'));assert.ok(!html.includes('Sevilla y provincia'));assert.ok(!html.includes('Boletines eléctricos'));});
+test('las imágenes del HTML compilado existen y no dependen de WordPress',()=>{const html=readFileSync(new URL('../dist/index.html',import.meta.url),'utf8');const images=[...html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)];assert.ok(images.length>=clients.length+projects.length);for(const [,src]of images){assert.ok(src.startsWith('/media/'),src);assert.ok(existsSync(new URL(src.slice(1),root)),src);}});

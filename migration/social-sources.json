@@ -1,0 +1,53 @@
+{
+  "account": "https://www.facebook.com/Sevielectro/",
+  "assets": [
+    {
+      "local": "/media/social/facebook-oficinas-iluminacion.jpg",
+      "source": "https://www.facebook.com/photo.php?fbid=1622602899866336",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "local": "/media/social/facebook-zona-atencion.jpg",
+      "source": "https://www.facebook.com/photo.php?fbid=1622603079866318",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "local": "/media/social/facebook-iluminacion-salon.jpg",
+      "source": "https://www.facebook.com/photo.php?fbid=1622602836533009",
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "local": "/media/social/facebook-luminarias-lineales.jpg",
+      "source": "https://www.facebook.com/photo.php?fbid=1622602823199677",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "local": "/media/social/facebook-recepcion-comercial.jpg",
+      "source": "https://www.facebook.com/photo.php?fbid=1622602966532996",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "local": "/media/social/facebook-instalacion-industrial.jpg",
+      "source": "https://www.facebook.com/photo.php?fbid=1735637841896174",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "local": "/media/social/facebook-canalizacion-electrica.jpg",
+      "source": "https://www.facebook.com/photo.php?fbid=1735637741896184",
+      "width": 1536,
+      "height": 2048
+    },
+    {
+      "local": "/media/social/facebook-bandejas-cableado.jpg",
+      "source": "https://www.facebook.com/photo.php?fbid=1735637608562864",
+      "width": 1536,
+      "height": 2048
+    }
+  ]
+}

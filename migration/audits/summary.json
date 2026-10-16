@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-16T01:04:25.661Z",
+  "lighthouse": "13.5.0",
+  "method": "Local production build. Three consecutive runs with default mobile simulation; desktop preset. No custom throttling or scoring changes. No public deployment or field data.",
+  "before": {
+    "scores": {
+      "performance": 95,
+      "accessibility": 97,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1217.5126,
+        "display": "1.2 s"
+      },
+      "largest-contentful-paint": {
+        "value": 2867.5126,
+        "display": "2.9 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "total-byte-weight": {
+        "value": 601705,
+        "display": "Total size was 588 KiB"
+      }
+    }
+  },
+  "mobile": {
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 919.0581999999999,
+        "display": "0.9 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1744.0582,
+        "display": "1.7 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "total-byte-weight": {
+        "value": 282636,
+        "display": "Total size was 276 KiB"
+      }
+    }
+  },
+  "desktop": {
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 254.01170000000002,
+        "display": "0.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 474.0117,
+        "display": "0.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "total-byte-weight": {
+        "value": 375839,
+        "display": "Total size was 367 KiB"
+      }
+    }
+  },
+  "mobileVerificationRuns": [
+    {
+      "file": "mobile-100-run-1.report.json",
+      "time": "2026-10-16T01:04:25.661Z",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1744.0582
+    },
+    {
+      "file": "mobile-100-run-2.json",
+      "time": "2026-10-16T01:05:40.011Z",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1883.0915
+    },
+    {
+      "file": "mobile-100-run-3.json",
+      "time": "2026-10-16T01:05:51.695Z",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 1815.9140000000002
+    }
+  ],
+  "dependencyAudit": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0
+    },
+    "dependencies": 217,
+    "devDependencies": 0,
+    "optionalDependencies": 104,
+    "totalDependencies": 321
+  }
+}

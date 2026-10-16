@@ -1,0 +1,7 @@
+---
+import ResponsiveImage from './ResponsiveImage.astro';
+import { clients } from '../data/content';
+import media from '../data/media.json';
+import { ArrowUpRight } from 'lucide-react';
+---
+<section id="clientes" class="clients section"><div class="container"><div class="section-heading"><div><p class="eyebrow">02 / LA CONFIANZA SE CONSTRUYE</p><h2>Clientes que confían<br /><span class="muted">en nuestro trabajo.</span></h2></div><p>Nuestra entrega y dedicación en cada trabajo<br />nos han hecho merecedores de su confianza.</p></div><ul class="client-grid" aria-label="Clientes de SeviElectro">{clients.map(([file,name,url,type])=><li><a class="client-link" href={url} target="_blank" rel="noopener noreferrer" aria-label={`Visitar ${type==='profile'?'el perfil oficial':'la web oficial'} de ${name} (abre en otra pestaña)`}><ResponsiveImage src={media[file].src} width={media[file].width} height={media[file].height} loading="lazy" sizes="(max-width:640px) 95px, 130px" alt={name}/><span class="client-external" aria-hidden="true"><ArrowUpRight size={13}/></span></a></li>)}</ul><p class="clients-caption">La misma dedicación, en cada instalación.</p></div></section>

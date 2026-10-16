@@ -1,0 +1,70 @@
+---
+import ResponsiveImage from './ResponsiveImage.astro';
+import { ArrowUpRight, Plus, X, ChevronLeft, ChevronRight, Images, Grid2X2, Loader2 } from 'lucide-react';
+import { projects } from '../data/content';
+import media from '../data/media.json';
+import responsive from '../data/responsive-media.json';
+import '../styles/gallery-viewer.css';
+const orderedProjects=[...projects].sort((a,b)=>(a.showcaseOrder ?? 100)-(b.showcaseOrder ?? 100));
+const showcaseLimit=5;
+---
+<section id="galeria" class="section gallery-section">
+  <div class="container">
+    <div class="section-heading">
+      <div><p class="eyebrow">03 / TRABAJOS REALIZADOS</p><h2>La calidad se ve.<br/><span class="muted">Y también se conecta.</span></h2></div>
+      <a class="text-link" href="#contacto">Hablemos de tu proyecto <ArrowUpRight size={18}/></a>
+    </div>
+    <div class="gallery-toolbar">
+      <div class="gallery-filters" role="group" aria-label="Filtrar trabajos">
+        <button class="filter active" data-filter="Todos" aria-pressed="true">Todos los trabajos <span>{String(projects.length).padStart(2,'0')}</span></button>
+        <button class="filter" data-filter="Iluminación" aria-pressed="false">Iluminación</button>
+        <button class="filter" data-filter="Instalaciones" aria-pressed="false">Instalaciones</button>
+      </div>
+      <p class="gallery-invitation"><Images size={14}/> Una selección de nuestro trabajo</p>
+    </div>
+    <div class="project-grid showcase-grid">
+      {orderedProjects.map((project,i)=><figure class:list={['project',{'is-lead':i===0}]} hidden={i>=showcaseLimit} data-category={project.category}>
+        <button class="project-open" data-category={project.category} data-full={responsive[media[project.file].src].full} aria-description="Ampliar fotografía">
+          <ResponsiveImage src={media[project.file].src} width={media[project.file].width} height={media[project.file].height} alt={project.alt} loading="lazy" sizes={i===0 ? "(max-width:850px) 90vw, 440px" : "(max-width:850px) 44vw, 370px"}/>
+          <span class="project-overlay"><span><span class="project-category">{project.category}</span><strong>{project.title}</strong></span><span class="project-plus"><Plus size={20}/></span></span>
+        </button>
+      </figure>)}
+    </div>
+    <div class="gallery-summary">
+      <p aria-live="polite"><span data-showcase-count>{Math.min(showcaseLimit,projects.length)}</span> imágenes destacadas <span class="summary-separator">/</span> <span data-collection-count>{projects.length}</span> fotografías para explorar</p>
+      <button class="button secondary gallery-explore" type="button"><Images size={17}/><span>Ver la galería completa</span><ArrowUpRight size={17}/></button>
+    </div>
+  </div>
+</section>
+<dialog class="gallery-viewer" aria-labelledby="gallery-viewer-label">
+  <div class="viewer-shell">
+    <header class="viewer-header">
+      <div><span class="viewer-brandline">SEVIELECTRO / TRABAJOS REALIZADOS</span><h2 class="viewer-heading" id="gallery-viewer-label">Galería de proyectos <span class="viewer-total">{projects.length} fotografías</span></h2></div>
+      <div class="viewer-tools">
+        <button class="viewer-mode" type="button" aria-label="Ver mosaico con todas las fotografías" aria-pressed="false"><Grid2X2 size={17}/><span>Ver mosaico</span></button>
+        <button class="viewer-close" type="button" aria-label="Cerrar galería"><X size={22}/></button>
+      </div>
+    </header>
+    <div class="viewer-stage">
+      <div class="viewer-ambient" aria-hidden="true"></div>
+      <div class="viewer-frame" aria-busy="false">
+        <img class="viewer-image" alt="" draggable="false"/>
+        <div class="viewer-status" role="status" hidden><Loader2 size={25}/><span class="viewer-status-text">Cargando fotografía…</span><button class="viewer-retry" type="button" hidden>Reintentar</button></div>
+      </div>
+      <button class="viewer-arrow viewer-prev" type="button" aria-label="Fotografía anterior"><ChevronLeft size={23}/></button>
+      <button class="viewer-arrow viewer-next" type="button" aria-label="Fotografía siguiente"><ChevronRight size={23}/></button>
+    </div>
+    <div class="viewer-details">
+      <div><span class="viewer-category"></span><h3 class="viewer-title"></h3></div>
+      <div class="viewer-position"><p class="viewer-counter" aria-live="polite"></p><div class="viewer-progress" aria-hidden="true"><span class="viewer-progress-fill"></span></div></div>
+    </div>
+    <div class="viewer-collection" role="group" aria-label="Seleccionar fotografía">
+      {orderedProjects.map((project,i)=><button class="viewer-thumbnail" type="button" aria-label={`Ver fotografía ${i+1}: ${project.title}`} aria-pressed="false">
+        <ResponsiveImage src={media[project.file].src} width={media[project.file].width} height={media[project.file].height} loading="lazy" sizes="88px" alt=""/>
+        <span class="viewer-thumbnail-number" aria-hidden="true">{String(i+1).padStart(2,'0')}</span>
+        <span class="viewer-thumbnail-caption" aria-hidden="true">{project.title}</span>
+      </button>)}
+    </div>
+  </div>
+</dialog>
+<script>import '../scripts/gallery';</script>

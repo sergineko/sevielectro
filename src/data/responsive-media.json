@@ -1,0 +1,383 @@
+{
+  "/media/optimized/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651.jpeg.webp": {
+    "src": "/media/responsive/5bd6d511450a-640.webp",
+    "srcset": "/media/responsive/5bd6d511450a-160.webp 160w, /media/responsive/5bd6d511450a-320.webp 320w, /media/responsive/5bd6d511450a-640.webp 640w, /media/responsive/5bd6d511450a-792.webp 792w",
+    "width": 792,
+    "height": 517,
+    "full": "/media/responsive/5bd6d511450a-792.webp"
+  },
+  "/media/optimized/image_processing20220427-2020745-1vfleha.jpg.webp": {
+    "src": "/media/responsive/cb2532a4a257-640.webp",
+    "srcset": "/media/responsive/cb2532a4a257-160.webp 160w, /media/responsive/cb2532a4a257-320.webp 320w, /media/responsive/cb2532a4a257-640.webp 640w, /media/responsive/cb2532a4a257-960.webp 960w, /media/responsive/cb2532a4a257-1200.webp 1200w",
+    "width": 1200,
+    "height": 900,
+    "full": "/media/responsive/cb2532a4a257-1200.webp"
+  },
+  "/media/optimized/10-300x300.png.webp": {
+    "src": "/media/responsive/94a909f4e5a1-300.webp",
+    "srcset": "/media/responsive/94a909f4e5a1-160.webp 160w, /media/responsive/94a909f4e5a1-300.webp 300w",
+    "width": 300,
+    "height": 300,
+    "full": "/media/responsive/94a909f4e5a1-300.webp"
+  },
+  "/media/optimized/11-e1674365751440-300x154.png.webp": {
+    "src": "/media/responsive/55fd04cfe4e5-300.webp",
+    "srcset": "/media/responsive/55fd04cfe4e5-160.webp 160w, /media/responsive/55fd04cfe4e5-300.webp 300w",
+    "width": 300,
+    "height": 154,
+    "full": "/media/responsive/55fd04cfe4e5-300.webp"
+  },
+  "/media/optimized/12-e1674365729949-300x140.png.webp": {
+    "src": "/media/responsive/1c289b926b6a-300.webp",
+    "srcset": "/media/responsive/1c289b926b6a-160.webp 160w, /media/responsive/1c289b926b6a-300.webp 300w",
+    "width": 300,
+    "height": 140,
+    "full": "/media/responsive/1c289b926b6a-300.webp"
+  },
+  "/media/optimized/13-300x300.png.webp": {
+    "src": "/media/responsive/5510c038a055-300.webp",
+    "srcset": "/media/responsive/5510c038a055-160.webp 160w, /media/responsive/5510c038a055-300.webp 300w",
+    "width": 300,
+    "height": 300,
+    "full": "/media/responsive/5510c038a055-300.webp"
+  },
+  "/media/optimized/14-300x300.png.webp": {
+    "src": "/media/responsive/584db77c0052-300.webp",
+    "srcset": "/media/responsive/584db77c0052-160.webp 160w, /media/responsive/584db77c0052-300.webp 300w",
+    "width": 300,
+    "height": 300,
+    "full": "/media/responsive/584db77c0052-300.webp"
+  },
+  "/media/optimized/4a-e1674365890181-300x120.png.webp": {
+    "src": "/media/responsive/51619d159211-300.webp",
+    "srcset": "/media/responsive/51619d159211-160.webp 160w, /media/responsive/51619d159211-300.webp 300w",
+    "width": 300,
+    "height": 120,
+    "full": "/media/responsive/51619d159211-300.webp"
+  },
+  "/media/optimized/5-300x300.png.webp": {
+    "src": "/media/responsive/a4f0262e96c8-300.webp",
+    "srcset": "/media/responsive/a4f0262e96c8-160.webp 160w, /media/responsive/a4f0262e96c8-300.webp 300w",
+    "width": 300,
+    "height": 300,
+    "full": "/media/responsive/a4f0262e96c8-300.webp"
+  },
+  "/media/optimized/6a-e1674365922318-300x155.png.webp": {
+    "src": "/media/responsive/99961834dc1e-300.webp",
+    "srcset": "/media/responsive/99961834dc1e-160.webp 160w, /media/responsive/99961834dc1e-300.webp 300w",
+    "width": 300,
+    "height": 155,
+    "full": "/media/responsive/99961834dc1e-300.webp"
+  },
+  "/media/optimized/7-e1674365697887-300x91.png.webp": {
+    "src": "/media/responsive/4abb42e1fb61-300.webp",
+    "srcset": "/media/responsive/4abb42e1fb61-160.webp 160w, /media/responsive/4abb42e1fb61-300.webp 300w",
+    "width": 300,
+    "height": 91,
+    "full": "/media/responsive/4abb42e1fb61-300.webp"
+  },
+  "/media/optimized/8-300x300.png.webp": {
+    "src": "/media/responsive/bb30c4270e30-300.webp",
+    "srcset": "/media/responsive/bb30c4270e30-160.webp 160w, /media/responsive/bb30c4270e30-300.webp 300w",
+    "width": 300,
+    "height": 300,
+    "full": "/media/responsive/bb30c4270e30-300.webp"
+  },
+  "/media/optimized/9-e1674365769668-300x102.png.webp": {
+    "src": "/media/responsive/3c979881f474-300.webp",
+    "srcset": "/media/responsive/3c979881f474-160.webp 160w, /media/responsive/3c979881f474-300.webp 300w",
+    "width": 300,
+    "height": 102,
+    "full": "/media/responsive/3c979881f474-300.webp"
+  },
+  "/media/optimized/Gerente-Trabajando-1.jpg.webp": {
+    "src": "/media/responsive/dadedaa7f2be-540.webp",
+    "srcset": "/media/responsive/dadedaa7f2be-160.webp 160w, /media/responsive/dadedaa7f2be-320.webp 320w, /media/responsive/dadedaa7f2be-540.webp 540w",
+    "width": 540,
+    "height": 960,
+    "full": "/media/responsive/dadedaa7f2be-540.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-1-768x1024.jpg.webp": {
+    "src": "/media/responsive/493ce98385d4-640.webp",
+    "srcset": "/media/responsive/493ce98385d4-160.webp 160w, /media/responsive/493ce98385d4-320.webp 320w, /media/responsive/493ce98385d4-640.webp 640w, /media/responsive/493ce98385d4-768.webp 768w",
+    "width": 768,
+    "height": 1024,
+    "full": "/media/responsive/493ce98385d4-768.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-1.jpg.webp": {
+    "src": "/media/responsive/04067937ee2a-640.webp",
+    "srcset": "/media/responsive/04067937ee2a-160.webp 160w, /media/responsive/04067937ee2a-320.webp 320w, /media/responsive/04067937ee2a-640.webp 640w, /media/responsive/04067937ee2a-960.webp 960w, /media/responsive/04067937ee2a-1200.webp 1200w",
+    "width": 1200,
+    "height": 1600,
+    "full": "/media/responsive/04067937ee2a-1200.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-3-767x1024.jpg.webp": {
+    "src": "/media/responsive/bc995dfa4a8d-640.webp",
+    "srcset": "/media/responsive/bc995dfa4a8d-160.webp 160w, /media/responsive/bc995dfa4a8d-320.webp 320w, /media/responsive/bc995dfa4a8d-640.webp 640w, /media/responsive/bc995dfa4a8d-767.webp 767w",
+    "width": 767,
+    "height": 1024,
+    "full": "/media/responsive/bc995dfa4a8d-767.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-3.jpg.webp": {
+    "src": "/media/responsive/555e97501cba-640.webp",
+    "srcset": "/media/responsive/555e97501cba-160.webp 160w, /media/responsive/555e97501cba-320.webp 320w, /media/responsive/555e97501cba-640.webp 640w, /media/responsive/555e97501cba-960.webp 960w, /media/responsive/555e97501cba-1199.webp 1199w",
+    "width": 1199,
+    "height": 1600,
+    "full": "/media/responsive/555e97501cba-1199.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-4-768x1024.jpg.webp": {
+    "src": "/media/responsive/df16e412fa8c-640.webp",
+    "srcset": "/media/responsive/df16e412fa8c-160.webp 160w, /media/responsive/df16e412fa8c-320.webp 320w, /media/responsive/df16e412fa8c-640.webp 640w, /media/responsive/df16e412fa8c-768.webp 768w",
+    "width": 768,
+    "height": 1024,
+    "full": "/media/responsive/df16e412fa8c-768.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-4.jpg.webp": {
+    "src": "/media/responsive/fd458e3c4ea6-640.webp",
+    "srcset": "/media/responsive/fd458e3c4ea6-160.webp 160w, /media/responsive/fd458e3c4ea6-320.webp 320w, /media/responsive/fd458e3c4ea6-640.webp 640w, /media/responsive/fd458e3c4ea6-960.webp 960w, /media/responsive/fd458e3c4ea6-1200.webp 1200w",
+    "width": 1200,
+    "height": 1600,
+    "full": "/media/responsive/fd458e3c4ea6-1200.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-682x1024.jpg.webp": {
+    "src": "/media/responsive/baa9e0cc8623-640.webp",
+    "srcset": "/media/responsive/baa9e0cc8623-160.webp 160w, /media/responsive/baa9e0cc8623-320.webp 320w, /media/responsive/baa9e0cc8623-640.webp 640w, /media/responsive/baa9e0cc8623-682.webp 682w",
+    "width": 682,
+    "height": 1024,
+    "full": "/media/responsive/baa9e0cc8623-682.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28.jpg.webp": {
+    "src": "/media/responsive/53cdbb0d7e81-640.webp",
+    "srcset": "/media/responsive/53cdbb0d7e81-160.webp 160w, /media/responsive/53cdbb0d7e81-320.webp 320w, /media/responsive/53cdbb0d7e81-640.webp 640w, /media/responsive/53cdbb0d7e81-897.webp 897w",
+    "width": 897,
+    "height": 1347,
+    "full": "/media/responsive/53cdbb0d7e81-897.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-5-1-768x1024.jpg.webp": {
+    "src": "/media/responsive/3db73cbee92d-640.webp",
+    "srcset": "/media/responsive/3db73cbee92d-160.webp 160w, /media/responsive/3db73cbee92d-320.webp 320w, /media/responsive/3db73cbee92d-640.webp 640w, /media/responsive/3db73cbee92d-768.webp 768w",
+    "width": 768,
+    "height": 1024,
+    "full": "/media/responsive/3db73cbee92d-768.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-5-1.jpg.webp": {
+    "src": "/media/responsive/1288d0b63c59-640.webp",
+    "srcset": "/media/responsive/1288d0b63c59-160.webp 160w, /media/responsive/1288d0b63c59-320.webp 320w, /media/responsive/1288d0b63c59-640.webp 640w, /media/responsive/1288d0b63c59-960.webp 960w, /media/responsive/1288d0b63c59-1080.webp 1080w",
+    "width": 1080,
+    "height": 1440,
+    "full": "/media/responsive/1288d0b63c59-1080.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-6-1024x768.jpg.webp": {
+    "src": "/media/responsive/7f926cf1d313-640.webp",
+    "srcset": "/media/responsive/7f926cf1d313-160.webp 160w, /media/responsive/7f926cf1d313-320.webp 320w, /media/responsive/7f926cf1d313-640.webp 640w, /media/responsive/7f926cf1d313-960.webp 960w, /media/responsive/7f926cf1d313-1024.webp 1024w",
+    "width": 1024,
+    "height": 768,
+    "full": "/media/responsive/7f926cf1d313-1024.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-6.jpg.webp": {
+    "src": "/media/responsive/51cc2ddebbda-640.webp",
+    "srcset": "/media/responsive/51cc2ddebbda-160.webp 160w, /media/responsive/51cc2ddebbda-320.webp 320w, /media/responsive/51cc2ddebbda-640.webp 640w, /media/responsive/51cc2ddebbda-960.webp 960w, /media/responsive/51cc2ddebbda-1080.webp 1080w",
+    "width": 1080,
+    "height": 810,
+    "full": "/media/responsive/51cc2ddebbda-1080.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-7-1024x768.jpg.webp": {
+    "src": "/media/responsive/b3faa413eeb2-640.webp",
+    "srcset": "/media/responsive/b3faa413eeb2-160.webp 160w, /media/responsive/b3faa413eeb2-320.webp 320w, /media/responsive/b3faa413eeb2-640.webp 640w, /media/responsive/b3faa413eeb2-960.webp 960w, /media/responsive/b3faa413eeb2-1024.webp 1024w",
+    "width": 1024,
+    "height": 768,
+    "full": "/media/responsive/b3faa413eeb2-1024.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-7.jpg.webp": {
+    "src": "/media/responsive/cf8c4afd4f49-640.webp",
+    "srcset": "/media/responsive/cf8c4afd4f49-160.webp 160w, /media/responsive/cf8c4afd4f49-320.webp 320w, /media/responsive/cf8c4afd4f49-640.webp 640w, /media/responsive/cf8c4afd4f49-960.webp 960w, /media/responsive/cf8c4afd4f49-1080.webp 1080w",
+    "width": 1080,
+    "height": 810,
+    "full": "/media/responsive/cf8c4afd4f49-1080.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-8-1-768x1024.jpg.webp": {
+    "src": "/media/responsive/aa1678a0ab41-640.webp",
+    "srcset": "/media/responsive/aa1678a0ab41-160.webp 160w, /media/responsive/aa1678a0ab41-320.webp 320w, /media/responsive/aa1678a0ab41-640.webp 640w, /media/responsive/aa1678a0ab41-768.webp 768w",
+    "width": 768,
+    "height": 1024,
+    "full": "/media/responsive/aa1678a0ab41-768.webp"
+  },
+  "/media/optimized/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-8-1.jpg.webp": {
+    "src": "/media/responsive/27c956cd5ed8-640.webp",
+    "srcset": "/media/responsive/27c956cd5ed8-160.webp 160w, /media/responsive/27c956cd5ed8-320.webp 320w, /media/responsive/27c956cd5ed8-640.webp 640w, /media/responsive/27c956cd5ed8-960.webp 960w, /media/responsive/27c956cd5ed8-1080.webp 1080w",
+    "width": 1080,
+    "height": 1440,
+    "full": "/media/responsive/27c956cd5ed8-1080.webp"
+  },
+  "/media/optimized/Logo-SeviElectro-1.png.webp": {
+    "src": "/media/responsive/1796ce014bad-500.webp",
+    "srcset": "/media/responsive/1796ce014bad-160.webp 160w, /media/responsive/1796ce014bad-320.webp 320w, /media/responsive/1796ce014bad-500.webp 500w",
+    "width": 500,
+    "height": 123,
+    "full": "/media/responsive/1796ce014bad-500.webp",
+    "avifSrcset": "/media/responsive/d1cda040eab8-160.avif 160w, /media/responsive/d1cda040eab8-320.avif 320w, /media/responsive/d1cda040eab8-500.avif 500w"
+  },
+  "/media/optimized/SeviElectric.jpg.webp": {
+    "src": "/media/responsive/7b1cca0f9468-640.webp",
+    "srcset": "/media/responsive/7b1cca0f9468-160.webp 160w, /media/responsive/7b1cca0f9468-320.webp 320w, /media/responsive/7b1cca0f9468-640.webp 640w, /media/responsive/7b1cca0f9468-960.webp 960w, /media/responsive/7b1cca0f9468-1280.webp 1280w, /media/responsive/7b1cca0f9468-1366.webp 1366w",
+    "width": 1366,
+    "height": 768,
+    "full": "/media/responsive/7b1cca0f9468-1366.webp",
+    "avifSrcset": "/media/responsive/39f0de7b3de4-160.avif 160w, /media/responsive/39f0de7b3de4-320.avif 320w, /media/responsive/39f0de7b3de4-640.avif 640w, /media/responsive/39f0de7b3de4-960.avif 960w, /media/responsive/39f0de7b3de4-1280.avif 1280w, /media/responsive/39f0de7b3de4-1366.avif 1366w"
+  },
+  "/media/optimized/SeviElectric.png.webp": {
+    "src": "/media/responsive/d78c938d7102-640.webp",
+    "srcset": "/media/responsive/d78c938d7102-160.webp 160w, /media/responsive/d78c938d7102-320.webp 320w, /media/responsive/d78c938d7102-640.webp 640w, /media/responsive/d78c938d7102-960.webp 960w, /media/responsive/d78c938d7102-1280.webp 1280w, /media/responsive/d78c938d7102-1366.webp 1366w",
+    "width": 1366,
+    "height": 768,
+    "full": "/media/responsive/d78c938d7102-1366.webp"
+  },
+  "/media/optimized/SeviElectric1.jpg.webp": {
+    "src": "/media/responsive/08fd6af9efef-640.webp",
+    "srcset": "/media/responsive/08fd6af9efef-160.webp 160w, /media/responsive/08fd6af9efef-320.webp 320w, /media/responsive/08fd6af9efef-640.webp 640w, /media/responsive/08fd6af9efef-960.webp 960w, /media/responsive/08fd6af9efef-1280.webp 1280w, /media/responsive/08fd6af9efef-1366.webp 1366w",
+    "width": 1366,
+    "height": 768,
+    "full": "/media/responsive/08fd6af9efef-1366.webp"
+  },
+  "/media/optimized/SeviElectric3.jpg.webp": {
+    "src": "/media/responsive/83e07b66fc99-640.webp",
+    "srcset": "/media/responsive/83e07b66fc99-160.webp 160w, /media/responsive/83e07b66fc99-320.webp 320w, /media/responsive/83e07b66fc99-640.webp 640w, /media/responsive/83e07b66fc99-960.webp 960w, /media/responsive/83e07b66fc99-1280.webp 1280w, /media/responsive/83e07b66fc99-1366.webp 1366w",
+    "width": 1366,
+    "height": 768,
+    "full": "/media/responsive/83e07b66fc99-1366.webp"
+  },
+  "/media/optimized/papa-10-300x300.png.webp": {
+    "src": "/media/responsive/151ffd91b19b-300.webp",
+    "srcset": "/media/responsive/151ffd91b19b-160.webp 160w, /media/responsive/151ffd91b19b-300.webp 300w",
+    "width": 300,
+    "height": 300,
+    "full": "/media/responsive/151ffd91b19b-300.webp"
+  },
+  "/media/optimized/papa-6-300x300.png.webp": {
+    "src": "/media/responsive/00762016a1d0-300.webp",
+    "srcset": "/media/responsive/00762016a1d0-160.webp 160w, /media/responsive/00762016a1d0-300.webp 300w",
+    "width": 300,
+    "height": 300,
+    "full": "/media/responsive/00762016a1d0-300.webp"
+  },
+  "/media/optimized/papa-8-e1674365633329-300x80.png.webp": {
+    "src": "/media/responsive/e6b339ea37a6-300.webp",
+    "srcset": "/media/responsive/e6b339ea37a6-160.webp 160w, /media/responsive/e6b339ea37a6-300.webp 300w",
+    "width": 300,
+    "height": 80,
+    "full": "/media/responsive/e6b339ea37a6-300.webp"
+  },
+  "/media/optimized/sev-papa.png.webp": {
+    "src": "/media/responsive/ad199911c142-640.webp",
+    "srcset": "/media/responsive/ad199911c142-160.webp 160w, /media/responsive/ad199911c142-320.webp 320w, /media/responsive/ad199911c142-640.webp 640w, /media/responsive/ad199911c142-960.webp 960w, /media/responsive/ad199911c142-1280.webp 1280w, /media/responsive/ad199911c142-1600.webp 1600w",
+    "width": 1920,
+    "height": 1080,
+    "full": "/media/responsive/ad199911c142-1600.webp"
+  },
+  "/media/optimized/WhatsApp-Image-2023-06-17-at-7.21.06-PM.jpeg.webp": {
+    "src": "/media/responsive/808543b02273-640.webp",
+    "srcset": "/media/responsive/808543b02273-160.webp 160w, /media/responsive/808543b02273-320.webp 320w, /media/responsive/808543b02273-640.webp 640w, /media/responsive/808543b02273-958.webp 958w",
+    "width": 958,
+    "height": 960,
+    "full": "/media/responsive/808543b02273-958.webp"
+  },
+  "/media/optimized/SeviElectric-q10ocazb9rt4yz80qwwjdrhcmltb9bsr4w6dz3qh6w.jpg.webp": {
+    "src": "/media/responsive/fd54254c1d3e-500.webp",
+    "srcset": "/media/responsive/fd54254c1d3e-160.webp 160w, /media/responsive/fd54254c1d3e-320.webp 320w, /media/responsive/fd54254c1d3e-500.webp 500w",
+    "width": 500,
+    "height": 500,
+    "full": "/media/responsive/fd54254c1d3e-500.webp"
+  },
+  "/media/optimized/SeviElectric4-q10ocjfuza4pvgvqdik6i7chz2nm6lqc621raldxmw.jpg.webp": {
+    "src": "/media/responsive/e80b633e1003-500.webp",
+    "srcset": "/media/responsive/e80b633e1003-160.webp 160w, /media/responsive/e80b633e1003-320.webp 320w, /media/responsive/e80b633e1003-500.webp 500w",
+    "width": 500,
+    "height": 500,
+    "full": "/media/responsive/e80b633e1003-500.webp"
+  },
+  "/media/optimized/image_processing20220427-2020745-1vfleha-pyxc0mnjuyz8263y8ebr0az2wx2a7e6a1kja0ezix4.jpg.webp": {
+    "src": "/media/responsive/a949eac886d6-500.webp",
+    "srcset": "/media/responsive/a949eac886d6-160.webp 160w, /media/responsive/a949eac886d6-320.webp 320w, /media/responsive/a949eac886d6-500.webp 500w",
+    "width": 500,
+    "height": 500,
+    "full": "/media/responsive/a949eac886d6-500.webp"
+  },
+  "/media/optimized/sev-papa-q10gdvlsp7pn4n9va3r6l1is1pkrpopb37lvdof98o.png.webp": {
+    "src": "/media/responsive/94ceba8b899c-500.webp",
+    "srcset": "/media/responsive/94ceba8b899c-160.webp 160w, /media/responsive/94ceba8b899c-320.webp 320w, /media/responsive/94ceba8b899c-500.webp 500w",
+    "width": 500,
+    "height": 500,
+    "full": "/media/responsive/94ceba8b899c-500.webp"
+  },
+  "/media/social/facebook-oficinas-iluminacion.jpg.webp": {
+    "src": "/media/responsive/348dfe954a74-640.webp",
+    "srcset": "/media/responsive/348dfe954a74-160.webp 160w, /media/responsive/348dfe954a74-320.webp 320w, /media/responsive/348dfe954a74-640.webp 640w, /media/responsive/348dfe954a74-960.webp 960w, /media/responsive/348dfe954a74-1280.webp 1280w, /media/responsive/348dfe954a74-1536.webp 1536w",
+    "width": 1536,
+    "height": 2048,
+    "full": "/media/responsive/348dfe954a74-1536.webp"
+  },
+  "/media/social/facebook-zona-atencion.jpg.webp": {
+    "src": "/media/responsive/0b3cc9bb79ac-640.webp",
+    "srcset": "/media/responsive/0b3cc9bb79ac-160.webp 160w, /media/responsive/0b3cc9bb79ac-320.webp 320w, /media/responsive/0b3cc9bb79ac-640.webp 640w, /media/responsive/0b3cc9bb79ac-960.webp 960w, /media/responsive/0b3cc9bb79ac-1280.webp 1280w, /media/responsive/0b3cc9bb79ac-1536.webp 1536w",
+    "width": 1536,
+    "height": 2048,
+    "full": "/media/responsive/0b3cc9bb79ac-1536.webp"
+  },
+  "/media/social/facebook-iluminacion-salon.jpg.webp": {
+    "src": "/media/responsive/588e93819dd7-640.webp",
+    "srcset": "/media/responsive/588e93819dd7-160.webp 160w, /media/responsive/588e93819dd7-320.webp 320w, /media/responsive/588e93819dd7-640.webp 640w, /media/responsive/588e93819dd7-960.webp 960w, /media/responsive/588e93819dd7-1280.webp 1280w, /media/responsive/588e93819dd7-1600.webp 1600w",
+    "width": 2048,
+    "height": 1536,
+    "full": "/media/responsive/588e93819dd7-1600.webp"
+  },
+  "/media/social/facebook-luminarias-lineales.jpg.webp": {
+    "src": "/media/responsive/285567fab8f1-640.webp",
+    "srcset": "/media/responsive/285567fab8f1-160.webp 160w, /media/responsive/285567fab8f1-320.webp 320w, /media/responsive/285567fab8f1-640.webp 640w, /media/responsive/285567fab8f1-960.webp 960w, /media/responsive/285567fab8f1-1280.webp 1280w, /media/responsive/285567fab8f1-1536.webp 1536w",
+    "width": 1536,
+    "height": 2048,
+    "full": "/media/responsive/285567fab8f1-1536.webp"
+  },
+  "/media/social/facebook-recepcion-comercial.jpg.webp": {
+    "src": "/media/responsive/90f656c8dc64-640.webp",
+    "srcset": "/media/responsive/90f656c8dc64-160.webp 160w, /media/responsive/90f656c8dc64-320.webp 320w, /media/responsive/90f656c8dc64-640.webp 640w, /media/responsive/90f656c8dc64-960.webp 960w, /media/responsive/90f656c8dc64-1280.webp 1280w, /media/responsive/90f656c8dc64-1536.webp 1536w",
+    "width": 1536,
+    "height": 2048,
+    "full": "/media/responsive/90f656c8dc64-1536.webp"
+  },
+  "/media/social/facebook-instalacion-industrial.jpg.webp": {
+    "src": "/media/responsive/4ee7ad41ae09-640.webp",
+    "srcset": "/media/responsive/4ee7ad41ae09-160.webp 160w, /media/responsive/4ee7ad41ae09-320.webp 320w, /media/responsive/4ee7ad41ae09-640.webp 640w, /media/responsive/4ee7ad41ae09-960.webp 960w, /media/responsive/4ee7ad41ae09-1280.webp 1280w, /media/responsive/4ee7ad41ae09-1536.webp 1536w",
+    "width": 1536,
+    "height": 2048,
+    "full": "/media/responsive/4ee7ad41ae09-1536.webp"
+  },
+  "/media/social/facebook-canalizacion-electrica.jpg.webp": {
+    "src": "/media/responsive/d8eb5bf4a606-640.webp",
+    "srcset": "/media/responsive/d8eb5bf4a606-160.webp 160w, /media/responsive/d8eb5bf4a606-320.webp 320w, /media/responsive/d8eb5bf4a606-640.webp 640w, /media/responsive/d8eb5bf4a606-960.webp 960w, /media/responsive/d8eb5bf4a606-1280.webp 1280w, /media/responsive/d8eb5bf4a606-1536.webp 1536w",
+    "width": 1536,
+    "height": 2048,
+    "full": "/media/responsive/d8eb5bf4a606-1536.webp"
+  },
+  "/media/social/facebook-bandejas-cableado.jpg.webp": {
+    "src": "/media/responsive/a0810d5ec458-640.webp",
+    "srcset": "/media/responsive/a0810d5ec458-160.webp 160w, /media/responsive/a0810d5ec458-320.webp 320w, /media/responsive/a0810d5ec458-640.webp 640w, /media/responsive/a0810d5ec458-960.webp 960w, /media/responsive/a0810d5ec458-1280.webp 1280w, /media/responsive/a0810d5ec458-1536.webp 1536w",
+    "width": 1536,
+    "height": 2048,
+    "full": "/media/responsive/a0810d5ec458-1536.webp"
+  },
+  "/media/original/Logo-SeviElectro-1.png": {
+    "src": "/media/responsive/1796ce014bad-500.webp",
+    "srcset": "/media/responsive/1796ce014bad-160.webp 160w, /media/responsive/1796ce014bad-320.webp 320w, /media/responsive/1796ce014bad-500.webp 500w",
+    "width": 500,
+    "height": 123,
+    "full": "/media/responsive/1796ce014bad-500.webp",
+    "avifSrcset": "/media/responsive/d1cda040eab8-160.avif 160w, /media/responsive/d1cda040eab8-320.avif 320w, /media/responsive/d1cda040eab8-500.avif 500w"
+  },
+  "/media/team/veronica-sevilla.jpeg": {
+    "src": "/media/responsive/c382c7f90626-640.webp",
+    "srcset": "/media/responsive/c382c7f90626-160.webp 160w, /media/responsive/c382c7f90626-320.webp 320w, /media/responsive/c382c7f90626-640.webp 640w, /media/responsive/c382c7f90626-828.webp 828w",
+    "width": 828,
+    "height": 1069,
+    "full": "/media/responsive/c382c7f90626-828.webp"
+  }
+}

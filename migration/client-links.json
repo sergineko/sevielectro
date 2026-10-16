@@ -1,0 +1,79 @@
+{
+  "checkedOn": "2026-10-16",
+  "notes": [
+    "Farmacias Mi Doctorcito: Instagram proporcionado por el usuario.",
+    "Banco Promerica Ecuador: destino actual Produbanco, contrastado con Grupo Promerica."
+  ],
+  "clients": [
+    {
+      "name": "Farmacias Cruz Azul",
+      "url": "https://www.farmaciascruzazul.ec/",
+      "type": "website"
+    },
+    {
+      "name": "Banco Pichincha",
+      "url": "https://www.pichincha.com/",
+      "type": "website"
+    },
+    {
+      "name": "Farmacias Económicas",
+      "url": "https://www.farmaciaseconomicas.com.ec/",
+      "type": "website"
+    },
+    {
+      "name": "Cooprogreso",
+      "url": "https://www.cooprogreso.fin.ec/inicio/",
+      "type": "website"
+    },
+    {
+      "name": "Cuerpo de Ingenieros del Ejército",
+      "url": "https://www.cuerpodeingenierosdelejercito.mil.ec/",
+      "type": "website"
+    },
+    {
+      "name": "Veris",
+      "url": "https://www.veris.com.ec/",
+      "type": "website"
+    },
+    {
+      "name": "Farmacias Mi Doctorcito",
+      "url": "https://www.instagram.com/farmaciasmidoctorcito/",
+      "type": "profile"
+    },
+    {
+      "name": "Banco Promerica",
+      "url": "https://www.produbanco.com.ec/",
+      "type": "website"
+    },
+    {
+      "name": "Semaica Grupo Empresarial",
+      "url": "https://semaica.com/",
+      "type": "website"
+    },
+    {
+      "name": "Quiport",
+      "url": "https://www.quiport.com/",
+      "type": "website"
+    },
+    {
+      "name": "GM",
+      "url": "https://www.gm.com/",
+      "type": "website"
+    },
+    {
+      "name": "Banco del Pacífico",
+      "url": "https://www.bancodelpacifico.com/",
+      "type": "website"
+    },
+    {
+      "name": "Totto",
+      "url": "https://ec.totto.com/",
+      "type": "website"
+    },
+    {
+      "name": "Mr. Joy",
+      "url": "https://www.mrjoy.com.ec/",
+      "type": "website"
+    }
+  ]
+}

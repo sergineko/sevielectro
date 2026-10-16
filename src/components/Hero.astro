@@ -1,0 +1,24 @@
+---
+import ResponsiveImage from './ResponsiveImage.astro';
+import { ArrowUpRight, ArrowDown, Cable, Camera, BellRing, Zap } from 'lucide-react';
+import { business } from '../config';
+import media from '../data/media.json';
+---
+<section class="hero" aria-labelledby="hero-title">
+  <ResponsiveImage class="hero-photo" src={media['SeviElectric.jpg'].src} width={media['SeviElectric.jpg'].width} height={media['SeviElectric.jpg'].height} fetchpriority="high" loading="eager" sizes="100vw" alt="Trabajo sobre un cuadro eléctrico, fotografía de la web original de SeviElectro" />
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot"></span> SEVIELECTRO · QUITO, ECUADOR</p>
+      <h1 id="hero-title">Tu solución a todo<br />lo <span>eléctrico.</span></h1>
+      <p class="hero-description"><strong>Instalaciones eléctricas y electrónicas.</strong><br />El equipo de siempre, conectado con lo que necesitas.</p>
+      <div class="hero-actions">
+        <a href="#contacto" class="button primary">Solicitar una cotización <ArrowUpRight size={18}/></a>
+        <a href={business.whatsapp} class="button glass">Hablemos por WhatsApp <ArrowUpRight size={17}/></a>
+      </div>
+      <a class="hero-discover" href="#galeria"><span><ArrowDown size={17}/></span> Conoce nuestros trabajos</a>
+    </div>
+    <div class="hero-caption"><span class="caption-line" aria-hidden="true"></span><span>PRECISIÓN EN CADA CONEXIÓN<br /><strong>Instalaciones · Seguridad · Tecnología</strong></span><Zap size={21} strokeWidth={1.4} aria-hidden="true"/></div>
+  </div>
+  <div class="hero-bottom"><div class="container expertise-strip">{[[Cable,'Cableado estructurado'],[Camera,'Cámaras de seguridad'],[BellRing,'Sistemas de alarmas'],[Zap,'Instalaciones eléctricas']].map(([Icon,label])=><a href="#servicios"><Icon size={19} strokeWidth={1.5}/><span>{label}</span><ArrowUpRight size={14}/></a>)}</div></div>
+</section>

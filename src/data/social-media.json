@@ -1,0 +1,50 @@
+{
+  "facebook-oficinas-iluminacion.jpg": {
+    "src": "/media/social/facebook-oficinas-iluminacion.jpg.webp",
+    "width": 1536,
+    "height": 2048,
+    "original": "/media/social/facebook-oficinas-iluminacion.jpg"
+  },
+  "facebook-zona-atencion.jpg": {
+    "src": "/media/social/facebook-zona-atencion.jpg.webp",
+    "width": 1536,
+    "height": 2048,
+    "original": "/media/social/facebook-zona-atencion.jpg"
+  },
+  "facebook-iluminacion-salon.jpg": {
+    "src": "/media/social/facebook-iluminacion-salon.jpg.webp",
+    "width": 2048,
+    "height": 1536,
+    "original": "/media/social/facebook-iluminacion-salon.jpg"
+  },
+  "facebook-luminarias-lineales.jpg": {
+    "src": "/media/social/facebook-luminarias-lineales.jpg.webp",
+    "width": 1536,
+    "height": 2048,
+    "original": "/media/social/facebook-luminarias-lineales.jpg"
+  },
+  "facebook-recepcion-comercial.jpg": {
+    "src": "/media/social/facebook-recepcion-comercial.jpg.webp",
+    "width": 1536,
+    "height": 2048,
+    "original": "/media/social/facebook-recepcion-comercial.jpg"
+  },
+  "facebook-instalacion-industrial.jpg": {
+    "src": "/media/social/facebook-instalacion-industrial.jpg.webp",
+    "width": 1536,
+    "height": 2048,
+    "original": "/media/social/facebook-instalacion-industrial.jpg"
+  },
+  "facebook-canalizacion-electrica.jpg": {
+    "src": "/media/social/facebook-canalizacion-electrica.jpg.webp",
+    "width": 1536,
+    "height": 2048,
+    "original": "/media/social/facebook-canalizacion-electrica.jpg"
+  },
+  "facebook-bandejas-cableado.jpg": {
+    "src": "/media/social/facebook-bandejas-cableado.jpg.webp",
+    "width": 1536,
+    "height": 2048,
+    "original": "/media/social/facebook-bandejas-cableado.jpg"
+  }
+}

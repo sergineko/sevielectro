@@ -1,0 +1,7 @@
+---
+import ResponsiveImage from './ResponsiveImage.astro';
+import { ArrowUpRight } from 'lucide-react';
+import media from '../data/media.json';
+const sectors=[['image_processing20220427-2020745-1vfleha.jpg','Conjuntos privados'],['sev-papa-q10gdvlsp7pn4n9va3r6l1is1pkrpopb37lvdof98o.png','Hospitales y clínicas'],['SeviElectric4-q10ocjfuza4pvgvqdik6i7chz2nm6lqc621raldxmw.jpg','Talleres'],['SeviElectric-q10ocazb9rt4yz80qwwjdrhcmltb9bsr4w6dz3qh6w.jpg','Y muchos más espacios']];
+---
+<section class="section sectors"><div class="container"><div class="section-heading"><div><p class="eyebrow">DONDE NOS NECESITES</p><h2>Especialistas<br />en urbanizaciones.</h2></div><p>Tu solución a los inconvenientes eléctricos<br />y electrónicos en diferentes espacios.</p></div><div class="sector-grid">{sectors.map(([file,title])=><a href="#contacto" class="sector"><ResponsiveImage src={media[file].src} width={media[file].width} height={media[file].height} loading="lazy" sizes="(max-width:370px) 90vw, (max-width:850px) 44vw, 280px" alt=""/><div><h3>{title}</h3><ArrowUpRight size={20}/></div></a>)}</div></div></section>

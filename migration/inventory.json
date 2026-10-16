@@ -1,0 +1,627 @@
+{
+  "source": "https://sevielectro.com/",
+  "images": [
+    {
+      "fetchpriority": "high",
+      "width": "500",
+      "height": "123",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/Logo-SeviElectro-1.png",
+      "class": "attachment-large size-large wp-image-59",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2023/01/Logo-SeviElectro-1.png 500w, https://sevielectro.com/wp-content/uploads/2023/01/Logo-SeviElectro-1-300x74.png 300w",
+      "sizes": "(max-width: 500px) 100vw, 500px"
+    },
+    {
+      "decoding": "async",
+      "width": "500",
+      "height": "123",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/Logo-SeviElectro-1.png",
+      "class": "elementor-animation-grow attachment-large size-large wp-image-59",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2023/01/Logo-SeviElectro-1.png 500w, https://sevielectro.com/wp-content/uploads/2023/01/Logo-SeviElectro-1-300x74.png 300w",
+      "sizes": "(max-width: 500px) 100vw, 500px"
+    },
+    {
+      "decoding": "async",
+      "src": "https://sevielectro.com/wp-content/uploads/elementor/thumbs/image_processing20220427-2020745-1vfleha-pyxc0mnjuyz8263y8ebr0az2wx2a7e6a1kja0ezix4.jpg",
+      "title": "image_processing20220427-2020745-1vfleha",
+      "alt": "image_processing20220427-2020745-1vfleha",
+      "class": "elementor-animation-grow",
+      "loading": "lazy"
+    },
+    {
+      "decoding": "async",
+      "src": "https://sevielectro.com/wp-content/uploads/elementor/thumbs/sev-papa-q10gdvlsp7pn4n9va3r6l1is1pkrpopb37lvdof98o.png",
+      "title": "sev papá",
+      "alt": "sev papá",
+      "class": "elementor-animation-grow",
+      "loading": "lazy"
+    },
+    {
+      "decoding": "async",
+      "src": "https://sevielectro.com/wp-content/uploads/elementor/thumbs/SeviElectric4-q10ocjfuza4pvgvqdik6i7chz2nm6lqc621raldxmw.jpg",
+      "title": "SeviElectric4",
+      "alt": "SeviElectric4",
+      "class": "elementor-animation-grow",
+      "loading": "lazy"
+    },
+    {
+      "decoding": "async",
+      "src": "https://sevielectro.com/wp-content/uploads/elementor/thumbs/SeviElectric-q10ocazb9rt4yz80qwwjdrhcmltb9bsr4w6dz3qh6w.jpg",
+      "title": "SeviElectric",
+      "alt": "SeviElectric",
+      "class": "elementor-animation-grow",
+      "loading": "lazy"
+    },
+    {
+      "decoding": "async",
+      "width": "792",
+      "height": "517",
+      "src": "https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651.jpeg",
+      "class": "elementor-animation-grow attachment-full size-full wp-image-27",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651.jpeg 792w, https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651-300x196.jpeg 300w, https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651-768x501.jpeg 768w",
+      "sizes": "(max-width: 792px) 100vw, 792px"
+    },
+    {
+      "decoding": "async",
+      "width": "792",
+      "height": "517",
+      "src": "https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651.jpeg",
+      "class": "elementor-animation-grow attachment-full size-full wp-image-27",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651.jpeg 792w, https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651-300x196.jpeg 300w, https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651-768x501.jpeg 768w",
+      "sizes": "(max-width: 792px) 100vw, 792px"
+    },
+    {
+      "decoding": "async",
+      "width": "792",
+      "height": "517",
+      "src": "https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651.jpeg",
+      "class": "elementor-animation-grow attachment-full size-full wp-image-27",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651.jpeg 792w, https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651-300x196.jpeg 300w, https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651-768x501.jpeg 768w",
+      "sizes": "(max-width: 792px) 100vw, 792px"
+    },
+    {
+      "decoding": "async",
+      "width": "792",
+      "height": "517",
+      "src": "https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651.jpeg",
+      "class": "elementor-animation-grow attachment-full size-full wp-image-27",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651.jpeg 792w, https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651-300x196.jpeg 300w, https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651-768x501.jpeg 768w",
+      "sizes": "(max-width: 792px) 100vw, 792px"
+    },
+    {
+      "decoding": "async",
+      "class": "swiper-slide-image",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/12-e1674365729949-300x140.png",
+      "alt": "12"
+    },
+    {
+      "decoding": "async",
+      "class": "swiper-slide-image",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/papa-6-300x300.png",
+      "alt": "papá (6)"
+    },
+    {
+      "decoding": "async",
+      "class": "swiper-slide-image",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/11-e1674365751440-300x154.png",
+      "alt": "11"
+    },
+    {
+      "decoding": "async",
+      "class": "swiper-slide-image",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/6a-e1674365922318-300x155.png",
+      "alt": "6a"
+    },
+    {
+      "decoding": "async",
+      "class": "swiper-slide-image",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/14-300x300.png",
+      "alt": "14"
+    },
+    {
+      "decoding": "async",
+      "class": "swiper-slide-image",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/10-300x300.png",
+      "alt": "10"
+    },
+    {
+      "decoding": "async",
+      "class": "swiper-slide-image",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/9-e1674365769668-300x102.png",
+      "alt": "9"
+    },
+    {
+      "decoding": "async",
+      "class": "swiper-slide-image",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/4a-e1674365890181-300x120.png",
+      "alt": "4a"
+    },
+    {
+      "decoding": "async",
+      "class": "swiper-slide-image",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/7-e1674365697887-300x91.png",
+      "alt": "7"
+    },
+    {
+      "decoding": "async",
+      "class": "swiper-slide-image",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/13-300x300.png",
+      "alt": "13"
+    },
+    {
+      "decoding": "async",
+      "class": "swiper-slide-image",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/8-300x300.png",
+      "alt": "8"
+    },
+    {
+      "decoding": "async",
+      "class": "swiper-slide-image",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/papa-8-e1674365633329-300x80.png",
+      "alt": "papá (8)"
+    },
+    {
+      "decoding": "async",
+      "class": "swiper-slide-image",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/5-300x300.png",
+      "alt": "5"
+    },
+    {
+      "decoding": "async",
+      "class": "swiper-slide-image",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/papa-10-300x300.png",
+      "alt": "papá (10)"
+    },
+    {
+      "loading": "lazy",
+      "decoding": "async",
+      "width": "958",
+      "height": "960",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-17-at-7.21.06-PM.jpeg",
+      "class": "elementor-animation-grow attachment-large size-large wp-image-346",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-17-at-7.21.06-PM.jpeg 958w, https://sevielectro.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-17-at-7.21.06-PM-300x300.jpeg 300w, https://sevielectro.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-17-at-7.21.06-PM-150x150.jpeg 150w, https://sevielectro.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-17-at-7.21.06-PM-768x770.jpeg 768w",
+      "sizes": "(max-width: 958px) 100vw, 958px"
+    },
+    {
+      "loading": "lazy",
+      "decoding": "async",
+      "width": "767",
+      "height": "1024",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-3-767x1024.jpg",
+      "class": "attachment-large size-large",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-3-767x1024.jpg 767w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-3-225x300.jpg 225w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-3-768x1025.jpg 768w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-3-1151x1536.jpg 1151w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-3.jpg 1199w",
+      "sizes": "(max-width: 767px) 100vw, 767px"
+    },
+    {
+      "loading": "lazy",
+      "decoding": "async",
+      "width": "768",
+      "height": "1024",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-4-768x1024.jpg",
+      "class": "attachment-large size-large",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-4-768x1024.jpg 768w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-4-225x300.jpg 225w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-4-1152x1536.jpg 1152w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-4.jpg 1200w",
+      "sizes": "(max-width: 768px) 100vw, 768px"
+    },
+    {
+      "loading": "lazy",
+      "decoding": "async",
+      "width": "682",
+      "height": "1024",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-682x1024.jpg",
+      "class": "attachment-large size-large",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-682x1024.jpg 682w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-200x300.jpg 200w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-768x1153.jpg 768w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28.jpg 897w",
+      "sizes": "(max-width: 682px) 100vw, 682px"
+    },
+    {
+      "loading": "lazy",
+      "decoding": "async",
+      "width": "1024",
+      "height": "768",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-6-1024x768.jpg",
+      "class": "attachment-large size-large",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-6-1024x768.jpg 1024w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-6-300x225.jpg 300w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-6-768x576.jpg 768w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-6.jpg 1080w",
+      "sizes": "(max-width: 1024px) 100vw, 1024px"
+    },
+    {
+      "loading": "lazy",
+      "decoding": "async",
+      "width": "540",
+      "height": "960",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/Gerente-Trabajando-1.jpg",
+      "class": "attachment-large size-large",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2023/01/Gerente-Trabajando-1.jpg 540w, https://sevielectro.com/wp-content/uploads/2023/01/Gerente-Trabajando-1-169x300.jpg 169w",
+      "sizes": "(max-width: 540px) 100vw, 540px"
+    },
+    {
+      "loading": "lazy",
+      "decoding": "async",
+      "width": "1024",
+      "height": "768",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-7-1024x768.jpg",
+      "class": "attachment-large size-large",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-7-1024x768.jpg 1024w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-7-300x225.jpg 300w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-7-768x576.jpg 768w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-7.jpg 1080w",
+      "sizes": "(max-width: 1024px) 100vw, 1024px"
+    },
+    {
+      "loading": "lazy",
+      "decoding": "async",
+      "width": "768",
+      "height": "1024",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-8-1-768x1024.jpg",
+      "class": "attachment-large size-large",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-8-1-768x1024.jpg 768w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-8-1-225x300.jpg 225w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-8-1.jpg 1080w",
+      "sizes": "(max-width: 768px) 100vw, 768px"
+    },
+    {
+      "loading": "lazy",
+      "decoding": "async",
+      "width": "768",
+      "height": "1024",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-5-1-768x1024.jpg",
+      "class": "attachment-large size-large",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-5-1-768x1024.jpg 768w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-5-1-225x300.jpg 225w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-5-1.jpg 1080w",
+      "sizes": "(max-width: 768px) 100vw, 768px"
+    },
+    {
+      "loading": "lazy",
+      "decoding": "async",
+      "width": "768",
+      "height": "1024",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-1-768x1024.jpg",
+      "class": "attachment-large size-large",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-1-768x1024.jpg 768w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-1-225x300.jpg 225w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-1-1152x1536.jpg 1152w, https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-1.jpg 1200w",
+      "sizes": "(max-width: 768px) 100vw, 768px"
+    },
+    {
+      "width": "500",
+      "height": "123",
+      "src": "https://sevielectro.com/wp-content/uploads/2023/01/Logo-SeviElectro-1.png",
+      "class": "attachment-large size-large wp-image-59",
+      "alt": "",
+      "srcset": "https://sevielectro.com/wp-content/uploads/2023/01/Logo-SeviElectro-1.png 500w, https://sevielectro.com/wp-content/uploads/2023/01/Logo-SeviElectro-1-300x74.png 300w",
+      "sizes": "(max-width: 500px) 100vw, 500px"
+    }
+  ],
+  "links": [
+    "#content",
+    "https://sevielectro.com",
+    "https://www.facebook.com/Sevielectro",
+    "https://www.instagram.com/sevielectro/",
+    "https://wa.me/593984120086",
+    "https://sevielectro.com/",
+    "https://sevielectro.com/#servicios",
+    "https://sevielectro.com/#clientes",
+    "https://sevielectro.com/#equipos",
+    "https://sevielectro.com/#galeria",
+    "https://sevielectro.com/#contacto",
+    "#",
+    "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-3.jpg",
+    "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-4.jpg",
+    "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28.jpg",
+    "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-6.jpg",
+    "https://sevielectro.com/wp-content/uploads/2023/01/Gerente-Trabajando-1.jpg",
+    "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-7.jpg",
+    "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-8-1.jpg",
+    "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-5-1.jpg",
+    "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-1.jpg"
+  ],
+  "anchors": [
+    "wp-img-auto-sizes-contain-inline-css",
+    "astra-theme-css-css",
+    "astra-theme-css-inline-css",
+    "hfe-widgets-style-css",
+    "wp-emoji-styles-inline-css",
+    "global-styles-inline-css",
+    "hfe-style-css",
+    "elementor-frontend-css",
+    "eael-general-css",
+    "eael-6-css",
+    "elementor-icons-css",
+    "elementor-post-5-css",
+    "widget-spacer-css",
+    "e-animation-grow-css",
+    "widget-image-css",
+    "widget-menu-anchor-css",
+    "widget-heading-css",
+    "e-animation-shrink-css",
+    "widget-icon-box-css",
+    "widget-image-box-css",
+    "swiper-css",
+    "e-swiper-css",
+    "widget-image-carousel-css",
+    "widget-image-gallery-css",
+    "elementor-post-6-css",
+    "elementor-post-47-css",
+    "elementor-post-176-css",
+    "hfe-elementor-icons-css",
+    "hfe-icons-list-css",
+    "hfe-social-icons-css",
+    "hfe-social-share-icons-brands-css",
+    "hfe-social-share-icons-fontawesome-css",
+    "hfe-nav-menu-icons-css",
+    "elementor-gf-local-roboto-css",
+    "elementor-gf-local-robotoslab-css",
+    "elementor-gf-local-poppins-css",
+    "elementor-icons-shared-0-css",
+    "elementor-icons-fa-solid-css",
+    "elementor-icons-fa-brands-css",
+    "elementor-icons-fa-regular-css",
+    "jquery-core-js",
+    "jquery-migrate-js",
+    "jquery-js-after",
+    "widget-social-icons-css",
+    "e-apple-webkit-css",
+    "astra-galleries-css-css",
+    "widget-icon-list-css",
+    "page",
+    "masthead",
+    "menu-1-d020cf6",
+    "menu-item-61",
+    "menu-item-49",
+    "menu-item-51",
+    "menu-item-52",
+    "menu-item-53",
+    "menu-item-55",
+    "content",
+    "servicios",
+    "equipos",
+    "clientes",
+    "galeria",
+    "gallery-1",
+    "gallery-2",
+    "gallery-3",
+    "contacto",
+    "colophon",
+    "astra-theme-js-js-extra",
+    "astra-theme-js-js",
+    "eael-general-js-extra",
+    "eael-general-js",
+    "eael-6-js",
+    "elementor-webpack-runtime-js",
+    "elementor-frontend-modules-js",
+    "jquery-ui-core-js-before",
+    "jquery-ui-core-js",
+    "elementor-frontend-js-before",
+    "elementor-frontend-js",
+    "swiper-js",
+    "hfe-frontend-js-js",
+    "wp-emoji-settings"
+  ],
+  "assets": [
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651.jpeg",
+      "local": "/media/original/WhatsApp-Image-2022-12-06-at-10.26.49-AM-e1674368717651.jpeg",
+      "bytes": 40357
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2022/12/image_processing20220427-2020745-1vfleha.jpg",
+      "local": "/media/original/image_processing20220427-2020745-1vfleha.jpg",
+      "bytes": 193431
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/10-300x300.png",
+      "local": "/media/original/10-300x300.png",
+      "bytes": 13383
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/11-e1674365751440-300x154.png",
+      "local": "/media/original/11-e1674365751440-300x154.png",
+      "bytes": 12298
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/12-e1674365729949-300x140.png",
+      "local": "/media/original/12-e1674365729949-300x140.png",
+      "bytes": 14221
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/13-300x300.png",
+      "local": "/media/original/13-300x300.png",
+      "bytes": 6994
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/14-300x300.png",
+      "local": "/media/original/14-300x300.png",
+      "bytes": 24366
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/4a-e1674365890181-300x120.png",
+      "local": "/media/original/4a-e1674365890181-300x120.png",
+      "bytes": 26867
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/5-300x300.png",
+      "local": "/media/original/5-300x300.png",
+      "bytes": 9869
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/6a-e1674365922318-300x155.png",
+      "local": "/media/original/6a-e1674365922318-300x155.png",
+      "bytes": 40383
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/7-e1674365697887-300x91.png",
+      "local": "/media/original/7-e1674365697887-300x91.png",
+      "bytes": 12043
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/8-300x300.png",
+      "local": "/media/original/8-300x300.png",
+      "bytes": 22196
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/9-e1674365769668-300x102.png",
+      "local": "/media/original/9-e1674365769668-300x102.png",
+      "bytes": 13852
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Gerente-Trabajando-1.jpg",
+      "local": "/media/original/Gerente-Trabajando-1.jpg",
+      "bytes": 70155
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-1-768x1024.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-1-768x1024.jpg",
+      "bytes": 109056
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-1.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-1.jpg",
+      "bytes": 204853
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-3-767x1024.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-3-767x1024.jpg",
+      "bytes": 165280
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-3.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-3.jpg",
+      "bytes": 322837
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-4-768x1024.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-4-768x1024.jpg",
+      "bytes": 51161
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-4.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-4.jpg",
+      "bytes": 79437
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-682x1024.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28-682x1024.jpg",
+      "bytes": 84920
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.40.28.jpg",
+      "bytes": 90187
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-5-1-768x1024.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-5-1-768x1024.jpg",
+      "bytes": 83315
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-5-1.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-5-1.jpg",
+      "bytes": 118471
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-6-1024x768.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-6-1024x768.jpg",
+      "bytes": 63329
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-6.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.40-6.jpg",
+      "bytes": 58145
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-7-1024x768.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-7-1024x768.jpg",
+      "bytes": 52341
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-7.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-7.jpg",
+      "bytes": 47393
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-8-1-768x1024.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-8-1-768x1024.jpg",
+      "bytes": 59881
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-8-1.jpg",
+      "local": "/media/original/Imagen-de-WhatsApp-2023-01-22-a-las-01.41.41-8-1.jpg",
+      "bytes": 82665
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/Logo-SeviElectro-1.png",
+      "local": "/media/original/Logo-SeviElectro-1.png",
+      "bytes": 67591
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/SeviElectric.jpg",
+      "local": "/media/original/SeviElectric.jpg",
+      "bytes": 189400
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/SeviElectric.png",
+      "local": "/media/original/SeviElectric.png",
+      "bytes": 957973
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/SeviElectric1.jpg",
+      "local": "/media/original/SeviElectric1.jpg",
+      "bytes": 122657
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/SeviElectric3.jpg",
+      "local": "/media/original/SeviElectric3.jpg",
+      "bytes": 129008
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/papa-10-300x300.png",
+      "local": "/media/original/papa-10-300x300.png",
+      "bytes": 38140
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/papa-6-300x300.png",
+      "local": "/media/original/papa-6-300x300.png",
+      "bytes": 11061
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/papa-8-e1674365633329-300x80.png",
+      "local": "/media/original/papa-8-e1674365633329-300x80.png",
+      "bytes": 14767
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/01/sev-papa.png",
+      "local": "/media/original/sev-papa.png",
+      "bytes": 801607
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-17-at-7.21.06-PM.jpeg",
+      "local": "/media/original/WhatsApp-Image-2023-06-17-at-7.21.06-PM.jpeg",
+      "bytes": 135506
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/elementor/thumbs/SeviElectric-q10ocazb9rt4yz80qwwjdrhcmltb9bsr4w6dz3qh6w.jpg",
+      "local": "/media/original/SeviElectric-q10ocazb9rt4yz80qwwjdrhcmltb9bsr4w6dz3qh6w.jpg",
+      "bytes": 51895
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/elementor/thumbs/SeviElectric4-q10ocjfuza4pvgvqdik6i7chz2nm6lqc621raldxmw.jpg",
+      "local": "/media/original/SeviElectric4-q10ocjfuza4pvgvqdik6i7chz2nm6lqc621raldxmw.jpg",
+      "bytes": 38451
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/elementor/thumbs/image_processing20220427-2020745-1vfleha-pyxc0mnjuyz8263y8ebr0az2wx2a7e6a1kja0ezix4.jpg",
+      "local": "/media/original/image_processing20220427-2020745-1vfleha-pyxc0mnjuyz8263y8ebr0az2wx2a7e6a1kja0ezix4.jpg",
+      "bytes": 63668
+    },
+    {
+      "source": "https://sevielectro.com/wp-content/uploads/elementor/thumbs/sev-papa-q10gdvlsp7pn4n9va3r6l1is1pkrpopb37lvdof98o.png",
+      "local": "/media/original/sev-papa-q10gdvlsp7pn4n9va3r6l1is1pkrpopb37lvdof98o.png",
+      "bytes": 151205
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "sevielectro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "node --test tests/*.test.js",
+    "predev": "node scripts/prepare-media.mjs",
+    "prebuild": "node scripts/prepare-media.mjs",
+    "media:prepare": "node scripts/prepare-media.mjs",
+    "audit:indexability": "node scripts/check-indexability.mjs"
+  },
+  "dependencies": {
+    "astro": "7.4.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@astrojs/react": "7.1.0",
+    "tailwindcss": "4.3.3",
+    "lucide-react": "0.468.0",
+    "resend": "4.8.0",
+    "@tailwindcss/vite": "4.3.3"
+  },
+  "devDependencies": {
+    "sharp": "0.35.5"
+  },
+  "engines": {
+    "node": ">=22.22.0"
+  }
+}

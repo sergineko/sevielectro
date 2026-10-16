@@ -1,0 +1,37 @@
+---
+import ResponsiveImage from './ResponsiveImage.astro';
+import { Quote } from 'lucide-react';
+import { team } from '../data/content';
+import '../styles/manager-message.css';
+const manager=team[0];
+---
+<section id="equipos" class="section team-section">
+  <div class="container">
+    <div class="section-heading">
+      <div><p class="eyebrow">04 / NUESTRO EQUIPO</p><h2>Personas detrás<br /><span class="muted">de cada conexión.</span></h2></div>
+      <p>Este es el grupo de profesionales<br />que conformamos SeviElectro.</p>
+    </div>
+    <ul class="team-grid" aria-label="Equipo de SeviElectro">
+      {team.map((member,i)=><li class="team-card">
+        <div class="team-portrait">
+          {member.photo ? <ResponsiveImage src={member.photo} width={member.width} height={member.height} style={`object-position:${member.position}`} alt={`Retrato de ${member.name}`} loading="lazy" sizes="(max-width:370px) 90vw, (max-width:850px) 44vw, 280px"/> : <div class="team-placeholder" aria-hidden="true"><span class="team-initials">{member.initials}</span><span class="team-placeholder-label">SEVIELECTRO / EQUIPO</span></div>}
+          <span class="team-card-number" aria-hidden="true">0{i+1}</span>
+        </div>
+        <div class="team-card-info"><h3>{member.name}</h3><p>{member.role}</p></div>
+      </li>)}
+    </ul>
+    <aside class="manager-message" aria-labelledby="manager-message-title">
+      <figure class="manager-profile">
+        <ResponsiveImage src={manager.photo} width={manager.width} height={manager.height} sizes="(max-width:640px) 88px, (max-width:850px) 230px, 400px" alt="René Sevilla, gerente propietario de SeviElectro" loading="lazy"/>
+        <figcaption><span class="manager-profile-rule" aria-hidden="true"></span><strong>{manager.name}</strong><span>{manager.role}</span></figcaption>
+      </figure>
+      <div class="manager-copy">
+        <h3 id="manager-message-title" class="manager-label"><span aria-hidden="true"></span>Mensaje de nuestro gerente</h3>
+        <Quote className="manager-quote-mark" size={76} strokeWidth={1} aria-hidden="true"/>
+        <blockquote><p>«En SeviElectro nos esforzamos por brindar un <span>servicio de calidad.</span>»</p></blockquote>
+        <p class="manager-description">Trabajamos con herramientas óptimas y el material necesario para brindar a nuestros clientes la mayor satisfacción en las diferentes áreas eléctricas.</p>
+        <p class="manager-motto"><span aria-hidden="true"></span>Tu solución a todo lo eléctrico.</p>
+      </div>
+    </aside>
+  </div>
+</section>

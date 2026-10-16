@@ -1,0 +1,9 @@
+---
+import images from '../data/responsive-media.json';
+const { src, sizes = '100vw', loading = 'lazy', ...attributes } = Astro.props;
+const image = images[src];
+---
+{image?.avifSrcset ? <picture style="display:contents">
+  <source type="image/avif" srcset={image.avifSrcset} sizes={sizes}/>
+  <img {...attributes} src={image.src} srcset={image.srcset} sizes={sizes} width={attributes.width || image.width} height={attributes.height || image.height} loading={loading} decoding="async"/>
+</picture> : <img {...attributes} src={image?.src || src} srcset={image?.srcset} sizes={image ? sizes : undefined} width={attributes.width || image?.width} height={attributes.height || image?.height} loading={loading} decoding="async"/>}
