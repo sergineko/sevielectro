@@ -1,8 +1,13 @@
 // Public identification details: complete only with data confirmed by the owner.
-// One source for both the legal notice and the privacy policy.
-// Filling these three fields removes the pending identification notice on build.
+// One source for the visible address and the search engines' structured address.
+export const postalAddress = {
+  streetAddress: 'Chilibulo Alto, calle Virgen Pata, lote S496',
+  addressLocality: 'Quito',
+  addressRegion: 'Pichincha',
+  addressCountry: 'EC',
+};
 export const legalIdentity = {
   legalName: 'René Alcides Sevilla Huilcarema',
   ruc: '1717622680001',
-  address: 'Chilibulo Alto, calle Virgen Pata, lote S496, Quito, Pichincha, Ecuador',
+  address: [postalAddress.streetAddress,postalAddress.addressLocality,postalAddress.addressRegion,'Ecuador'].join(', '),
 };

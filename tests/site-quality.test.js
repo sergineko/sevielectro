@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
+import { postalAddress, legalIdentity } from '../src/data/legal-identity.js';
+import { services } from '../src/data/services.js';
 
 const read = file => readFileSync(new URL(`../${file}`, import.meta.url), 'utf8');
 const home = read('dist/index.html');
@@ -41,9 +43,52 @@ test('la imagen social y los iconos existen con las dimensiones declaradas', asy
     assert.equal(metadata.width,width); assert.equal(metadata.height,height);
   }
   const json = home.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)?.[1];
-  const schema = JSON.parse(json);
+  const schema = JSON.parse(json)['@graph'].find(item => item['@type'] === 'Electrician');
   assert.equal(schema['@type'],'Electrician');
   assert.equal(schema.telephone,'+593984120086');
+});
+
+test('los datos estructurados relacionan cada página con la web y el negocio sin inventar servicios o ubicación', () => {
+  for (const path of ['index.html','privacidad/index.html','aviso-legal/index.html','cookies/index.html']) {
+    const html = read(`dist/${path}`);
+    const canonical = html.match(/rel="canonical" href="([^"]+)"/)?.[1];
+    const graph = JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
+    const company = graph.find(item => item['@type'] === 'Electrician');
+    const website = graph.find(item => item['@type'] === 'WebSite');
+    const page = graph.find(item => item['@type'] === 'WebPage');
+    assert.equal(new Set(graph.map(item => item['@id'])).size,graph.length);
+    assert.equal(page.url,canonical);
+    assert.equal(page.isPartOf['@id'],website['@id']);
+    assert.equal(page.about['@id'],company['@id']);
+    assert.equal(website.publisher['@id'],company['@id']);
+    assert.equal(page.inLanguage,'es-EC');
+    assert.equal(website.inLanguage,'es-EC');
+    assert.deepEqual(company.address,{'@type':'PostalAddress',...postalAddress});
+    assert.equal(company.areaServed.name,'Quito');
+    for (const key of ['aggregateRating','review','openingHoursSpecification','geo','priceRange']) assert.equal(company[key],undefined,key);
+    const offered = company.hasOfferCatalog.itemListElement.map(item => item.itemOffered);
+    assert.deepEqual(offered.map(item => [item.name,item.description]),services.map(item => [item.title,item.text]));
+    assert.ok(offered.every(item => item.provider['@id'] === company['@id']));
+  }
+  assert.ok(home.includes(legalIdentity.address));
+});
+
+test('las páginas tienen títulos y descripciones propios, idioma y metadatos sociales coherentes', () => {
+  const titles = new Set(), descriptions = new Set();
+  for (const path of ['index.html','privacidad/index.html','aviso-legal/index.html','cookies/index.html']) {
+    const html = read(`dist/${path}`);
+    const title = html.match(/<title>(.*?)<\/title>/)?.[1];
+    const description = html.match(/name="description" content="([^"]+)"/)?.[1];
+    assert.ok(title && description,path);
+    titles.add(title); descriptions.add(description);
+    assert.match(html,/<html lang="es-EC">/);
+    assert.ok(html.includes(`property="og:title" content="${title}"`));
+    assert.ok(html.includes(`name="twitter:description" content="${description}"`));
+    assert.ok(html.includes('name="twitter:image:alt"'));
+    assert.ok(!/name="(?:google-site-verification|msvalidate\.01)" content=""/.test(html));
+    assert.ok(!html.includes('hreflang=')); // There is a single Spanish version.
+  }
+  assert.equal(titles.size,4); assert.equal(descriptions.size,4);
 });
 
 test('los recursos con caché inmutable usan nombres con huella y la carga principal se prioriza', () => {

@@ -1,5 +1,7 @@
 ---
 import { ArrowUpRight, Cable, Camera, BellRing, Zap } from 'lucide-react';
-const services=[{icon:Cable,title:'Cableado estructurado',text:'Instalación y desarrollo de la infraestructura de cables al interior de edificios y recintos.',detail:'CONECTIVIDAD'},{icon:Camera,title:'Cámaras de seguridad',text:'Monitoreo remoto y grabación por detección de movimiento, horarios programados o de forma continua.',detail:'SEGURIDAD'},{icon:BellRing,title:'Alarmas',text:'Sistemas de alarmas residenciales y contra incendios para advertir de peligros y posibles siniestros.',detail:'PROTECCIÓN'},{icon:Zap,title:'Instalaciones eléctricas',text:'Sistemas de conexión para conducir y distribuir la energía, desde el servicio eléctrico hasta cada tomacorriente.',detail:'ENERGÍA'}];
+import { services as catalogue } from '../data/services';
+const icons={cable:Cable,camera:Camera,alarm:BellRing,electricity:Zap};
+const services=catalogue.map(service=>({...service,icon:icons[service.icon]}));
 ---
 <section id="servicios" class="section services"><div class="container"><div class="section-heading"><div><p class="eyebrow">01 / NUESTROS SERVICIOS</p><h2>Todo conectado.<br /><span class="muted">Todo en buenas manos.</span></h2></div><p>Conoce nuestro portafolio de servicios.<br />Estaremos gustosos de ayudarte.</p></div><div class="services-grid">{services.map((s,i)=><a class="service-card" href="#contacto"><div class="card-top"><span class="service-icon"><s.icon size={26} strokeWidth={1.5}/></span><span class="card-number">0{i+1}</span></div><p class="card-tag">{s.detail}</p><h3>{s.title}</h3><p class="service-description">{s.text}</p><span class="card-link">Consultar servicio <ArrowUpRight size={17}/></span></a>)}</div></div></section>

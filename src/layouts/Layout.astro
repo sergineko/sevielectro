@@ -5,13 +5,39 @@ import '../styles/hero.css';
 import { business, phoneHref } from '../config';
 import images from '../data/responsive-media.json';
 import assets from '../data/static-assets.json';
+import { postalAddress } from '../data/legal-identity';
+import { services } from '../data/services';
 const { title='SeviElectro · Instalaciones eléctricas y electrónicas en Quito', description='Instalaciones eléctricas, cableado estructurado, cámaras y alarmas en Quito. Conoce los trabajos y el equipo de SeviElectro y solicita tu cotización.', noindex=false }=Astro.props;
 const site=Astro.site!;
 const googleVerification=import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
+const bingVerification=import.meta.env.PUBLIC_BING_SITE_VERIFICATION?.trim();
 const canonical=new URL(Astro.url.pathname,site);
 const socialImage=new URL(assets.socialImage,site);
 const logo=new URL(images['/media/original/Logo-SeviElectro-1.png'].full,site);
-const schema={'@context':'https://schema.org','@type':'Electrician','@id':new URL('/#empresa',site).href,name:business.name,url:site.href,telephone:phoneHref.slice(4),email:business.email,image:socialImage.href,logo:logo.href,address:{'@type':'PostalAddress',addressLocality:'Quito',addressCountry:'EC'},areaServed:{'@type':'City',name:'Quito'},sameAs:[business.facebook,business.instagram]};
+const businessId=new URL('/#empresa',site).href;
+const websiteId=new URL('/#website',site).href;
+const pageId=new URL('#webpage',canonical).href;
+const localBusiness={
+  '@type':'Electrician','@id':businessId,name:business.name,url:site.href,
+  telephone:phoneHref.slice(4),email:business.email,image:socialImage.href,logo:logo.href,
+  address:{'@type':'PostalAddress',...postalAddress},
+  areaServed:{'@type':'City',name:postalAddress.addressLocality},
+  sameAs:[business.facebook,business.instagram],
+  hasOfferCatalog:{
+    '@type':'OfferCatalog',name:'Servicios de SeviElectro',
+    itemListElement:services.map(service=>({
+      '@type':'Offer',itemOffered:{
+        '@type':'Service','@id':new URL(`/#servicio-${service.id}`,site).href,
+        name:service.title,description:service.text,provider:{'@id':businessId},
+      },
+    })),
+  },
+};
+const schema={'@context':'https://schema.org','@graph':[
+  localBusiness,
+  {'@type':'WebSite','@id':websiteId,url:site.href,name:business.name,inLanguage:'es-EC',publisher:{'@id':businessId}},
+  {'@type':'WebPage','@id':pageId,url:canonical.href,name:title,description,inLanguage:'es-EC',isPartOf:{'@id':websiteId},about:{'@id':businessId},...(Astro.url.pathname==='/' ? {mainEntity:{'@id':businessId}} : {})},
+]};
 ---
 <!doctype html>
 <html lang="es-EC">
@@ -24,6 +50,7 @@ const schema={'@context':'https://schema.org','@type':'Electrician','@id':new UR
     <meta name="color-scheme" content="dark light"/>
     <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}/>
     {googleVerification && <meta name="google-site-verification" content={googleVerification}/>}
+    {bingVerification && <meta name="msvalidate.01" content={bingVerification}/>}
     <link rel="icon" type="image/png" sizes="32x32" href={assets.favicon}/>
     <link rel="apple-touch-icon" sizes="180x180" href={assets.touchIcon}/>
     <link rel="canonical" href={canonical}/>
@@ -34,6 +61,7 @@ const schema={'@context':'https://schema.org','@type':'Electrician','@id':new UR
     <meta property="og:site_name" content="SeviElectro"/>
     <meta property="og:url" content={canonical}/>
     <meta property="og:image" content={socialImage}/>
+    <meta property="og:image:type" content="image/jpeg"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
     <meta property="og:image:alt" content="SeviElectro: instalaciones eléctricas y electrónicas en Quito"/>
@@ -41,6 +69,7 @@ const schema={'@context':'https://schema.org','@type':'Electrician','@id':new UR
     <meta name="twitter:title" content={title}/>
     <meta name="twitter:description" content={description}/>
     <meta name="twitter:image" content={socialImage}/>
+    <meta name="twitter:image:alt" content="SeviElectro: instalaciones eléctricas y electrónicas en Quito"/>
     <link rel="preload" href={assets.font} as="font" type="font/woff2" crossorigin/>
     <noscript><style is:inline>svg.client-logo { display:none }</style></noscript>
     {!noindex && <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\\u003c')}/>}
