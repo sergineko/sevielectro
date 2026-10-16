@@ -13,8 +13,8 @@ const manager=team[0];
     </div>
     <ul class="team-grid" aria-label="Equipo de SeviElectro">
       {team.map((member,i)=><li class="team-card">
-        <div class="team-portrait">
-          {member.photo ? <ResponsiveImage src={member.photo} width={member.width} height={member.height} style={`object-position:${member.position}`} alt={`Retrato de ${member.name}`} loading="lazy" sizes="(max-width:480px) 90vw, (max-width:640px) 420px, (max-width:850px) 29vw, 370px"/> : <div class="team-placeholder" aria-hidden="true"><span class="team-initials">{member.initials}</span><span class="team-placeholder-label">SEVIELECTRO / EQUIPO</span></div>}
+        <div class:list={['team-portrait',{'team-portrait--framed':member.frame}]} style={member.frame ? `--portrait-scale:${member.frame.scale};--portrait-origin:${member.frame.origin}` : undefined}>
+          {member.photo ? <ResponsiveImage src={member.photo} width={member.width} height={member.height} style={`object-position:${member.position}`} alt={`Retrato de ${member.name}`} loading="lazy" sizes={member.frame ? '(max-width:480px) 180vw, (max-width:640px) 840px, (max-width:850px) 58vw, 740px' : '(max-width:480px) 90vw, (max-width:640px) 420px, (max-width:850px) 29vw, 370px'}/> : <div class="team-placeholder" aria-hidden="true"><span class="team-initials">{member.initials}</span><span class="team-placeholder-label">SEVIELECTRO / EQUIPO</span></div>}
           <span class="team-card-number" aria-hidden="true">0{i+1}</span>
         </div>
         <div class="team-card-info"><h3>{member.name}</h3><p>{member.role}</p></div>
@@ -35,3 +35,19 @@ const manager=team[0];
     </aside>
   </div>
 </section>
+
+<style>
+  /* Frame the supplied photograph without altering the original. */
+  .team-portrait--framed > :global(img) {
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transform:scale(var(--portrait-scale));
+    transform-origin:var(--portrait-origin);
+  }
+  @media (max-width:640px) {
+    .team-portrait.team-portrait--framed { aspect-ratio:4/5; }
+  }
+</style>
