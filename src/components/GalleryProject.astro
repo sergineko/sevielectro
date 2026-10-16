@@ -1,0 +1,14 @@
+---
+import ResponsiveImage from './ResponsiveImage.astro';
+import { Plus } from 'lucide-react';
+import media from '../data/media.json';
+import responsive from '../data/responsive-media.json';
+const { project, lead = false, sizes = '(max-width:640px) 44vw, (max-width:850px) 30vw, 370px' } = Astro.props;
+const source = media[project.file];
+---
+<figure class:list={['project',{'is-lead':lead}]}>
+  <button class="project-open" type="button" data-category={project.category} data-full={responsive[source.src].full} aria-description="Ampliar fotografía" aria-haspopup="dialog" aria-controls="gallery-viewer">
+    <ResponsiveImage src={source.src} width={source.width} height={source.height} alt={project.alt} loading="lazy" sizes={sizes}/>
+    <span class="project-overlay"><span><span class="project-category">{project.category}</span><strong>{project.title}</strong></span><span class="project-plus" aria-hidden="true"><Plus size={20}/></span></span>
+  </button>
+</figure>

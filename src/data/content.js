@@ -28,9 +28,9 @@ export const projects=[
  {file:'facebook-zona-atencion.jpg',title:'Iluminación en zonas de atención',category:'Iluminación',alt:'Zona de atención al público con focos empotrados y luz lineal'},
  {file:'facebook-iluminacion-salon.jpg',title:'Precisión en cada detalle',category:'Iluminación',alt:'Interior comercial con iluminación LED y techo de líneas geométricas',showcaseOrder:5},
  {file:'facebook-luminarias-lineales.jpg',title:'Luminarias lineales',category:'Iluminación',alt:'Líneas de iluminación empotradas en un techo de doble altura'},
- {file:'facebook-recepcion-comercial.jpg',title:'Instalaciones en espacios comerciales',category:'Iluminación',alt:'Recepción comercial iluminada con focos y líneas LED'},
+ {file:'facebook-recepcion-comercial.jpg',title:'Instalaciones en espacios comerciales',category:'Iluminación',alt:'Recepción comercial iluminada con focos y líneas LED',showcaseOrder:6},
  {file:'facebook-instalacion-industrial.jpg',title:'Instalaciones en obra',category:'Instalaciones',alt:'Canalizaciones y conducciones instaladas bajo una cubierta metálica'},
- {file:'facebook-canalizacion-electrica.jpg',title:'Canalización eléctrica',category:'Instalaciones',alt:'Red de bandejas y tuberías en una instalación industrial'},
+ {file:'facebook-canalizacion-electrica.jpg',title:'Canalización eléctrica',category:'Instalaciones',alt:'Red de bandejas y tuberías en una instalación industrial',showcaseOrder:7},
  {file:'facebook-bandejas-cableado.jpg',title:'Distribución y cableado',category:'Instalaciones',alt:'Bandejas de distribución eléctrica en un edificio en construcción'}
 ];
 export const team=[

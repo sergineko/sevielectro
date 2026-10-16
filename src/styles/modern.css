@@ -59,10 +59,6 @@ h2 { font-size:clamp(37px,3.8vw,48px); line-height:1.12; letter-spacing:-1.8px; 
 .client-grid li:has(.client-link:hover),.client-grid li:focus-within { box-shadow:0 12px 28px #0e344512; }
 .client-external { top:9px; right:9px; }
 .clients-caption { font-size:11px; margin-top:27px; }
-.filter { border-radius:999px; padding:11px 18px; font-size:11px; background:#ffffff02; transition:background .2s,border-color .2s; }
-.filter:hover { border-color:#d4707e; }
-.filter.active { background:#d61a2f; border-color:#e41d32; }
-.gallery-invitation { font-size:10px; }
 .showcase-grid { gap:18px; grid-auto-rows:255px; }
 .project,.project-open { border-radius:15px; }
 .project-open { border-color:#36566a; }
@@ -71,8 +67,6 @@ h2 { font-size:clamp(37px,3.8vw,48px); line-height:1.12; letter-spacing:-1.8px; 
 .project strong { font-size:16px; line-height:1.35; }
 .project-plus { width:37px; height:37px; transition:background .2s,border-color .2s; }
 .project-open:hover .project-plus { background:#d61a2f; border-color:#f88494; }
-.gallery-summary > p { font-size:11px; }
-.gallery-explore { border-radius:999px; background:#13384b; }
 .text-link { font-size:12px; }
 
 .sectors { background:linear-gradient(120deg,#0d3548,#092c3f); border-color:#284c60; }
@@ -199,8 +193,6 @@ h2 { font-size:clamp(37px,3.8vw,48px); line-height:1.12; letter-spacing:-1.8px; 
   .client-link { min-height:110px; padding:17px 12px; }
   .client-logo { max-width:140px; height:66px; }
   .clients-caption { font-size:10px; }
-  .filter { padding:10px 13px; font-size:10px; gap:10px; }
-  .gallery-toolbar { margin-bottom:20px; }
   .showcase-grid { gap:12px; grid-auto-rows:225px; }
   .project,.project-open { border-radius:12px; }
   .project-overlay { padding:55px 14px 17px; gap:7px; }
@@ -208,8 +200,6 @@ h2 { font-size:clamp(37px,3.8vw,48px); line-height:1.12; letter-spacing:-1.8px; 
   .project strong { font-size:13px; line-height:1.35; }
   .project-plus { width:27px; height:27px; }
   .project-plus svg { width:16px; }
-  .gallery-summary > p { font-size:10px; }
-  .gallery-explore { font-size:11px; }
   .sector-grid { gap:12px; }
   .sector { height:245px; border-radius:13px; }
   .sector > div { left:16px; right:16px; bottom:20px; gap:7px; }
@@ -241,7 +231,6 @@ h2 { font-size:clamp(37px,3.8vw,48px); line-height:1.12; letter-spacing:-1.8px; 
   .footer-bottom { font-size:9px; }
 }
 @media(max-width:370px) {
-  .filter { font-size:9px; padding:10px 11px; }
   .showcase-grid { grid-auto-rows:270px; }
   .project strong { font-size:15px; }
   .project-category { font-size:8px; }

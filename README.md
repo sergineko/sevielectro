@@ -13,7 +13,7 @@ Desplegado en [sevielectro.pages.dev](https://sevielectro.pages.dev/). La conexi
 - Quito (Ecuador), teléfono +593 98 412 0086, los dos emails y enlaces de redes y WhatsApp.
 - Anclas originales `#servicios`, `#clientes`, `#equipos`, `#galeria`, `#contacto` y `#content`.
 
-La galería añade filtros y ampliación accesible con teclado (Escape y flechas). El menú móvil funciona sin React. Las fuentes, imágenes y logotipos se sirven localmente. No se han añadido testimonios, clientes, certificaciones ni promesas de urgencias.
+La galería muestra siete fotografías, con etiquetas de Iluminación e Instalaciones y sin filtros. Conserva el mosaico principal y añade una fila con dos trabajos y una tarjeta «Ver todos nuestros trabajos», que abre directamente la siguiente fotografía no mostrada en la página. El visor permite recorrer las 17 imágenes, cambiar al mosaico completo y navegar con teclado (Escape y flechas). El menú móvil funciona sin React. Las fuentes, imágenes y logotipos se sirven localmente. No se han añadido testimonios, clientes, certificaciones ni promesas de urgencias.
 
 La portada utiliza la fotografía original a todo el ancho y el titular superpuesto, manteniendo la composición de la versión anterior con un acabado moderno. Sus estilos están en `src/styles/hero.css`; los ajustes compartidos de tarjetas, navegación y secciones, en `src/styles/modern.css`.
 

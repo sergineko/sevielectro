@@ -26,7 +26,7 @@ if (gallery && viewer) {
     full: button.dataset.full!,
   }));
 
-  let collection = photos;
+  const collection = photos;
   let active = 0;
   let overview = false;
   let loadVersion = 0;
@@ -61,7 +61,6 @@ if (gallery && viewer) {
     viewer!.querySelector('.viewer-total')!.textContent = `${collection.length} fotografías`;
     counter.textContent = `${String(active + 1).padStart(2, '0')} / ${String(collection.length).padStart(2, '0')}`;
     progress.style.width = `${((active + 1) / collection.length) * 100}%`;
-    ambient.style.backgroundImage = `url("${photo.thumbnail.src}")`;
     thumbnails.forEach((thumbnail, i) => {
       const ordinal = collection.findIndex(item => item.index === i);
       thumbnail.hidden = ordinal < 0;
@@ -72,6 +71,10 @@ if (gallery && viewer) {
       }
     });
     if (!overview) requestAnimationFrame(centerThumbnail);
+    // While browsing the mosaic, load a full-size photograph only when the
+    // visitor selects one or switches to the photo view.
+    if (overview) return;
+    ambient.style.backgroundImage = `url("${photo.thumbnail.src}")`;
 
     frame.setAttribute('aria-busy', 'true');
     frame.classList.remove('is-ready', 'has-error');
@@ -108,12 +111,16 @@ if (gallery && viewer) {
   }
 
   photos.forEach(photo => photo.button.addEventListener('click', () => open(collection.indexOf(photo))));
-  gallery.querySelector('.gallery-explore')?.addEventListener('click', () => open(0));
+  const explore = gallery.querySelector<HTMLButtonElement>('.gallery-explore');
+  explore?.addEventListener('click', () => open(Number(explore.dataset.startIndex || 0)));
   viewer.querySelector('.viewer-close')?.addEventListener('click', () => viewer.close());
   viewer.querySelector('.viewer-prev')?.addEventListener('click', () => void show(active - 1));
   viewer.querySelector('.viewer-next')?.addEventListener('click', () => void show(active + 1));
   retry.addEventListener('click', () => void show(active));
-  modeButton.addEventListener('click', () => setOverview(!overview));
+  modeButton.addEventListener('click', () => {
+    setOverview(!overview);
+    if (!overview) void show(active);
+  });
   viewer.addEventListener('click', event => { if (event.target === viewer) viewer.close(); });
   viewer.addEventListener('close', () => { loadVersion++; });
   viewer.addEventListener('keydown', event => {
@@ -153,20 +160,4 @@ if (gallery && viewer) {
   });
   frame.addEventListener('pointercancel', () => { touchStart = null; });
 
-  gallery.querySelectorAll<HTMLButtonElement>('.filter').forEach(filter => filter.addEventListener('click', () => {
-    collection = photos.filter(photo => filter.dataset.filter === 'Todos' || photo.category === filter.dataset.filter);
-    active = 0;
-    const featured = collection.slice(0, 5);
-    photos.forEach(photo => {
-      const figure = photo.button.closest<HTMLElement>('.project')!;
-      figure.hidden = !featured.includes(photo);
-      figure.classList.toggle('is-lead', photo === featured[0]);
-    });
-    gallery.querySelectorAll('.filter').forEach(button => {
-      button.classList.toggle('active', button === filter);
-      button.setAttribute('aria-pressed', String(button === filter));
-    });
-    gallery.querySelector('[data-showcase-count]')!.textContent = String(featured.length);
-    gallery.querySelector('[data-collection-count]')!.textContent = String(collection.length);
-  }));
 }
