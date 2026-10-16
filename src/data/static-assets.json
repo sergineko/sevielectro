@@ -1,76 +1,76 @@
 {
   "clients": {
-    "src": "/media/static/390bde3a1176.svg",
+    "src": "/media/static/52e87f6e05b5.svg",
     "symbols": [
       {
         "id": "client-0",
-        "width": 300,
-        "height": 140
+        "width": 246,
+        "height": 85
       },
       {
         "id": "client-1",
-        "width": 180,
-        "height": 180
+        "width": 226,
+        "height": 48
       },
       {
         "id": "client-2",
-        "width": 300,
-        "height": 154
+        "width": 251,
+        "height": 108
       },
       {
         "id": "client-3",
-        "width": 300,
-        "height": 155
+        "width": 263,
+        "height": 121
       },
       {
         "id": "client-4",
-        "width": 180,
-        "height": 180
+        "width": 158,
+        "height": 128
       },
       {
         "id": "client-5",
-        "width": 180,
-        "height": 180
+        "width": 130,
+        "height": 166
       },
       {
         "id": "client-6",
-        "width": 300,
-        "height": 102
+        "width": 255,
+        "height": 56
       },
       {
         "id": "client-7",
-        "width": 300,
-        "height": 120
+        "width": 255,
+        "height": 70
       },
       {
         "id": "client-8",
-        "width": 300,
-        "height": 91
+        "width": 254,
+        "height": 59
       },
       {
         "id": "client-9",
-        "width": 180,
-        "height": 180
+        "width": 148,
+        "height": 148
       },
       {
         "id": "client-10",
-        "width": 180,
-        "height": 180
+        "width": 148,
+        "height": 148
       },
       {
         "id": "client-11",
-        "width": 300,
-        "height": 80
+        "width": 270,
+        "height": 41
       },
       {
         "id": "client-12",
-        "width": 180,
+        "width": 121,
         "height": 180
       },
       {
         "id": "client-13",
-        "width": 180,
-        "height": 180
+        "width": 162,
+        "height": 162
       }
     ]
   },

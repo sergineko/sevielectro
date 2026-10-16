@@ -70,7 +70,8 @@ async function staticAsset(bytes, extension) {
 const clientSymbols = [];
 for (const [index, [file]] of clients.entries()) {
   const original = path.join(root, 'public', media[file].original);
-  const { data, info } = await sharp(original).rotate().trim({background:'#ffffff',threshold:10}).resize({width:360, height:180, fit:'inside', withoutEnlargement:true})
+  const flattened = await sharp(original).rotate().flatten({background:'#ffffff'}).toBuffer();
+  const { data, info } = await sharp(flattened).trim({background:'#ffffff',threshold:10}).resize({width:360, height:180, fit:'inside', withoutEnlargement:true})
     .webp({quality:90, effort:5}).toBuffer({resolveWithObject:true});
   clientSymbols.push({id:`client-${index}`, width:info.width, height:info.height, data});
 }
