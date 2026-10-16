@@ -2,7 +2,7 @@
 // One source for both the legal notice and the privacy policy.
 // Filling these three fields removes the pending identification notice on build.
 export const legalIdentity = {
-  legalName: '', // Full legal name of the owner or registered company name.
-  ruc: '', // RUC exactly as confirmed by the owner; keep it as a string.
-  address: '', // Full legal address, including city/province and Ecuador.
+  legalName: 'René Alcides Sevilla Huilcarema',
+  ruc: '1717622680001',
+  address: 'Chilibulo Alto, calle Virgen Pata, lote S496, Quito, Pichincha, Ecuador',
 };

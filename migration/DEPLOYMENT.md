@@ -50,10 +50,10 @@ La Function solo recibe `/api/contact`; todas sus respuestas usan `private, no-s
 
 ## Pendiente para el lanzamiento con el dominio
 
-1. Completar el nombre legal o razón social, RUC y domicilio del titular en `src/data/legal-identity.js`. Se han solicitado, sin inventar datos. Confirmar también la conservación efectiva de los buzones y los contratos y garantías de los proveedores descritos en [la revisión de Ecuador](LEGAL-ECUADOR.md).
+1. La identificación legal ya está incorporada con los datos facilitados por el usuario. Confirmar la conservación efectiva de los buzones y los contratos y garantías de los proveedores descritos en [la revisión de Ecuador](LEGAL-ECUADOR.md).
 2. Verificar en Resend el dominio o subdominio remitente mediante sus registros DNS. Añadir `RESEND_API_KEY` como secreto y `FROM_EMAIL` con ese remitente verificado, y volver a desplegar.
 3. Realizar un envío real autorizado con adjunto y verificar recepción en los dos buzones y respuesta directa al visitante. Hasta entonces no está comprobada la entrega.
 4. Conectar `sevielectro.com` cuando se complete la gestión del dominio, conservando los registros del correo y demás servicios. No se ha cambiado DNS ni titularidad.
 5. Revisar HTTPS, redirecciones, caché y rastreo en el dominio definitivo, verificar su propiedad en Search Console y enviar `/sitemap.xml`. Las canónicas y el sitemap ya usan ese dominio.
 
-Los textos ecuatorianos están redactados, pero la identificación legal y las verificaciones operativas indicadas impiden afirmar que toda la empresa esté jurídicamente regularizada solo por publicar estas páginas.
+Los textos ecuatorianos y la identificación están incorporados. Las verificaciones operativas indicadas siguen siendo independientes: publicar las páginas no acredita por sí solo el cumplimiento integral de la empresa.

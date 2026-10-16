@@ -43,7 +43,7 @@ Cambiar la cabecera User-Agent comprueba que la aplicación no discrimina ese id
 4. Enviar o comprobar `https://sevielectro.com/sitemap.xml` en la propiedad correspondiente y utilizar «Inspección de URLs → Probar URL publicada» para confirmar el acceso real de Google. Consultar posteriormente los informes de páginas e imágenes.
 5. Hacer esta comprobación en el dominio de producción. Cloudflare Pages añade `X-Robots-Tag: noindex` a sus despliegues temporales de preview; esa cabecera no proviene del HTML de esta web.
 
-Las páginas legales se han redactado para Ecuador y mantienen su indexabilidad. Falta confirmar nombre legal o razón social, RUC y domicilio del titular, además de las verificaciones operativas documentadas en [LEGAL-ECUADOR.md](../LEGAL-ECUADOR.md). No se han completado con datos inventados.
+Las páginas legales se han redactado para Ecuador y mantienen su indexabilidad. El nombre legal, RUC y domicilio facilitados por el usuario ya están incorporados. Las verificaciones operativas restantes se documentan en [LEGAL-ECUADOR.md](../LEGAL-ECUADOR.md).
 
 Permitir el rastreo, verificar la propiedad y enviar el sitemap no garantiza que Google u otro buscador indexe o posicione una página: la decisión final pertenece a cada buscador.
 

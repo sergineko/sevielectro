@@ -4,11 +4,11 @@ Revisión: 16 de octubre de 2026. Ámbito: web informativa de SeviElectro en Qui
 
 Las páginas `/aviso-legal/`, `/privacidad/` y `/cookies/` sustituyen los textos provisionales. Describen el código y la configuración observados: Cloudflare Pages y Turnstile, Resend previsto para los envíos, dos buzones Gmail/Hotmail, adjuntos opcionales, sin analítica, publicidad o publicaciones sociales incrustadas. Siguen siendo estáticas, indexables y navegables sin JavaScript. Con JavaScript el índice desplaza suavemente sin dejar fragmentos en la URL.
 
-## Datos que faltan y decisiones operativas
+## Identificación incorporada y decisiones operativas
 
-El titular ha indicado que todavía no dispone de los tres datos de identificación. No se vuelven a solicitar para continuar preparando el proyecto. Los campos quedan vacíos en una única fuente, sin sustituirlos por datos de ejemplo.
+El usuario ha facilitado los datos de identificación para su publicación: René Alcides Sevilla Huilcarema, RUC 1717622680001, y Chilibulo Alto, calle Virgen Pata, lote S496, Quito, Pichincha, Ecuador. Se han normalizado las mayúsculas y completado la ciudad, provincia y país con la ubicación conocida de la actividad. No se ha añadido un código postal ni una numeración distinta de la facilitada. No se ha realizado una consulta registral al SRI.
 
-- **Identidad:** el titular todavía no ha facilitado su nombre legal o razón social, RUC y domicilio completo. Se han solicitado. Se incorporan en un único archivo, `src/data/legal-identity.js`, y se muestran en aviso y privacidad. Mientras están vacíos aparece una indicación explícita; no se ha inventado una sociedad, número fiscal o dirección. El art. 12 LOPDP exige identificar al responsable y su domicilio legal: esta parte no puede darse por finalizada sin esos datos.
+- **Identidad:** los tres datos constan en `src/data/legal-identity.js` y se muestran en Aviso legal y Privacidad. La comprobación de identificación pasa y el aviso de datos pendientes desaparece. La versión de privacidad se actualiza a `2026-10-16.2`, con fecha HTML válida e independiente del número de versión.
 - **Conservación:** se explica el criterio de atención y seguimiento, y la conservación legal cuando corresponda. No se atribuye a Ecuador un plazo universal inexistente para toda consulta. La eliminación de los buzones y copias de trabajo debe gestionarla el titular: la web no puede borrar mensajes en Gmail/Hotmail ni promete borrados automáticos. El titular debe concretar y documentar sus plazos por categoría y la configuración real de registros y copias.
 - **Proveedores y exterior:** se informa de Cloudflare, Resend, Google y Microsoft, sus finalidades y tratamiento internacional. Antes de activar el correo deben verificarse los contratos de encargo, roles de los proveedores, garantías de comunicaciones a responsables extranjeros y plazos reales. No se ha afirmado que se hayan firmado acuerdos ecuatorianos ni que Estados Unidos tenga una declaración de adecuación de la SPDP. Los contratos europeos no acreditan por sí solos garantías ecuatorianas. La resolución SPDP-SPD-2026-0004-R distingue el acceso por un encargado de una transferencia entre responsables; no permite asumir que todos los usos propios del proveedor sean encargos.
 - **Seguridad:** el aviso identifica el interés legítimo y su límite. Corresponde al responsable documentar la ponderación exigible, revisar necesidad y proporcionalidad y atender objeciones. Cloudflare declara un rol propio para mejoras de Turnstile, además del tratamiento por cuenta de la web; no se presenta todo su tratamiento como un encargo.
@@ -16,14 +16,14 @@ El titular ha indicado que todavía no dispone de los tres datos de identificaci
 
 La aceptación y la versión del aviso se incluyen en el texto y HTML del correo. El servidor rechaza una versión ausente o antigua antes de consultar proveedores. No se añade una fecha variable al contenido para conservar la idempotencia; el mensaje entregado tiene sus cabeceras de fecha. Esto conserva una evidencia básica de la declaración del formulario, no certifica por sí solo todo el cumplimiento de la empresa.
 
-## Incorporación de los datos cuando estén disponibles
+## Mantenimiento de la identificación
 
 1. Completar únicamente `legalName`, `ruc` y `address` en `src/data/legal-identity.js`, con los datos confirmados. El RUC se mantiene como texto para preservar sus dígitos.
 2. Ejecutar `npm run legal:check` (o `pnpm legal:check`). El comando señala los campos vacíos sin imprimir sus valores; mientras falten datos sale con código 1. Es una comprobación de identificación, no una certificación de cumplimiento legal, y no bloquea las compilaciones actuales.
 3. Compilar con `npm run build` y ejecutar las pruebas existentes. El componente compartido incorpora los datos en Aviso legal y Privacidad y retira automáticamente el aviso de identificación pendiente cuando los tres campos están completos. No es necesario editar los textos de cada página ni el formulario.
 4. Subir a `main` para que Cloudflare Pages publique el cambio y verificar ambas páginas públicas. Si además cambian los tratamientos descritos, revisar y actualizar la versión de privacidad; completar la identificación sin cambiar la finalidad no requiere modificar manualmente todos los documentos.
 
-La incorporación de los datos queda preparada. La activación de Resend, el dominio y las verificaciones operativas anteriores se mantienen como tareas independientes, sin afirmar que los tres campos resuelvan por sí solos todas las obligaciones de la empresa.
+La identificación ya está incorporada. La activación de Resend, el dominio y las verificaciones operativas anteriores se mantienen como tareas independientes, sin afirmar que los tres campos resuelvan por sí solos todas las obligaciones de la empresa.
 
 ## Fuentes primarias consultadas
 

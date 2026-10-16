@@ -6,7 +6,7 @@ import LegalNotice from '../components/LegalNotice.astro';
 import PrivacyPolicy from '../components/PrivacyPolicy.astro';
 import CookiePolicy from '../components/CookiePolicy.astro';
 import { ArrowLeft, ArrowUpRight, FileCheck2, ShieldCheck, Settings2 } from 'lucide-react';
-import { PRIVACY_VERSION, PRIVACY_DATE_LABEL } from '../lib/privacy';
+import { PRIVACY_VERSION, PRIVACY_UPDATED_AT, PRIVACY_DATE_LABEL } from '../lib/privacy';
 import '../styles/legal.css';
 
 export function getStaticPaths() {
@@ -41,7 +41,7 @@ const policies = [['aviso-legal','Aviso legal'],['privacidad','Privacidad'],['co
         <a class="legal-back" href="/"><ArrowLeft size={16}/> Volver a SeviElectro</a>
         <div class="legal-title-row"><div><p class="eyebrow">SEVIELECTRO / TRANSPARENCIA</p><h1>{title}</h1></div><span class="legal-icon" aria-hidden="true"><Icon size={32}/></span></div>
         <p class="legal-intro">{intro}</p>
-        <p class="legal-meta"><span>Quito, Ecuador</span><span>Actualización: <time datetime={PRIVACY_VERSION}>{PRIVACY_DATE_LABEL}</time></span></p>
+        <p class="legal-meta" data-policy-version={PRIVACY_VERSION}><span>Quito, Ecuador</span><span>Actualización: <time datetime={PRIVACY_UPDATED_AT}>{PRIVACY_DATE_LABEL}</time></span></p>
       </div>
       <div class="legal-layout">
         <aside class="legal-sidebar"><nav aria-label="Índice de esta página"><p>En esta página</p><ol>{contents.map(([id,label],index) => <li><a href={`#${id}`}><span aria-hidden="true">{String(index + 1).padStart(2,'0')}</span>{label}</a></li>)}</ol></nav><div class="legal-help"><ShieldCheck size={20} aria-hidden="true"/><p>Tu información,<br/><strong>con claridad.</strong></p><a href="/#contacto">Contacta con nosotros <ArrowUpRight size={15}/></a></div></aside>
