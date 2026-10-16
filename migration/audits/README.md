@@ -4,6 +4,8 @@ Las primeras mediciones siguientes corresponden a la compilación estática loca
 
 ## Resultado público tras caché y reducción de peticiones
 
+**Revisión SEO posterior:** la compilación publicada `61412f0` incorpora dirección completa y catálogo compartido en el JSON-LD enlazado de empresa, web y páginas. `seo-international-mobile.report.html/json` da **100/100/100/100** sobre Pages (móvil), LCP 1,4 s, TBT 0 ms y CLS 0. Se aprueban 24 pruebas y 62 comprobaciones HTTP con once identificadores de rastreadores. El [informe de indexación actualizado](SEARCH-CONSOLE.md) distingue estos resultados de la conexión del dominio definitivo y Resend, que siguen pendientes.
+
 Mediciones sobre `https://sevielectro.pages.dev/`, con la simulación móvil habitual y el preset de escritorio, sin alterar la limitación de red o CPU de Lighthouse:
 
 | Categoría | Antes, móvil | Publicada, móvil | Publicada, escritorio |

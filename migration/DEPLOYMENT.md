@@ -4,7 +4,7 @@ Revisión: 16 de octubre de 2026.
 
 Sitio público: https://sevielectro.pages.dev/
 
-Código publicado y verificado: `94ab2f57abb24a7b52cc74e721299ae88d52206f`. Despliegue Pages `386874ee-d132-4a44-b314-17690640b61e`.
+Código publicado y verificado: `61412f0d042a8a4c38e669364ef8506d5b5140d6`. Despliegue Pages `ffc9f90a-e57b-4785-879d-bbb8c1f8b2d5` · https://ffc9f90a.sevielectro.pages.dev/.
 
 Proyecto Pages `sevielectro`, en la cuenta **Sevielectro_81@hotmail.com's Account**, ID `dcd34e5f3ff2cf026a8977a7bd863685`. Conexión directa con `sergineko/sevielectro`, rama `main`. No se ha alterado la cuenta de Cloudflare de los otros proyectos ni reinstalado la aplicación GitHub.
 
@@ -12,7 +12,7 @@ Proyecto Pages `sevielectro`, en la cuenta **Sevielectro_81@hotmail.com's Accoun
 
 | Campo | Valor |
 | --- | --- |
-| Código fuente | `94ab2f5` (escaparate de galería y acceso a todos los trabajos) |
+| Código fuente | `61412f0` (SEO estructurado y rastreo internacional) |
 | Marco / salida | Astro estático |
 | Raíz | Raíz del repositorio |
 | Compilación | `pnpm run build` |
@@ -42,10 +42,11 @@ La Function solo recibe `/api/contact`; todas sus respuestas usan `private, no-s
 
 ## Comprobaciones
 
-- Compilación correcta y 22 pruebas automatizadas aprobadas.
+- Compilación correcta y 24 pruebas automatizadas aprobadas.
 - [Auditoría pública de caché y formulario](audits/contact-public.json): HTML revalidable, recursos inmutables, respuestas 304, GET del endpoint 405, ausencia de token 400 y token inválido 403, sin enviar correos.
-- [Auditoría de indexabilidad](audits/indexability-public.json): cuatro páginas públicas, sitemap con 18 imágenes, robots sin restricciones generales y ruta inexistente con HTTP 404. Sin bloqueo observado con los User-Agent de los buscadores revisados. No reproduce las IP verificadas de los rastreadores ni garantiza indexación.
+- [Auditoría de indexabilidad](audits/indexability-public.json): 62 solicitudes, cuatro páginas públicas, sitemap con 18 imágenes, once identificadores de rastreadores, robots sin restricciones generales y ruta inexistente con HTTP 404. Metadatos únicos y JSON-LD de negocio, web y páginas verificados. Sin bloqueo observado con esos User-Agent; no reproduce las IP verificadas ni pruebas desde cada país. La auditoría advierte que el dominio canónico todavía sirve WordPress.
 - Portada pública: Lighthouse móvil **99/100/100/100**, escritorio **100/100/100/100**. La carga inicial móvil pasa de 21 peticiones y 242.263 bytes a 6 peticiones y 119.181 bytes; LCP 1,8 s, TBT 0 ms, CLS 0. [Informes](audits/README.md).
+- Revisión SEO pública posterior, sobre `61412f0`: Lighthouse móvil **100/100/100/100**, LCP 1,4 s, TBT 0 ms y CLS 0. Informe `seo-international-mobile.report.html/json`. Son valores de laboratorio de esta medición, no datos CrUX ni posiciones garantizadas en buscadores.
 - Política de privacidad: auditoría móvil local con 100 en las cuatro categorías; revisión visual de las tres páginas legales en móvil y escritorio.
 - Identificación actualizada en Aviso legal y Privacidad: nombre legal, RUC y domicilio completo facilitados por el usuario, sin el aviso de datos pendientes. Se verifican en el HTML público con versión `2026-10-16.2`. La captura de comprobación se conserva solo en local.
 - Galería: filtros y recuentos promocionales retirados, etiquetas de categoría conservadas, cinco fotografías principales y una fila adicional de dos trabajos y una tarjeta «Ver todos nuestros trabajos». La tarjeta abre la octava fotografía en el visor, desde el que se recorren las 17 o se activa el mosaico. Verificado en escritorio y móvil sin desbordamiento, con cierre y navegación correctos. Accesibilidad local Lighthouse: 100, sin discrepancia entre texto visible y nombre accesible del botón. Se han retirado también los estilos y manejadores antiguos de filtros.

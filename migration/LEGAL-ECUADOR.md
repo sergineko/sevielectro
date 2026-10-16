@@ -18,7 +18,7 @@ La aceptación y la versión del aviso se incluyen en el texto y HTML del correo
 
 ## Mantenimiento de la identificación
 
-1. Completar únicamente `legalName`, `ruc` y `address` en `src/data/legal-identity.js`, con los datos confirmados. El RUC se mantiene como texto para preservar sus dígitos.
+1. Mantener `legalName`, `ruc` y las partes de `postalAddress` en `src/data/legal-identity.js`, con los datos confirmados. `legalIdentity.address` genera el domicilio completo desde esas partes para evitar diferencias con el JSON-LD y el contacto. El RUC se mantiene como texto para preservar sus dígitos.
 2. Ejecutar `npm run legal:check` (o `pnpm legal:check`). El comando señala los campos vacíos sin imprimir sus valores; mientras falten datos sale con código 1. Es una comprobación de identificación, no una certificación de cumplimiento legal, y no bloquea las compilaciones actuales.
 3. Compilar con `npm run build` y ejecutar las pruebas existentes. El componente compartido incorpora los datos en Aviso legal y Privacidad y retira automáticamente el aviso de identificación pendiente cuando los tres campos están completos. No es necesario editar los textos de cada página ni el formulario.
 4. Subir a `main` para que Cloudflare Pages publique el cambio y verificar ambas páginas públicas. Si además cambian los tratamientos descritos, revisar y actualizar la versión de privacidad; completar la identificación sin cambiar la finalidad no requiere modificar manualmente todos los documentos.

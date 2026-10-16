@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-16T17:59:16.150Z",
+  "date": "2026-10-16T20:23:09.153Z",
   "target": "http://127.0.0.1:4321/",
   "scope": "local",
   "passed": true,
@@ -8,6 +8,13 @@
       "url": "https://sevielectro.com/",
       "status": 200,
       "canonical": "https://sevielectro.com/",
+      "title": "SeviElectro · Instalaciones eléctricas y electrónicas en Quito",
+      "description": "Instalaciones eléctricas, cableado estructurado, cámaras y alarmas en Quito. Conoce los trabajos y el equipo de SeviElectro y solicita tu cotización.",
+      "schemaTypes": [
+        "Electrician",
+        "WebSite",
+        "WebPage"
+      ],
       "robots": [
         "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
       ]
@@ -16,6 +23,13 @@
       "url": "https://sevielectro.com/aviso-legal/",
       "status": 200,
       "canonical": "https://sevielectro.com/aviso-legal/",
+      "title": "Aviso legal · SeviElectro",
+      "description": "Identificación de SeviElectro, condiciones de uso y atención de solicitudes de instalaciones eléctricas en Quito, Ecuador.",
+      "schemaTypes": [
+        "Electrician",
+        "WebSite",
+        "WebPage"
+      ],
       "robots": [
         "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
       ]
@@ -24,6 +38,13 @@
       "url": "https://sevielectro.com/privacidad/",
       "status": 200,
       "canonical": "https://sevielectro.com/privacidad/",
+      "title": "Política de privacidad · SeviElectro",
+      "description": "Cómo trata SeviElectro tus consultas, datos y adjuntos, sus proveedores y tus derechos de protección de datos personales en Ecuador.",
+      "schemaTypes": [
+        "Electrician",
+        "WebSite",
+        "WebPage"
+      ],
       "robots": [
         "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
       ]
@@ -32,6 +53,13 @@
       "url": "https://sevielectro.com/cookies/",
       "status": 200,
       "canonical": "https://sevielectro.com/cookies/",
+      "title": "Política de cookies · SeviElectro",
+      "description": "Tecnologías utilizadas por SeviElectro: caché, protección Cloudflare Turnstile y enlaces externos, sin analítica ni publicidad comportamental.",
+      "schemaTypes": [
+        "Electrician",
+        "WebSite",
+        "WebPage"
+      ],
       "robots": [
         "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
       ]
@@ -40,13 +68,20 @@
   "images": 18,
   "agents": [
     "Googlebot",
-    "Googlebot-Image",
+    "Googlebot-Image/1.0",
     "bingbot",
+    "DuckDuckBot/1.1",
+    "Applebot",
+    "YandexBot",
+    "Baiduspider",
+    "Slurp",
+    "MojeekBot",
     "OAI-SearchBot",
     "PerplexityBot"
   ],
   "requests": [
     {
+      "url": "http://127.0.0.1:4321/robots.txt",
       "path": "/robots.txt",
       "agent": "SeviElectroDiscoveryAudit/1.0",
       "status": 200,
@@ -60,6 +95,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/sitemap.xml",
       "path": "/sitemap.xml",
       "agent": "SeviElectroDiscoveryAudit/1.0",
       "status": 200,
@@ -73,6 +109,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/",
       "path": "/",
       "agent": "SeviElectroDiscoveryAudit/1.0",
       "status": 200,
@@ -86,6 +123,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/aviso-legal/",
       "path": "/aviso-legal/",
       "agent": "SeviElectroDiscoveryAudit/1.0",
       "status": 200,
@@ -99,6 +137,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/privacidad/",
       "path": "/privacidad/",
       "agent": "SeviElectroDiscoveryAudit/1.0",
       "status": 200,
@@ -112,6 +151,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/cookies/",
       "path": "/cookies/",
       "agent": "SeviElectroDiscoveryAudit/1.0",
       "status": 200,
@@ -125,6 +165,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/",
       "path": "/",
       "agent": "Googlebot",
       "status": 200,
@@ -138,6 +179,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/robots.txt",
       "path": "/robots.txt",
       "agent": "Googlebot",
       "status": 200,
@@ -151,6 +193,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/sitemap.xml",
       "path": "/sitemap.xml",
       "agent": "Googlebot",
       "status": 200,
@@ -164,6 +207,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/",
       "path": "/",
       "agent": "Googlebot-Image/1.0",
       "status": 200,
@@ -177,6 +221,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/robots.txt",
       "path": "/robots.txt",
       "agent": "Googlebot-Image/1.0",
       "status": 200,
@@ -190,6 +235,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/sitemap.xml",
       "path": "/sitemap.xml",
       "agent": "Googlebot-Image/1.0",
       "status": 200,
@@ -203,6 +249,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/",
       "path": "/",
       "agent": "bingbot",
       "status": 200,
@@ -216,6 +263,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/robots.txt",
       "path": "/robots.txt",
       "agent": "bingbot",
       "status": 200,
@@ -229,6 +277,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/sitemap.xml",
       "path": "/sitemap.xml",
       "agent": "bingbot",
       "status": 200,
@@ -242,6 +291,259 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/",
+      "path": "/",
+      "agent": "DuckDuckBot/1.1",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/",
+      "headers": {
+        "content-type": "text/html",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/robots.txt",
+      "path": "/robots.txt",
+      "agent": "DuckDuckBot/1.1",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/robots.txt",
+      "headers": {
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/sitemap.xml",
+      "path": "/sitemap.xml",
+      "agent": "DuckDuckBot/1.1",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/sitemap.xml",
+      "headers": {
+        "content-type": "text/xml",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/",
+      "path": "/",
+      "agent": "Applebot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/",
+      "headers": {
+        "content-type": "text/html",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/robots.txt",
+      "path": "/robots.txt",
+      "agent": "Applebot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/robots.txt",
+      "headers": {
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/sitemap.xml",
+      "path": "/sitemap.xml",
+      "agent": "Applebot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/sitemap.xml",
+      "headers": {
+        "content-type": "text/xml",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/",
+      "path": "/",
+      "agent": "YandexBot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/",
+      "headers": {
+        "content-type": "text/html",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/robots.txt",
+      "path": "/robots.txt",
+      "agent": "YandexBot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/robots.txt",
+      "headers": {
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/sitemap.xml",
+      "path": "/sitemap.xml",
+      "agent": "YandexBot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/sitemap.xml",
+      "headers": {
+        "content-type": "text/xml",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/",
+      "path": "/",
+      "agent": "Baiduspider",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/",
+      "headers": {
+        "content-type": "text/html",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/robots.txt",
+      "path": "/robots.txt",
+      "agent": "Baiduspider",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/robots.txt",
+      "headers": {
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/sitemap.xml",
+      "path": "/sitemap.xml",
+      "agent": "Baiduspider",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/sitemap.xml",
+      "headers": {
+        "content-type": "text/xml",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/",
+      "path": "/",
+      "agent": "Slurp",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/",
+      "headers": {
+        "content-type": "text/html",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/robots.txt",
+      "path": "/robots.txt",
+      "agent": "Slurp",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/robots.txt",
+      "headers": {
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/sitemap.xml",
+      "path": "/sitemap.xml",
+      "agent": "Slurp",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/sitemap.xml",
+      "headers": {
+        "content-type": "text/xml",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/",
+      "path": "/",
+      "agent": "MojeekBot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/",
+      "headers": {
+        "content-type": "text/html",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/robots.txt",
+      "path": "/robots.txt",
+      "agent": "MojeekBot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/robots.txt",
+      "headers": {
+        "content-type": "text/plain",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/sitemap.xml",
+      "path": "/sitemap.xml",
+      "agent": "MojeekBot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/sitemap.xml",
+      "headers": {
+        "content-type": "text/xml",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/",
       "path": "/",
       "agent": "OAI-SearchBot",
       "status": 200,
@@ -255,6 +557,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/robots.txt",
       "path": "/robots.txt",
       "agent": "OAI-SearchBot",
       "status": 200,
@@ -268,6 +571,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/sitemap.xml",
       "path": "/sitemap.xml",
       "agent": "OAI-SearchBot",
       "status": 200,
@@ -281,6 +585,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/",
       "path": "/",
       "agent": "PerplexityBot",
       "status": 200,
@@ -294,6 +599,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/robots.txt",
       "path": "/robots.txt",
       "agent": "PerplexityBot",
       "status": 200,
@@ -307,6 +613,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/sitemap.xml",
       "path": "/sitemap.xml",
       "agent": "PerplexityBot",
       "status": 200,
@@ -320,6 +627,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/7b1cca0f9468-1366.webp",
       "path": "/media/responsive/7b1cca0f9468-1366.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -333,6 +641,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/51cc2ddebbda-1080.webp",
       "path": "/media/responsive/51cc2ddebbda-1080.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -346,6 +655,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/fd458e3c4ea6-1200.webp",
       "path": "/media/responsive/fd458e3c4ea6-1200.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -359,6 +669,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/dadedaa7f2be-540.webp",
       "path": "/media/responsive/dadedaa7f2be-540.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -372,6 +683,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/555e97501cba-1199.webp",
       "path": "/media/responsive/555e97501cba-1199.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -385,6 +697,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/cf8c4afd4f49-1080.webp",
       "path": "/media/responsive/cf8c4afd4f49-1080.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -398,6 +711,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/1288d0b63c59-1080.webp",
       "path": "/media/responsive/1288d0b63c59-1080.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -411,6 +725,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/27c956cd5ed8-1080.webp",
       "path": "/media/responsive/27c956cd5ed8-1080.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -424,6 +739,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/53cdbb0d7e81-897.webp",
       "path": "/media/responsive/53cdbb0d7e81-897.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -437,6 +753,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/04067937ee2a-1200.webp",
       "path": "/media/responsive/04067937ee2a-1200.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -450,6 +767,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/348dfe954a74-1536.webp",
       "path": "/media/responsive/348dfe954a74-1536.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -463,6 +781,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/0b3cc9bb79ac-1536.webp",
       "path": "/media/responsive/0b3cc9bb79ac-1536.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -476,6 +795,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/588e93819dd7-1600.webp",
       "path": "/media/responsive/588e93819dd7-1600.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -489,6 +809,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/285567fab8f1-1536.webp",
       "path": "/media/responsive/285567fab8f1-1536.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -502,6 +823,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/90f656c8dc64-1536.webp",
       "path": "/media/responsive/90f656c8dc64-1536.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -515,6 +837,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/4ee7ad41ae09-1536.webp",
       "path": "/media/responsive/4ee7ad41ae09-1536.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -528,6 +851,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/d8eb5bf4a606-1536.webp",
       "path": "/media/responsive/d8eb5bf4a606-1536.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -541,6 +865,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/responsive/a0810d5ec458-1536.webp",
       "path": "/media/responsive/a0810d5ec458-1536.webp",
       "agent": "Googlebot",
       "status": 200,
@@ -554,6 +879,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/media/static/3100e775e861.woff2",
       "path": "/media/static/3100e775e861.woff2",
       "agent": "Googlebot",
       "status": 200,
@@ -567,10 +893,11 @@
       }
     },
     {
-      "path": "/media/static/4e0620e33125.svg",
+      "url": "http://127.0.0.1:4321/media/static/52e87f6e05b5.svg",
+      "path": "/media/static/52e87f6e05b5.svg",
       "agent": "Googlebot",
       "status": 200,
-      "finalUrl": "http://127.0.0.1:4321/media/static/4e0620e33125.svg",
+      "finalUrl": "http://127.0.0.1:4321/media/static/52e87f6e05b5.svg",
       "headers": {
         "content-type": "image/svg+xml",
         "x-robots-tag": null,
@@ -580,10 +907,11 @@
       }
     },
     {
-      "path": "/_astro/Gallery.astro_astro_type_script_index_0_lang.DFJp10tf.js",
+      "url": "http://127.0.0.1:4321/_astro/Gallery.astro_astro_type_script_index_0_lang.CyqEuPij.js",
+      "path": "/_astro/Gallery.astro_astro_type_script_index_0_lang.CyqEuPij.js",
       "agent": "Googlebot",
       "status": 200,
-      "finalUrl": "http://127.0.0.1:4321/_astro/Gallery.astro_astro_type_script_index_0_lang.DFJp10tf.js",
+      "finalUrl": "http://127.0.0.1:4321/_astro/Gallery.astro_astro_type_script_index_0_lang.CyqEuPij.js",
       "headers": {
         "content-type": "text/javascript",
         "x-robots-tag": null,
@@ -593,6 +921,7 @@
       }
     },
     {
+      "url": "http://127.0.0.1:4321/comprobacion-ruta-inexistente-404",
       "path": "/comprobacion-ruta-inexistente-404",
       "agent": "SeviElectroDiscoveryAudit/1.0",
       "status": 404,
@@ -607,6 +936,7 @@
     }
   ],
   "errors": [],
+  "warnings": [],
   "limitations": [
     "Cambiar el User-Agent comprueba el comportamiento del sitio; no reproduce las IP verificadas de los rastreadores reales.",
     "Esta prueba no valida las reglas WAF, robots gestionado, autenticación o bloqueo de bots de la cuenta Cloudflare de producción.",
