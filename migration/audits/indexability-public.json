@@ -1,0 +1,601 @@
+{
+  "date": "2026-10-16T17:36:15.748Z",
+  "target": "https://sevielectro.pages.dev/",
+  "scope": "public",
+  "passed": true,
+  "pages": [
+    {
+      "url": "https://sevielectro.com/",
+      "status": 200,
+      "canonical": "https://sevielectro.com/",
+      "robots": [
+        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      ]
+    },
+    {
+      "url": "https://sevielectro.com/aviso-legal/",
+      "status": 200,
+      "canonical": "https://sevielectro.com/aviso-legal/",
+      "robots": [
+        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      ]
+    },
+    {
+      "url": "https://sevielectro.com/privacidad/",
+      "status": 200,
+      "canonical": "https://sevielectro.com/privacidad/",
+      "robots": [
+        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      ]
+    },
+    {
+      "url": "https://sevielectro.com/cookies/",
+      "status": 200,
+      "canonical": "https://sevielectro.com/cookies/",
+      "robots": [
+        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      ]
+    }
+  ],
+  "images": 18,
+  "agents": [
+    "Googlebot",
+    "Googlebot-Image",
+    "bingbot",
+    "OAI-SearchBot",
+    "PerplexityBot"
+  ],
+  "requests": [
+    {
+      "path": "/robots.txt",
+      "agent": "SeviElectroDiscoveryAudit/1.0",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/robots.txt",
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2f3cec2dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/sitemap.xml",
+      "agent": "SeviElectroDiscoveryAudit/1.0",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/sitemap.xml",
+      "headers": {
+        "content-type": "application/xml",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2f55b11dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/",
+      "agent": "SeviElectroDiscoveryAudit/1.0",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/",
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2f6bf6bdd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/aviso-legal/",
+      "agent": "SeviElectroDiscoveryAudit/1.0",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/aviso-legal/",
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2f76936dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/privacidad/",
+      "agent": "SeviElectroDiscoveryAudit/1.0",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/privacidad/",
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2f8dce2dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/cookies/",
+      "agent": "SeviElectroDiscoveryAudit/1.0",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/cookies/",
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2fa9a56dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/",
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2fbfe1fdd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/robots.txt",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/robots.txt",
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2fc4efedd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/sitemap.xml",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/sitemap.xml",
+      "headers": {
+        "content-type": "application/xml",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2fc7f90dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/",
+      "agent": "Googlebot-Image/1.0",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/",
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2fcb825dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/robots.txt",
+      "agent": "Googlebot-Image/1.0",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/robots.txt",
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2fd08d7dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/sitemap.xml",
+      "agent": "Googlebot-Image/1.0",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/sitemap.xml",
+      "headers": {
+        "content-type": "application/xml",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2fd3988dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/",
+      "agent": "bingbot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/",
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2fd6a33dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/robots.txt",
+      "agent": "bingbot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/robots.txt",
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2fdab0edd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/sitemap.xml",
+      "agent": "bingbot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/sitemap.xml",
+      "headers": {
+        "content-type": "application/xml",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2fddb87dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/",
+      "agent": "OAI-SearchBot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/",
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2fe0c08dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/robots.txt",
+      "agent": "OAI-SearchBot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/robots.txt",
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2fe5d19dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/sitemap.xml",
+      "agent": "OAI-SearchBot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/sitemap.xml",
+      "headers": {
+        "content-type": "application/xml",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2fe9d9edd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/",
+      "agent": "PerplexityBot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/",
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2fece0edd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/robots.txt",
+      "agent": "PerplexityBot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/robots.txt",
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2ff1ec8dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/sitemap.xml",
+      "agent": "PerplexityBot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/sitemap.xml",
+      "headers": {
+        "content-type": "application/xml",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2ff4f66dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/7b1cca0f9468-1366.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/7b1cca0f9468-1366.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d2ff8816dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/51cc2ddebbda-1080.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/51cc2ddebbda-1080.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d3023c5c1bb5-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/fd458e3c4ea6-1200.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/fd458e3c4ea6-1200.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d303fb3bdd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/dadedaa7f2be-540.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/dadedaa7f2be-540.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d3058ede1bb5-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/555e97501cba-1199.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/555e97501cba-1199.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d306fb52dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/cf8c4afd4f49-1080.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/cf8c4afd4f49-1080.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d309ea501bb5-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/1288d0b63c59-1080.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/1288d0b63c59-1080.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d30b8eeadd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/27c956cd5ed8-1080.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/27c956cd5ed8-1080.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d30d5ce01bb5-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/53cdbb0d7e81-897.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/53cdbb0d7e81-897.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d30eff68dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/04067937ee2a-1200.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/04067937ee2a-1200.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d3111f501bb5-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/348dfe954a74-1536.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/348dfe954a74-1536.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d31349e8dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/0b3cc9bb79ac-1536.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/0b3cc9bb79ac-1536.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d314fa521bb5-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/588e93819dd7-1600.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/588e93819dd7-1600.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d316ebafdd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/285567fab8f1-1536.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/285567fab8f1-1536.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d3189ce51bb5-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/90f656c8dc64-1536.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/90f656c8dc64-1536.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d31a7d07dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/4ee7ad41ae09-1536.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/4ee7ad41ae09-1536.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d31d388a1bb5-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/d8eb5bf4a606-1536.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/d8eb5bf4a606-1536.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d31ed8f4dd98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/media/responsive/a0810d5ec458-1536.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/a0810d5ec458-1536.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d320db121bb5-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/fonts/inter-latin.woff2",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/fonts/inter-latin.woff2",
+      "headers": {
+        "content-type": "font/woff2",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d3237f2add98-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/_astro/Gallery.astro_astro_type_script_index_0_lang.DFJp10tf.js",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/_astro/Gallery.astro_astro_type_script_index_0_lang.DFJp10tf.js",
+      "headers": {
+        "content-type": "application/javascript",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d323bd0d1bb5-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "path": "/comprobacion-ruta-inexistente-404",
+      "agent": "SeviElectroDiscoveryAudit/1.0",
+      "status": 404,
+      "finalUrl": "https://sevielectro.pages.dev/comprobacion-ruta-inexistente-404",
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4b8d3251b8fdd98-MAD",
+        "server": "cloudflare"
+      }
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Cambiar el User-Agent comprueba el comportamiento del sitio; no reproduce las IP verificadas de los rastreadores reales.",
+    "La propiedad y el estado real de indexación deben comprobarse en Search Console. Permitir el acceso no garantiza que un buscador indexe una URL."
+  ]
+}

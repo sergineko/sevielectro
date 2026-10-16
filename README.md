@@ -1,6 +1,8 @@
 # SeviElectro · Migración a Astro
 
-Rediseño de https://sevielectro.com/ conservando su identidad y contenido. Astro 7 estático, React 18 para el formulario, Tailwind 4 y Cloudflare Pages Functions con Resend. No se ha modificado ni publicado la web de producción.
+Rediseño de https://sevielectro.com/ conservando su identidad y contenido. Astro 7 estático, React 18 para el formulario, Tailwind 4 y Cloudflare Pages Functions con Resend.
+
+Desplegado en [sevielectro.pages.dev](https://sevielectro.pages.dev/). La conexión del dominio definitivo y la configuración de envío con Resend siguen pendientes. Este despliegue no ha cambiado los DNS del dominio original. Configuración y verificaciones en [migration/DEPLOYMENT.md](migration/DEPLOYMENT.md).
 
 ## Qué se conserva
 
