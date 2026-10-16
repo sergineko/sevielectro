@@ -4,7 +4,7 @@ Revisión: 16 de octubre de 2026.
 
 Sitio público: https://sevielectro.pages.dev/
 
-Despliegue de producción verificado: https://a215bdf6.sevielectro.pages.dev/ · código `39b96f6c6ae096451e0406cbb9dbf62f1bc261b9`.
+Código publicado y verificado: `8216162ec2945ecc3963c140ddc503e045c750f8`. Despliegue Pages `7e93e3fc-929c-45dc-83a1-febd14ab45fb`.
 
 Proyecto Pages `sevielectro`, en la cuenta **Sevielectro_81@hotmail.com's Account**, ID `dcd34e5f3ff2cf026a8977a7bd863685`. Conexión directa con `sergineko/sevielectro`, rama `main`. No se ha alterado la cuenta de Cloudflare de los otros proyectos ni reinstalado la aplicación GitHub.
 
@@ -12,7 +12,7 @@ Proyecto Pages `sevielectro`, en la cuenta **Sevielectro_81@hotmail.com's Accoun
 
 | Campo | Valor |
 | --- | --- |
-| Código fuente | `39b96f6` (textos legales de Ecuador y versión de privacidad) |
+| Código fuente | `8216162` (identificación completa y domicilio normalizado) |
 | Marco / salida | Astro estático |
 | Raíz | Raíz del repositorio |
 | Compilación | `pnpm run build` |
@@ -47,6 +47,7 @@ La Function solo recibe `/api/contact`; todas sus respuestas usan `private, no-s
 - [Auditoría de indexabilidad](audits/indexability-public.json): cuatro páginas públicas, sitemap con 18 imágenes, robots sin restricciones generales y ruta inexistente con HTTP 404. Sin bloqueo observado con los User-Agent de los buscadores revisados. No reproduce las IP verificadas de los rastreadores ni garantiza indexación.
 - Portada pública: Lighthouse móvil **99/100/100/100**, escritorio **100/100/100/100**. La carga inicial móvil pasa de 21 peticiones y 242.263 bytes a 6 peticiones y 119.181 bytes; LCP 1,8 s, TBT 0 ms, CLS 0. [Informes](audits/README.md).
 - Política de privacidad: auditoría móvil local con 100 en las cuatro categorías; revisión visual de las tres páginas legales en móvil y escritorio.
+- Identificación actualizada en Aviso legal y Privacidad: nombre legal, RUC y domicilio completo facilitados por el usuario, sin el aviso de datos pendientes. Se verifican en el HTML público con versión `2026-10-16.2`. La captura de comprobación se conserva solo en local.
 
 ## Pendiente para el lanzamiento con el dominio
 
