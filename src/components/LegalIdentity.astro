@@ -1,0 +1,14 @@
+---
+import { business, phoneHref } from '../config';
+import { legalIdentity } from '../data/legal-identity';
+const complete = legalIdentity.legalName && legalIdentity.ruc && legalIdentity.address;
+---
+<dl class="legal-identity">
+  <div><dt>Nombre comercial</dt><dd>{business.name}</dd></div>
+  {legalIdentity.legalName && <div><dt>Titular / responsable</dt><dd>{legalIdentity.legalName}</dd></div>}
+  {legalIdentity.ruc && <div><dt>RUC</dt><dd>{legalIdentity.ruc}</dd></div>}
+  <div><dt>{legalIdentity.address ? 'Domicilio' : 'Ubicación'}</dt><dd>{legalIdentity.address || business.location}</dd></div>
+  <div><dt>Teléfono</dt><dd><a href={phoneHref}>{business.phone}</a></dd></div>
+  <div><dt>Correo electrónico</dt><dd><a href={`mailto:${business.email}`}>{business.email}</a><a href={`mailto:${business.secondaryEmail}`}>{business.secondaryEmail}</a></dd></div>
+</dl>
+{!complete && <p class="legal-pending"><strong>Identificación pendiente de completar:</strong> el titular debe confirmar su nombre o razón social, RUC y domicilio completo. Los datos de contacto anteriores están disponibles para consultas y solicitudes sobre privacidad.</p>}

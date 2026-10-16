@@ -1,5 +1,6 @@
 import { Resend } from 'resend';
 import { MAX_TOTAL_BYTES, validateAttachments } from '../../src/lib/attachments.js';
+import { PRIVACY_VERSION, PRIVACY_CONSENT } from '../../src/lib/privacy.js';
 
 const MAX_BODY_BYTES = Math.ceil(MAX_TOTAL_BYTES / 3) * 4 + 32768;
 const attempts = new Map();
@@ -58,6 +59,7 @@ export async function onRequestPost({ request,env }) {
   }
   const { name,email,phone,service,message } = fields;
   if (!name || !email || message.length < 10 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || /[\r\n]/.test(email) || body.consent !== 'yes') return json({ error:'Revisa el nombre, el email, la descripción (mínimo 10 caracteres) y la aceptación de privacidad.' },400);
+  if (body.privacyVersion !== PRIVACY_VERSION) return json({ error:'La política de privacidad se ha actualizado. Recarga la página y revisa el aviso antes de enviar.' },400);
   if (typeof body.turnstileToken !== 'string' || !body.turnstileToken || body.turnstileToken.length > 2048) return json({ error:'No se ha completado la comprobación de seguridad. Inténtalo de nuevo.' },400);
   const hostnames = (env.TURNSTILE_ALLOWED_HOSTNAMES || '').split(',').map(host => host.trim().toLowerCase()).filter(Boolean);
   if (!env.TURNSTILE_SECRET_KEY || !hostnames.length) return json({ error:'La comprobación de seguridad no está disponible. Contacta por teléfono o email.' },503);
@@ -78,11 +80,14 @@ export async function onRequestPost({ request,env }) {
   try {
     const resend = new Resend(env.RESEND_API_KEY);
     const rows = [['Nombre',name],['Email',email],['Teléfono',phone || 'No indicado'],['Servicio',service || 'Consulta general']].map(([label,value]) => `<tr><td style="padding:12px;border-bottom:1px solid #334155;color:#94a3b8">${label}</td><td style="padding:12px;border-bottom:1px solid #334155">${escapeHtml(value)}</td></tr>`).join('');
+    // Include the accepted notice without adding a changing timestamp to the
+    // payload: retries must retain the same provider idempotency key.
+    const consentEvidence = `Privacidad: casilla aceptada. Versión ${PRIVACY_VERSION}. ${PRIVACY_CONSENT}`;
     const payload = {
       from:env.FROM_EMAIL, to:recipients, replyTo:email,
       subject:`Nueva consulta web · ${service || 'SeviElectro'}`.replace(/[\r\n]/g,' '),
-      html:`<!doctype html><html lang="es"><body style="margin:0;padding:32px;background:#080d18;color:#f1f5f9;font-family:Arial,sans-serif"><div style="max-width:600px;margin:auto;border:1px solid #334155;border-radius:14px;padding:32px;background:#0f172a"><p style="color:#fb7185;letter-spacing:2px">SEVIELECTRO / CONTACTO</p><h1 style="font-size:26px">Una nueva idea por conectar.</h1><table style="width:100%;border-collapse:collapse">${rows}</table><h2 style="font-size:16px;margin-top:28px">Descripción</h2><p style="line-height:1.8;white-space:pre-wrap">${escapeHtml(message)}</p>${attachments.length ? `<p style="color:#cbd5e1">Archivos adjuntos: ${attachments.map(file => escapeHtml(file.filename)).join(', ')}</p>` : ''}</div></body></html>`,
-      text:`Nueva consulta SeviElectro\nNombre: ${name}\nEmail: ${email}\nTeléfono: ${phone || 'No indicado'}\nServicio: ${service || 'Consulta general'}\n\n${message}`,
+      html:`<!doctype html><html lang="es"><body style="margin:0;padding:32px;background:#080d18;color:#f1f5f9;font-family:Arial,sans-serif"><div style="max-width:600px;margin:auto;border:1px solid #334155;border-radius:14px;padding:32px;background:#0f172a"><p style="color:#fb7185;letter-spacing:2px">SEVIELECTRO / CONTACTO</p><h1 style="font-size:26px">Una nueva idea por conectar.</h1><table style="width:100%;border-collapse:collapse">${rows}</table><h2 style="font-size:16px;margin-top:28px">Descripción</h2><p style="line-height:1.8;white-space:pre-wrap">${escapeHtml(message)}</p>${attachments.length ? `<p style="color:#cbd5e1">Archivos adjuntos: ${attachments.map(file => escapeHtml(file.filename)).join(', ')}</p>` : ''}<p style="font-size:12px;line-height:1.7;color:#cbd5e1;border-top:1px solid #334155;padding-top:16px">${escapeHtml(consentEvidence)}</p></div></body></html>`,
+      text:`Nueva consulta SeviElectro\nNombre: ${name}\nEmail: ${email}\nTeléfono: ${phone || 'No indicado'}\nServicio: ${service || 'Consulta general'}\n\n${message}\n\n${consentEvidence}`,
       ...(attachments.length ? { attachments } : {}),
     };
     const digest = await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(payload)));

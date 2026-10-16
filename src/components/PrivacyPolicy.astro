@@ -1,0 +1,72 @@
+---
+import { business, phoneHref } from '../config';
+import LegalIdentity from './LegalIdentity.astro';
+---
+<section id="responsable" aria-labelledby="responsable-title">
+  <h2 id="responsable-title">01. Responsable y ámbito de esta política</h2>
+  <p>Esta política explica el tratamiento de datos personales al visitar esta web o contactar con SeviElectro. Se ha preparado conforme a la Ley Orgánica de Protección de Datos Personales del Ecuador (LOPDP), su Reglamento General y las disposiciones aplicables de la Superintendencia de Protección de Datos Personales (SPDP).</p>
+  <LegalIdentity/>
+  <p>Puedes utilizar cualquiera de los correos indicados para asuntos de privacidad. No necesitas enviar el formulario comercial para ejercer tus derechos.</p>
+</section>
+<section id="datos" aria-labelledby="datos-title">
+  <h2 id="datos-title">02. Qué datos tratamos</h2>
+  <ul>
+    <li><strong>Consulta:</strong> nombre, correo electrónico y descripción del proyecto, que son obligatorios. Teléfono, tipo de servicio y archivos adjuntos son opcionales.</li>
+    <li><strong>Adjuntos:</strong> documentos PDF, Word o imágenes que decidas aportar. Se admite un máximo de tres archivos, de hasta 5 MB cada uno y 10 MB en conjunto.</li>
+    <li><strong>Comunicaciones posteriores:</strong> las respuestas y la información necesaria para aclarar la consulta o preparar una cotización.</li>
+    <li><strong>Seguridad y conexión:</strong> dirección IP, datos de la solicitud y señales del navegador o dispositivo que Cloudflare utiliza para servir la web y distinguir personas de envíos automatizados, como el agente de usuario y características de la conexión.</li>
+    <li><strong>Aceptación:</strong> la declaración de privacidad marcada en el formulario y la versión del aviso se incorporan al correo de la consulta.</li>
+  </ul>
+  <p>Los datos de la consulta proceden de ti; las señales técnicas se generan al conectar con el sitio. El formulario remite la información a nuestros buzones: no crea una cuenta de usuario ni una base de datos de consultas o archivos en la web.</p>
+  <p>Si no proporcionas los campos obligatorios o no aceptas el tratamiento de la consulta, no podrás enviarla mediante el formulario. Puedes optar por teléfono o correo electrónico. Una dirección de contacto errónea puede impedir nuestra respuesta.</p>
+  <p>No solicitamos categorías especiales de datos ni información de menores de edad. Evita incluir datos sensibles o de terceros que no sean necesarios. Si actúas por otra persona, debes contar con la legitimación correspondiente.</p>
+</section>
+<section id="finalidades" aria-labelledby="finalidades-title">
+  <h2 id="finalidades-title">03. Para qué y con qué base los utilizamos</h2>
+  <div class="legal-table-wrap"><table class="legal-table"><caption>Finalidades y bases del tratamiento</caption><thead><tr><th scope="col">Finalidad</th><th scope="col">Base jurídica</th></tr></thead><tbody>
+    <tr><th scope="row">Responder consultas generales y revisar la información y los adjuntos aportados.</th><td>Tu consentimiento, expresado al marcar la casilla y enviar la consulta (art. 7.1 LOPDP).</td></tr>
+    <tr><th scope="row">Preparar una cotización o gestionar medidas previas a una contratación solicitada por ti.</th><td>Medidas precontractuales a petición del titular y, en su caso, ejecución del contrato (art. 7.5 LOPDP).</td></tr>
+    <tr><th scope="row">Prevenir spam, abuso e incidentes y mantener disponible el sitio.</th><td>Interés legítimo en la seguridad, sujeto a necesidad, proporcionalidad y ponderación de los derechos de las personas (art. 7.8 LOPDP).</td></tr>
+    <tr><th scope="row">Atender obligaciones legales y requerimientos válidos de autoridades.</th><td>Cumplimiento de una obligación legal aplicable (art. 7.2 LOPDP), limitada a los datos exigibles.</td></tr>
+  </tbody></table></div>
+  <p>No utilizamos la consulta para suscribirte a publicidad ni vendemos tus datos. Navegar por el sitio no constituye consentimiento para fines adicionales. Si se plantea un uso diferente que requiera autorización, se informará y solicitará por separado.</p>
+</section>
+<section id="proveedores" aria-labelledby="proveedores-title">
+  <h2 id="proveedores-title">04. Quién recibe la información</h2>
+  <p>Las consultas se dirigen a <a href={`mailto:${business.email}`}>{business.email}</a> y <a href={`mailto:${business.secondaryEmail}`}>{business.secondaryEmail}</a>, para su atención por SeviElectro. Al responder utilizaremos el correo que hayas indicado.</p>
+  <div class="legal-provider-list">
+    <div><h3>Cloudflare</h3><p>Alojamiento, distribución y seguridad del sitio y validación antispam mediante Turnstile. Para proteger esta web actúa por cuenta del sitio; según su aviso específico, también actúa como responsable de determinados datos de Turnstile para mejorar su detección de bots. <a href="https://www.cloudflare.com/turnstile-privacy-policy/" target="_blank" rel="noopener noreferrer">Privacidad de Turnstile</a> · <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Privacidad de Cloudflare</a>.</p></div>
+    <div><h3>Resend · Plus Five Five, Inc.</h3><p>Servicio previsto para entregar el correo del formulario, incluidos sus adjuntos y metadatos de envío. Solo interviene al tramitar el envío; no se carga como un rastreador en tu navegador. <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Privacidad</a> · <a href="https://resend.com/legal/dpa" target="_blank" rel="noopener noreferrer">Condiciones de tratamiento</a>.</p></div>
+    <div><h3>Google y Microsoft</h3><p>Proveedores de los buzones Gmail y Hotmail a los que llegan las consultas y desde los que se gestionan las respuestas. <a href="https://policies.google.com/privacy?hl=es" target="_blank" rel="noopener noreferrer">Privacidad de Google</a> · <a href="https://www.microsoft.com/es-es/privacy/privacystatement" target="_blank" rel="noopener noreferrer">Privacidad de Microsoft</a>.</p></div>
+  </div>
+  <p>No se publican los adjuntos en una galería ni se incorporan automáticamente a los trabajos mostrados. También podrán comunicarse datos a una autoridad cuando exista una obligación legal o un requerimiento válido.</p>
+  <h3>Tratamiento fuera del Ecuador</h3>
+  <p>Estos proveedores utilizan infraestructura internacional. Los datos pueden tratarse en Estados Unidos y en otros países de sus redes y subproveedores; Resend informa de almacenamiento en Estados Unidos. No se ofrece alojamiento exclusivo en Ecuador.</p>
+  <p>Los servicios que tratan datos exclusivamente por cuenta de SeviElectro deben quedar sujetos a un encargo con instrucciones, confidencialidad y medidas de seguridad. Cuando exista una comunicación a otro responsable en el exterior, deben cumplirse las reglas ecuatorianas sobre transferencias internacionales y las garantías o la habilitación legal que corresponda. La existencia de condiciones europeas de un proveedor no acredita por sí sola el cumplimiento de la normativa ecuatoriana.</p>
+  <p>Puedes solicitar a SeviElectro información sobre los destinatarios, países y garantías aplicables utilizando los contactos de esta política.</p>
+</section>
+<section id="conservacion" aria-labelledby="conservacion-title">
+  <h2 id="conservacion-title">05. Durante cuánto tiempo</h2>
+  <p>El criterio de conservación de las consultas y sus adjuntos es el tiempo necesario para responderlas y completar el seguimiento solicitado. Al finalizar esa finalidad, deben eliminarse de los buzones y copias de trabajo, salvo que una contratación, una obligación legal o una reclamación justifique conservar la información pertinente durante el plazo aplicable. No se establece una conservación indefinida para publicidad.</p>
+  <p>Si la consulta da lugar a un contrato, los documentos necesarios para su ejecución y para obligaciones tributarias, contables o de defensa de derechos tendrán su propio plazo legal. Las solicitudes de derechos y la prueba de su atención se conservarán solo durante el tiempo necesario para acreditar su cumplimiento.</p>
+  <p>El control de ráfagas del formulario emplea ventanas de un minuto y memoria temporal del servidor, sin crear un historial de consultas. Los registros de infraestructura están sujetos a los plazos y configuración del proveedor. Resend publica una retención estándar de 30 días para datos y registros de correos en sus planes Free, Pro y Scale; ese plazo no elimina las copias que lleguen a los buzones de destino.</p>
+  <p>La web no realiza un borrado automático del correo recibido: la gestión y eliminación de esas copias corresponde a SeviElectro. Puedes solicitar información sobre la conservación de tu caso o ejercer el derecho de eliminación cuando proceda.</p>
+</section>
+<section id="derechos" aria-labelledby="derechos-title">
+  <h2 id="derechos-title">06. Tus derechos y cómo ejercerlos</h2>
+  <p>En las condiciones previstas por la LOPDP, puedes acceder a tus datos, rectificarlos y actualizarlos, pedir su eliminación, oponerte al tratamiento, solicitar su suspensión o limitación y ejercer la portabilidad. También puedes revocar el consentimiento y solicitar la revisión humana de las decisiones automatizadas que te afecten en los términos de la ley.</p>
+  <div class="legal-callout"><h3>Solicita atención sobre tus datos</h3><p>Escribe a <a href={`mailto:${business.email}`}>{business.email}</a> o <a href={`mailto:${business.secondaryEmail}`}>{business.secondaryEmail}</a>. Indica tu nombre, el derecho que solicitas, los datos o la consulta a los que se refiere y un medio para responderte. Si actúas mediante representante, acredita esa representación.</p><p>El trámite es gratuito. Podremos pedir la información estrictamente necesaria para verificar tu identidad, sin solicitar documentos adicionales de forma indiscriminada. También puedes llamar al <a href={phoneHref}>{business.phone}</a> para recibir orientación.</p></div>
+  <p>Las solicitudes de acceso, rectificación y actualización, eliminación y oposición se atenderán dentro del plazo de quince días que establece la LOPDP. Los demás derechos se tramitarán dentro de los plazos que les correspondan. Si existe una causa legal para no atender total o parcialmente la petición, se explicará la decisión.</p>
+  <p>Retirar tu consentimiento no afecta al tratamiento realizado lícitamente antes de la retirada. Si existe otra base legal que obligue o permita conservar determinados datos, se informará de su alcance.</p>
+  <p>Si no recibes respuesta o consideras vulnerados tus derechos, puedes reclamar ante la <a href="https://www.spdp.gob.ec/" target="_blank" rel="noopener noreferrer">Superintendencia de Protección de Datos Personales del Ecuador (SPDP)</a>, sin perjuicio de las demás vías de tutela que reconozca la ley.</p>
+</section>
+<section id="seguridad" aria-labelledby="seguridad-title">
+  <h2 id="seguridad-title">07. Seguridad y comprobaciones automáticas</h2>
+  <p>La web utiliza HTTPS, validación de los campos y del formato y tamaño de los adjuntos, controles antispam y respuestas del formulario que no se almacenan en caché. No incluyas en la consulta contraseñas, claves de acceso ni documentación que no sea necesaria.</p>
+  <p>Turnstile comprueba señales técnicas para autorizar o rechazar un envío automatizado. La comprobación puede realizarse sin mostrar un desafío; si necesita interacción, aparece en el formulario. No se utiliza para crear perfiles publicitarios ni para decidir automáticamente sobre la contratación de un servicio. Si la comprobación bloquea tu consulta, puedes contactar por teléfono o correo para que una persona la atienda.</p>
+</section>
+<section id="cambios-privacidad" aria-labelledby="cambios-privacidad-title">
+  <h2 id="cambios-privacidad-title">08. Cambios y más información</h2>
+  <p>Esta política se actualizará si cambian los tratamientos, proveedores o requisitos aplicables. La fecha de la versión se indica al comienzo. Los cambios que requieran un nuevo consentimiento no se aplicarán mediante una aceptación implícita por continuar navegando.</p>
+  <p>Consulta también el <a href="/aviso-legal/">aviso legal</a> y la <a href="/cookies/">política de cookies y tecnologías similares</a>.</p>
+</section>

@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { readFile,writeFile } from 'node:fs/promises';
+import { PRIVACY_VERSION } from '../src/lib/privacy.js';
 
 const target = new URL(process.argv[2] || 'https://sevielectro.pages.dev/');
 const assets = JSON.parse(await readFile(new URL('../src/data/static-assets.json',import.meta.url),'utf8'));
@@ -11,8 +12,10 @@ async function get(path,options = {}) {
 }
 const home = await get('/');
 assert.equal(home.status,200);
+assert.match(home.headers.get('cache-control'),/max-age=0.*must-revalidate/);
 const html = await home.text();
 assert.ok(html.includes('Adjuntar archivos'));
+assert.equal([...html.matchAll(/class="contact-email-link"/g)].length,2);
 assert.ok(!html.includes('Gonzalo Sevilla'));
 assert.ok(html.includes(assets.clients.src));
 for (const path of [assets.clients.src,assets.font]) {
@@ -24,7 +27,7 @@ for (const path of [assets.clients.src,assets.font]) {
 }
 const method = await get('/api/contact');
 assert.equal(method.status,405); assert.match(method.headers.get('cache-control'),/no-store/); await method.text();
-const body = { name:'Prueba técnica',email:'audit@example.com',message:'Comprobación de validación sin enviar correo.',consent:'yes' };
+const body = { name:'Prueba técnica',email:'audit@example.com',message:'Comprobación de validación sin enviar correo.',consent:'yes',privacyVersion:PRIVACY_VERSION };
 for (const [token,status] of [[undefined,400],['audit-invalid-token',403]]) {
   const result = await get('/api/contact',{ method:'POST',headers:{ 'Content-Type':'application/json',Origin:target.origin },body:JSON.stringify({ ...body,turnstileToken:token }) });
   assert.equal(result.status,status); assert.match(result.headers.get('cache-control'),/no-store/);

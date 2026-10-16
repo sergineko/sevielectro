@@ -4,8 +4,9 @@ import { onRequest, onRequestPost } from '../functions/api/contact.js';
 import { checkFiles, validateAttachments, MAX_FILE_BYTES } from '../src/lib/attachments.js';
 import { crc32 } from 'node:zlib';
 import sharp from 'sharp';
+import { PRIVACY_VERSION, PRIVACY_CONSENT } from '../src/lib/privacy.js';
 
-const valid = { name:'Ana', email:'ana@example.com', message:'Necesito una instalación eléctrica', consent:'yes', turnstileToken:'fresh-token' };
+const valid = { name:'Ana', email:'ana@example.com', message:'Necesito una instalación eléctrica', consent:'yes', privacyVersion:PRIVACY_VERSION, turnstileToken:'fresh-token' };
 const security = { TURNSTILE_SECRET_KEY:'test-secret', TURNSTILE_ALLOWED_HOSTNAMES:'sevielectro.example' };
 const env = { ...security, RESEND_API_KEY:'re_test', TO_EMAIL:'sevielectro81@gmail.com,sevielectro_81@hotmail.com', FROM_EMAIL:'contact@example.com' };
 const context = (body,config = env,headers = {}) => ({ request:new Request('https://sevielectro.example/api/contact',{ method:'POST', headers:{ 'Content-Type':'application/json', ...headers }, body:JSON.stringify(body) }), env:config });
@@ -66,6 +67,7 @@ test('valida adjuntos y envía una sola petición a Resend con contenido escapad
     assert.ok(sent.html.includes('&lt;script&gt;')); assert.ok(!sent.html.includes('<script>'));
     assert.deepEqual(sent.to,['sevielectro81@gmail.com','sevielectro_81@hotmail.com']);
     assert.equal(sent.from,env.FROM_EMAIL); assert.equal(sent.reply_to,valid.email); assert.equal(sent.attachments[0].content,pdf.content);
+    assert.ok(sent.text.includes(PRIVACY_CONSENT)); assert.ok(sent.text.includes(PRIVACY_VERSION)); assert.ok(sent.html.includes(PRIVACY_VERSION));
     assert.equal(sent.attachments[0].filename,pdf.name); assert.equal(sent.attachments[0].content_type,'application/pdf');
     const key = calls[1].options.headers.get('Idempotency-Key');
     assert.match(key,/^contact-[a-f0-9]{64}$/);
@@ -73,6 +75,15 @@ test('valida adjuntos y envía una sola petición a Resend con contenido escapad
     assert.equal(calls[3].options.headers.get('Idempotency-Key'),key);
     assert.equal((await onRequestPost(context({ ...body,attachments:[] }))).status,200);
     assert.notEqual(calls[5].options.headers.get('Idempotency-Key'),key);
+  });
+});
+test('una versión de privacidad ausente o antigua exige revisar el aviso antes de contactar proveedores',async () => {
+  await mockNetwork(async calls => {
+    for (const privacyVersion of [undefined,'2020-01-01']) {
+      const result = await onRequestPost(context({ ...valid,privacyVersion }));
+      assert.equal(result.status,400); assert.match((await result.json()).error,/Recarga la página/);
+    }
+    assert.equal(calls.length,0);
   });
 });
 test('rechaza formato falsificado, archivos ejecutables y límites antes de Resend',async () => {

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { ArrowUpRight, Loader2, CheckCircle2, AlertCircle, Paperclip, FileText, X } from 'lucide-react';
 import { ACCEPT_FILES, checkFiles } from '../lib/attachments';
 import { createTurnstile } from '../lib/turnstile';
+import { PRIVACY_VERSION } from '../lib/privacy';
 
 const fileSize = bytes => bytes < 1024 * 1024 ? `${Math.ceil(bytes / 1024)} KB` : `${(bytes / 1024 / 1024).toFixed(1)} MB`;
 function encodeFile(file) {
@@ -46,6 +47,7 @@ export default function ContactForm({ siteKey = '' }) {
     try { checkFiles(files); } catch (error) { setFileError(error.message); return; }
     locked.current = true; setStatus('loading'); setError(''); setFileError(''); setPhase('Comprobando seguridad…');
     const values = Object.fromEntries(new FormData(form));
+    values.privacyVersion = PRIVACY_VERSION;
     try {
       const widget = await prepareSecurity();
       values.turnstileToken = await widget.execute();
@@ -88,6 +90,6 @@ export default function ContactForm({ siteKey = '' }) {
       <button className="button primary submit" disabled={!ready || status === 'loading'} type="submit">{!ready ? 'Preparando formulario…' : status === 'loading' ? <><Loader2 className="spin" size={18}/><span role="status" aria-live="polite">{phase}</span></> : <>Enviar mi consulta <ArrowUpRight size={19}/></>}</button>
     </fieldset>
     <div ref={challengeRef} className="contact-challenge"/>
-    <p className="form-note">Protegido con Cloudflare Turnstile. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Privacidad de Cloudflare</a>.</p>
+    <p className="form-note">Protegido con Cloudflare Turnstile. <a href="https://www.cloudflare.com/turnstile-privacy-policy/" target="_blank" rel="noopener noreferrer">Privacidad de Cloudflare</a>.</p>
   </form>;
 }

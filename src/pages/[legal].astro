@@ -2,7 +2,57 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-export function getStaticPaths(){return [{params:{legal:'aviso-legal'},props:{title:'Aviso legal'}},{params:{legal:'privacidad'},props:{title:'Política de privacidad'}},{params:{legal:'cookies'},props:{title:'Política de cookies'}}];}
-const {title}=Astro.props;
+import LegalNotice from '../components/LegalNotice.astro';
+import PrivacyPolicy from '../components/PrivacyPolicy.astro';
+import CookiePolicy from '../components/CookiePolicy.astro';
+import { ArrowLeft, ArrowUpRight, FileCheck2, ShieldCheck, Settings2 } from 'lucide-react';
+import { PRIVACY_VERSION, PRIVACY_DATE_LABEL } from '../lib/privacy';
+import '../styles/legal.css';
+
+export function getStaticPaths() {
+  return [
+    { params:{ legal:'aviso-legal' },props:{
+      title:'Aviso legal',description:'Identificación de SeviElectro, condiciones de uso y atención de solicitudes de instalaciones eléctricas en Quito, Ecuador.',
+      intro:'Quién está detrás de esta web y las condiciones para utilizar nuestros contenidos y canales de contacto.',
+      contents:[['titular','Identificación y contacto'],['servicios-web','Servicios y cotizaciones'],['uso-sitio','Uso del sitio'],['propiedad','Contenidos y autoría'],['enlaces','Enlaces y disponibilidad'],['ley-aplicable','Legislación aplicable']],
+    } },
+    { params:{ legal:'privacidad' },props:{
+      title:'Política de privacidad',description:'Cómo trata SeviElectro tus consultas, datos y adjuntos, sus proveedores y tus derechos de protección de datos personales en Ecuador.',
+      intro:'Información clara sobre tus datos, el formulario de contacto y cómo ejercer tus derechos en Ecuador.',
+      contents:[['responsable','Responsable'],['datos','Datos que tratamos'],['finalidades','Finalidades y bases'],['proveedores','Destinatarios y exterior'],['conservacion','Conservación'],['derechos','Tus derechos'],['seguridad','Seguridad'],['cambios-privacidad','Actualizaciones']],
+    } },
+    { params:{ legal:'cookies' },props:{
+      title:'Política de cookies',description:'Tecnologías utilizadas por SeviElectro: caché, protección Cloudflare Turnstile y enlaces externos, sin analítica ni publicidad comportamental.',
+      intro:'Qué tecnologías utiliza esta web para funcionar con rapidez y proteger el formulario de contacto.',
+      contents:[['tecnologias','Qué son estas tecnologías'],['uso-actual','Uso actual del sitio'],['turnstile','Protección del formulario'],['preferencias','Control del navegador'],['contacto-cookies','Contacto y cambios']],
+    } },
+  ];
+}
+const { title,description,intro,contents } = Astro.props;
+const page = Astro.params.legal;
+const Icon = page === 'privacidad' ? ShieldCheck : page === 'cookies' ? Settings2 : FileCheck2;
+const policies = [['aviso-legal','Aviso legal'],['privacidad','Privacidad'],['cookies','Cookies']];
 ---
-<Layout title={`${title} · SeviElectro`} description={`${title} de SeviElectro. Información sobre el sitio web y el tratamiento de las consultas.`}><Header/><main id="contenido" class="container legal"><p class="eyebrow">SEVIELECTRO / INFORMACIÓN</p><h1>{title}</h1><p><strong>Documento pendiente de completar antes de publicar.</strong> El titular debe revisar y completar las condiciones aplicables al servicio.</p>{Astro.params.legal==='aviso-legal' && <><h2>Identificación del titular</h2><p>SeviElectro. Quito, Ecuador. Contacto: +593 98 412 0086 · sevielectro81@gmail.com. Pendiente de incorporar razón social, identificación fiscal y domicilio completo del responsable.</p><h2>Servicios</h2><p>Las consultas enviadas mediante esta web no constituyen una contratación. El alcance, precio y disponibilidad deben acordarse mediante un presupuesto.</p></>}{Astro.params.legal==='privacidad' && <><h2>Datos del formulario</h2><p>Se solicitan nombre, email, teléfono opcional, servicio y descripción para atender tu consulta. Puedes añadir documentos o imágenes de forma opcional. El envío y sus adjuntos se procesan mediante Cloudflare y Resend, sin crear una galería pública ni almacenar los archivos en el sitio. No incluyas información sensible. Cloudflare Turnstile comprueba señales técnicas de conexión y navegador para prevenir envíos automatizados; la validación en servidor utiliza la dirección IP de la solicitud.</p><h2>Información que debe completar el titular</h2><p>Identidad y contacto del responsable, base jurídica, conservación, destinatarios, transferencias internacionales y procedimiento para ejercer derechos. El formulario no debe habilitarse al público hasta completar esta información.</p></>}{Astro.params.legal==='cookies' && <><h2>Uso de tecnologías</h2><p>Esta implementación no incorpora analítica ni cookies publicitarias. Las tipografías y las imágenes se sirven desde el propio sitio. Los enlaces de WhatsApp y redes sociales solo navegan a esos servicios al pulsarlos. La protección Cloudflare Turnstile se carga al interactuar con el formulario y puede comprobar el navegador para prevenir spam. No se activa la autorización previa mediante cookies de Turnstile (pre-clearance). Consulta la <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">política de privacidad de Cloudflare</a>.</p><h2>Revisión antes de publicación</h2><p>Comprueba las tecnologías efectivamente utilizadas por el alojamiento y cualquier integración que añadas, y actualiza esta información.</p></>}<p><a class="button secondary" href="/">Volver al inicio</a></p></main><Footer/></Layout>
+<Layout title={`${title} · SeviElectro`} description={description}>
+  <Header/>
+  <main id="contenido" class="legal-page">
+    <div class="container">
+      <div class="legal-hero">
+        <a class="legal-back" href="/"><ArrowLeft size={16}/> Volver a SeviElectro</a>
+        <div class="legal-title-row"><div><p class="eyebrow">SEVIELECTRO / TRANSPARENCIA</p><h1>{title}</h1></div><span class="legal-icon" aria-hidden="true"><Icon size={32}/></span></div>
+        <p class="legal-intro">{intro}</p>
+        <p class="legal-meta"><span>Quito, Ecuador</span><span>Actualización: <time datetime={PRIVACY_VERSION}>{PRIVACY_DATE_LABEL}</time></span></p>
+      </div>
+      <div class="legal-layout">
+        <aside class="legal-sidebar"><nav aria-label="Índice de esta página"><p>En esta página</p><ol>{contents.map(([id,label],index) => <li><a href={`#${id}`}><span aria-hidden="true">{String(index + 1).padStart(2,'0')}</span>{label}</a></li>)}</ol></nav><div class="legal-help"><ShieldCheck size={20} aria-hidden="true"/><p>Tu información,<br/><strong>con claridad.</strong></p><a href="/#contacto">Contacta con nosotros <ArrowUpRight size={15}/></a></div></aside>
+        <div class="legal-body">
+          {page === 'aviso-legal' && <LegalNotice/>}
+          {page === 'privacidad' && <PrivacyPolicy/>}
+          {page === 'cookies' && <CookiePolicy/>}
+          <nav class="legal-related" aria-label="Documentos legales">{policies.map(([slug,label]) => <a href={`/${slug}/`} aria-current={page === slug ? 'page' : undefined}>{label}<ArrowUpRight size={15}/></a>)}</nav>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer/>
+</Layout>
