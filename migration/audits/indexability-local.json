@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-16T01:20:22.253Z",
+  "date": "2026-10-16T17:59:16.150Z",
   "target": "http://127.0.0.1:4321/",
   "scope": "local",
   "passed": true,
@@ -554,12 +554,25 @@
       }
     },
     {
-      "path": "/fonts/inter-latin.woff2",
+      "path": "/media/static/3100e775e861.woff2",
       "agent": "Googlebot",
       "status": 200,
-      "finalUrl": "http://127.0.0.1:4321/fonts/inter-latin.woff2",
+      "finalUrl": "http://127.0.0.1:4321/media/static/3100e775e861.woff2",
       "headers": {
         "content-type": "font/woff2",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "path": "/media/static/4e0620e33125.svg",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/media/static/4e0620e33125.svg",
+      "headers": {
+        "content-type": "image/svg+xml",
         "x-robots-tag": null,
         "cf-mitigated": null,
         "cf-ray": null,

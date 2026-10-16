@@ -35,8 +35,9 @@ test('todas las páginas públicas son indexables y el error 404 no se indexa', 
 });
 
 test('la imagen social y los iconos existen con las dimensiones declaradas', async () => {
-  for (const [file, width, height] of [['media/og-sevielectro.jpg',1200,630],['favicon-32.png',32,32],['apple-touch-icon.png',180,180]]) {
-    const metadata = await sharp(fileURLToPath(new URL(`../dist/${file}`,import.meta.url))).metadata();
+  const assets = JSON.parse(read('src/data/static-assets.json'));
+  for (const [file, width, height] of [[assets.socialImage,1200,630],[assets.favicon,32,32],[assets.touchIcon,180,180]]) {
+    const metadata = await sharp(fileURLToPath(new URL(`../dist${file}`,import.meta.url))).metadata();
     assert.equal(metadata.width,width); assert.equal(metadata.height,height);
   }
   const json = home.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)?.[1];
@@ -50,4 +51,20 @@ test('los recursos con caché inmutable usan nombres con huella y la carga princ
   assert.match(home, /class="hero-photo"[^>]*fetchpriority="high"[^>]*loading="eager"/);
   assert.match(home, /client="visible"/);
   assert.match(read('dist/_headers'), /\/media\/responsive\/\*[\s\S]*max-age=31536000, immutable/);
+});
+
+test('los catorce clientes comparten un único recurso y mantienen sus enlaces accesibles',() => {
+  const assets = JSON.parse(read('src/data/static-assets.json'));
+  const sprite = read(`public${assets.clients.src}`);
+  assert.equal(assets.clients.symbols.length,14);
+  assert.equal([...sprite.matchAll(/<symbol /g)].length,14);
+  assert.equal([...home.matchAll(/<use href="([^"#]+)#client-\d+"/g)].length,14);
+  assert.equal(new Set([...home.matchAll(/<use href="([^"#]+)#client-\d+"/g)].map(match => match[1])).size,1);
+  for (const src of [assets.font,assets.favicon,assets.touchIcon,assets.socialImage,assets.clients.src]) {
+    assert.match(src,/\/media\/static\/[a-f0-9]{12}\.[a-z0-9]+$/);
+    assert.ok(existsSync(new URL(`../dist${src}`,import.meta.url)));
+  }
+  assert.ok(home.includes(`href="${assets.font}" as="font"`));
+  assert.ok(home.includes(`url(${assets.font})`) || home.includes(`url("${assets.font}")`) || home.includes(`url('${assets.font}')`));
+  assert.deepEqual(JSON.parse(read('public/_routes.json')).include,['/api/contact']);
 });

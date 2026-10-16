@@ -56,7 +56,9 @@ for (const agent of ['Googlebot','Googlebot-Image/1.0','bingbot','OAI-SearchBot'
     if (path === '/robots.txt') check(result.body === robots.body, `${agent}: robots.txt distinto`);
   }
 }
-const assets = [...new Set([...imageUrls.map(url => new URL(url).pathname), '/fonts/inter-latin.woff2', ...[...(home?.body || '').matchAll(/<script\b[^>]*src="([^"]+)"/g)].map(([,src]) => src)])];
+const font = [...(home?.body || '').matchAll(/<link\b[^>]*>/g)].map(([tag]) => attributes(tag)).find(tag => tag.as === 'font')?.href;
+const clientSprite = [...(home?.body || '').matchAll(/<use href="([^"#]+)#client-\d+"/g)].map(([,src]) => src);
+const assets = [...new Set([...imageUrls.map(url => new URL(url).pathname), ...(font ? [font] : []), ...clientSprite, ...[...(home?.body || '').matchAll(/<script\b[^>]*src="([^"]+)"/g)].map(([,src]) => src)])];
 for (const path of assets) {
   const result = await get(path,'Googlebot',false);
   check(result.status === 200, `Googlebot: recurso inaccesible ${path}`);

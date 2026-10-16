@@ -1,0 +1,81 @@
+{
+  "clients": {
+    "src": "/media/static/390bde3a1176.svg",
+    "symbols": [
+      {
+        "id": "client-0",
+        "width": 300,
+        "height": 140
+      },
+      {
+        "id": "client-1",
+        "width": 180,
+        "height": 180
+      },
+      {
+        "id": "client-2",
+        "width": 300,
+        "height": 154
+      },
+      {
+        "id": "client-3",
+        "width": 300,
+        "height": 155
+      },
+      {
+        "id": "client-4",
+        "width": 180,
+        "height": 180
+      },
+      {
+        "id": "client-5",
+        "width": 180,
+        "height": 180
+      },
+      {
+        "id": "client-6",
+        "width": 300,
+        "height": 102
+      },
+      {
+        "id": "client-7",
+        "width": 300,
+        "height": 120
+      },
+      {
+        "id": "client-8",
+        "width": 300,
+        "height": 91
+      },
+      {
+        "id": "client-9",
+        "width": 180,
+        "height": 180
+      },
+      {
+        "id": "client-10",
+        "width": 180,
+        "height": 180
+      },
+      {
+        "id": "client-11",
+        "width": 300,
+        "height": 80
+      },
+      {
+        "id": "client-12",
+        "width": 180,
+        "height": 180
+      },
+      {
+        "id": "client-13",
+        "width": 180,
+        "height": 180
+      }
+    ]
+  },
+  "font": "/media/static/3100e775e861.woff2",
+  "favicon": "/media/static/c416541deec9.png",
+  "touchIcon": "/media/static/a92673d15d73.png",
+  "socialImage": "/media/static/04af7db72c4e.jpg"
+}

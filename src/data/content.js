@@ -35,7 +35,6 @@ export const projects=[
 ];
 export const team=[
  {name:'René Sevilla',role:'Gerente propietario',initials:'RS',photo:'/media/optimized/WhatsApp-Image-2023-06-17-at-7.21.06-PM.jpeg.webp',width:958,height:960,position:'50% 24%'},
- {name:'Gonzalo Sevilla',role:'Técnico industrial en electricidad',initials:'GS',photo:null},
  {name:'René Mauricio Sevilla',role:'Técnico industrial en electricidad',initials:'RMS',photo:null},
  {name:'Verónica Sevilla',role:'Gestión Administrativa',initials:'VS',photo:'/media/team/veronica-sevilla.jpeg',width:828,height:1069,position:'50% 28%'}
 ];

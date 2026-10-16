@@ -14,7 +14,7 @@ const manager=team[0];
     <ul class="team-grid" aria-label="Equipo de SeviElectro">
       {team.map((member,i)=><li class="team-card">
         <div class="team-portrait">
-          {member.photo ? <ResponsiveImage src={member.photo} width={member.width} height={member.height} style={`object-position:${member.position}`} alt={`Retrato de ${member.name}`} loading="lazy" sizes="(max-width:370px) 90vw, (max-width:850px) 44vw, 280px"/> : <div class="team-placeholder" aria-hidden="true"><span class="team-initials">{member.initials}</span><span class="team-placeholder-label">SEVIELECTRO / EQUIPO</span></div>}
+          {member.photo ? <ResponsiveImage src={member.photo} width={member.width} height={member.height} style={`object-position:${member.position}`} alt={`Retrato de ${member.name}`} loading="lazy" sizes="(max-width:480px) 90vw, (max-width:640px) 420px, (max-width:850px) 29vw, 370px"/> : <div class="team-placeholder" aria-hidden="true"><span class="team-initials">{member.initials}</span><span class="team-placeholder-label">SEVIELECTRO / EQUIPO</span></div>}
           <span class="team-card-number" aria-hidden="true">0{i+1}</span>
         </div>
         <div class="team-card-info"><h3>{member.name}</h3><p>{member.role}</p></div>

@@ -54,7 +54,7 @@
 .hero-caption strong { font-size:11px; font-weight:400; letter-spacing:0; }
 .hero-caption .caption-line { width:2px; height:32px; background:#ff7b8b; }
 .hero-caption > svg { color:#ff9caa; margin-left:14px; }
-.hero-bottom { position:relative; background:#082b3edb; border-top-color:#ffffff24; backdrop-filter:blur(12px); }
+.hero-bottom { position:relative; background:#082b3ef2; border-top-color:#ffffff24; backdrop-filter:none; }
 
 @media(min-width:1550px) {
   .hero-content { min-height:690px; }

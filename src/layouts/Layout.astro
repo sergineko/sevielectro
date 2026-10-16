@@ -4,11 +4,12 @@ import '../styles/modern.css';
 import '../styles/hero.css';
 import { business, phoneHref } from '../config';
 import images from '../data/responsive-media.json';
+import assets from '../data/static-assets.json';
 const { title='SeviElectro · Instalaciones eléctricas y electrónicas en Quito', description='Instalaciones eléctricas, cableado estructurado, cámaras y alarmas en Quito. Conoce los trabajos y el equipo de SeviElectro y solicita tu cotización.', noindex=false }=Astro.props;
 const site=Astro.site!;
 const googleVerification=import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
 const canonical=new URL(Astro.url.pathname,site);
-const socialImage=new URL('/media/og-sevielectro.jpg',site);
+const socialImage=new URL(assets.socialImage,site);
 const logo=new URL(images['/media/original/Logo-SeviElectro-1.png'].full,site);
 const schema={'@context':'https://schema.org','@type':'Electrician','@id':new URL('/#empresa',site).href,name:business.name,url:site.href,telephone:phoneHref.slice(4),email:business.email,image:socialImage.href,logo:logo.href,address:{'@type':'PostalAddress',addressLocality:'Quito',addressCountry:'EC'},areaServed:{'@type':'City',name:'Quito'},sameAs:[business.facebook,business.instagram]};
 ---
@@ -23,8 +24,8 @@ const schema={'@context':'https://schema.org','@type':'Electrician','@id':new UR
     <meta name="color-scheme" content="dark light"/>
     <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}/>
     {googleVerification && <meta name="google-site-verification" content={googleVerification}/>}
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href={assets.favicon}/>
+    <link rel="apple-touch-icon" sizes="180x180" href={assets.touchIcon}/>
     <link rel="canonical" href={canonical}/>
     <meta property="og:type" content="website"/>
     <meta property="og:locale" content="es_EC"/>
@@ -40,7 +41,7 @@ const schema={'@context':'https://schema.org','@type':'Electrician','@id':new UR
     <meta name="twitter:title" content={title}/>
     <meta name="twitter:description" content={description}/>
     <meta name="twitter:image" content={socialImage}/>
-    <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href={assets.font} as="font" type="font/woff2" crossorigin/>
     {!noindex && <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\\u003c')}/>}
   </head>
   <body>
