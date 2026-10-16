@@ -37,7 +37,7 @@ Variables del servidor: `RESEND_API_KEY`, `TO_EMAIL`, `FROM_EMAIL`, `TURNSTILE_S
 
 No se ha probado el envío real: necesita las credenciales y comprobar la recepción. El formulario muestra un error si falta configuración.
 
-Antes de publicar, completa los datos fiscales y los borradores legales/privacidad, confirma que el contacto y el equipo siguen vigentes y comprueba un envío real. El formulario exige Turnstile con comprobación en servidor y muestra su interacción solo cuando Cloudflare la necesita. El script se carga al interactuar con el formulario y el desafío se ejecuta al enviar. Incluye honeypot, control de origen, límite de cuerpo, guardia de ráfagas por IP y claves idempotentes de Resend. La guardia es por instancia de Function, no un límite distribuido; para tráfico abusivo elevado configura una regla de tasa en el WAF del dominio cuando se conecte.
+Los textos legales se han adaptado a Ecuador; falta completar la identidad fiscal confirmada y verificar las condiciones operativas indicadas en [migration/LEGAL-ECUADOR.md](migration/LEGAL-ECUADOR.md). Antes de activar el correo comprueba un envío real y su recepción. El formulario exige Turnstile con comprobación en servidor y muestra su interacción solo cuando Cloudflare la necesita. El script se carga al interactuar con el formulario y el desafío se ejecuta al enviar. Incluye honeypot, control de origen, límite de cuerpo, guardia de ráfagas por IP y claves idempotentes de Resend. La guardia es por instancia de Function, no un límite distribuido; para tráfico abusivo elevado configura una regla de tasa en el WAF del dominio cuando se conecte.
 
 ## Equipo y navegación actualizados
 
@@ -57,7 +57,7 @@ La revisión y los informes Lighthouse están en [migration/audits/README.md](mi
 
 `scripts/prepare-media.mjs` genera variantes WebP, AVIF para portada y logotipo, sus tamaños y las imágenes sociales a partir del material original. `src/components/ResponsiveImage.astro` añade tamaños adaptados a cada sección y alternativa WebP para los recursos AVIF. Los estilos se incluyen en el HTML para evitar peticiones que retrasen la primera pintura. La caché inmutable se limita a nombres con huella; las cabeceras y rutas de Cloudflare se definen en `public/_headers` y `public/_routes.json`. El formulario se activa al acercarse al contacto.
 
-La integración heredada `@astrojs/tailwind` se ha sustituido por el plugin oficial `@tailwindcss/vite` al actualizar a Tailwind 4 y Astro 7. La configuración CSS y el diseño propio se conservan. La auditoría final de dependencias y las pruebas automatizadas están documentadas junto a las mediciones. La validación pública de caché, HTTPS, PageSpeed y entrega real del correo se realiza tras desplegar en Cloudflare.
+La integración heredada `@astrojs/tailwind` se ha sustituido por el plugin oficial `@tailwindcss/vite` al actualizar a Tailwind 4 y Astro 7. La configuración CSS y el diseño propio se conservan. La auditoría de dependencias y las pruebas automatizadas están documentadas junto a las mediciones. Se han comprobado caché, HTTPS y Lighthouse sobre Pages; la entrega real del correo sigue pendiente de Resend y deberán repetirse las comprobaciones de infraestructura en el dominio definitivo.
 
 ## Google Search Console y descubrimiento
 
@@ -76,3 +76,9 @@ La Function solo se invoca en `/api/contact`; el resto del sitio se sirve desde 
 Turnstile está creado en la cuenta de SeviElectro en modo gestionado, con pre-clearance desactivado. En producción están configuradas su clave pública, clave secreta cifrada y lista cerrada de hostnames: `sevielectro.pages.dev,sevielectro.com,www.sevielectro.com`. Si se crean despliegues de vista previa que deban admitir envíos, configura sus variables y dominios de forma explícita. No publiques las claves de prueba de Cloudflare.
 
 Fuentes: [Adjuntos de Resend](https://resend.com/docs/dashboard/emails/attachments), [formatos no admitidos](https://resend.com/docs/knowledge-base/what-attachment-types-are-not-supported), [configuración de Turnstile](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/widget-configurations/), [Siteverify](https://developers.cloudflare.com/turnstile/get-started/server-side-validation/) y [caché de Pages](https://developers.cloudflare.com/pages/configuration/serving-pages/).
+
+## Documentos legales de Ecuador
+
+`/aviso-legal/`, `/privacidad/` y `/cookies/` tienen contenido propio sobre la actividad en Quito, consultas y cotizaciones, adjuntos, destinatarios, proveedores internacionales, conservación y derechos ante la SPDP. No se ha usado una plantilla de LSSI o AEPD española. Los datos del titular se mantienen en `src/data/legal-identity.js`; mientras no se confirmen, las páginas indican expresamente esa carencia.
+
+La versión del aviso y la declaración de aceptación se incluyen en el email. `src/lib/privacy.js` comparte la versión entre interfaz y servidor; debe actualizarse cuando cambie el tratamiento informado. Una versión antigua se rechaza con un mensaje de recarga antes de acceder a proveedores. Las decisiones de conservación, contratos de encargo y garantías deben verificarse con la operativa real del titular: publicar textos no las ejecuta automáticamente. Fuentes y cuestiones concretas en [migration/LEGAL-ECUADOR.md](migration/LEGAL-ECUADOR.md).

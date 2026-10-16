@@ -1,6 +1,25 @@
 # Auditoría de calidad · 16 de octubre de 2026
 
-Se ha medido la compilación estática local en `http://127.0.0.1:4321/` con Lighthouse 13.5.0 y Chrome, usando la simulación móvil predeterminada y el preset de escritorio. No se ha publicado ni alterado la web de producción.
+Las primeras mediciones siguientes corresponden a la compilación estática local en `http://127.0.0.1:4321/`, con Lighthouse 13.5.0 y Chrome. Se conservan como historial. El sitio se publicó posteriormente en Cloudflare Pages y su resultado público actual figura en el apartado de abajo.
+
+## Resultado público tras caché y reducción de peticiones
+
+Mediciones sobre `https://sevielectro.pages.dev/`, con la simulación móvil habitual y el preset de escritorio, sin alterar la limitación de red o CPU de Lighthouse:
+
+| Categoría | Antes, móvil | Publicada, móvil | Publicada, escritorio |
+| --- | ---: | ---: | ---: |
+| Rendimiento | 98 | 99 | 100 |
+| Accesibilidad | 100 | 100 | 100 |
+| Buenas prácticas | 100 | 100 | 100 |
+| SEO | 100 | 100 | 100 |
+
+La carga móvil inicial pasa de **21 solicitudes HTTP y 242.263 bytes** a **6 solicitudes y 119.181 bytes**: 71 % menos peticiones y 51 % menos transferencia. FCP 1,1 s, LCP 1,8 s, TBT 0 ms y CLS 0. Se cuentan las solicitudes HTTP, no las entradas `data:` de las imágenes incorporadas en el sprite. La galería, los clientes y el formulario descargan recursos al acercarse o interactuar: las cifras no representan recorrer toda la web ni enviar un formulario.
+
+Informes: `cache-before-mobile.json`, `cache-after-mobile.report.html/json` y `cache-after-desktop.report.html/json`. El resultado móvil real es **99**, sin prometer 100 constante ni equivalencia con CrUX. El HTML se revalida al visitar, los recursos con huella se conservan un año como inmutables y la API nunca se cachea. `contact-public.json` documenta cabeceras, 304 y rechazo de solicitudes inválidas, sin correos reales.
+
+La revisión legal posterior incorpora `legal-mobile.report.html/json`: política de privacidad local con **100/100/100/100**, tras corregir el tamaño táctil de los dos enlaces de correo. Las tres páginas mantienen carga estática, metadatos propios y ausencia de bloqueos de indexación. Compilación correcta y **22 pruebas** aprobadas, incluidas versión de consentimiento, adjuntos, destinatarios y `Reply-To`.
+
+## Historial de las primeras mediciones locales
 
 | Categoría | Antes, móvil | Final, móvil | Final, escritorio |
 | --- | ---: | ---: | ---: |
@@ -52,6 +71,6 @@ Para repetir la medición, compila con `npm run build`, ejecuta `npm run preview
 
 La caché y las cabeceras de `_headers` se aplican en Cloudflare Pages, no en el preview de Astro. Tras publicar deben comprobarse por HTTPS en el dominio final, junto con los redireccionamientos de WordPress y una nueva medición de PageSpeed Insights. Los Core Web Vitals de campo requieren tráfico y datos reales.
 
-Antes de habilitar el formulario públicamente siguen pendientes los datos y textos legales definitivos, las credenciales de Resend y un envío real con comprobación de recepción. No se han inventado datos fiscales, horarios o certificaciones para completar el marcado SEO.
+Para activar el envío siguen pendientes las credenciales de Resend y la comprobación de recepción. Los textos de Ecuador ya se han redactado; falta la identidad fiscal confirmada y verificar las condiciones operativas de conservación y proveedores descritas en [LEGAL-ECUADOR.md](../LEGAL-ECUADOR.md). No se han inventado datos fiscales, horarios o certificaciones para completar el marcado SEO.
 
 Referencias: [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview), [optimización del LCP](https://web.dev/articles/optimize-lcp), [estilos en línea de Astro](https://docs.astro.build/en/reference/configuration-reference/#buildinlinestylesheets), [codificación AVIF](https://sharp.pixelplumbing.com/api-output/#avif), [cabeceras de Cloudflare Pages](https://developers.cloudflare.com/pages/configuration/headers/), [rutas de Functions](https://developers.cloudflare.com/pages/functions/routing/), [actualización de Astro](https://docs.astro.build/en/guides/upgrade-to/v7/), [Tailwind en Astro](https://docs.astro.build/en/guides/styling/#tailwind).

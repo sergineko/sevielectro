@@ -1,44 +1,59 @@
-# Primer despliegue de SeviElectro
+# Despliegue de SeviElectro
 
-Fecha: 16 de octubre de 2026.
+Revisión: 16 de octubre de 2026.
 
-URL publicada: https://sevielectro.pages.dev/
+Sitio público: https://sevielectro.pages.dev/
 
-Proyecto Cloudflare Pages: `sevielectro`, creado en la cuenta de destino indicada por el titular. El proyecto se ha conectado directamente con `sergineko/sevielectro`, sin reinstalar la aplicación de GitHub ni cambiar otros proyectos.
+Despliegue de producción verificado: https://a215bdf6.sevielectro.pages.dev/ · código `39b96f6c6ae096451e0406cbb9dbf62f1bc261b9`.
+
+Proyecto Pages `sevielectro`, en la cuenta **Sevielectro_81@hotmail.com's Account**, ID `dcd34e5f3ff2cf026a8977a7bd863685`. Conexión directa con `sergineko/sevielectro`, rama `main`. No se ha alterado la cuenta de Cloudflare de los otros proyectos ni reinstalado la aplicación GitHub.
 
 ## Configuración
 
 | Campo | Valor |
 | --- | --- |
-| Repositorio | https://github.com/sergineko/sevielectro |
-| Rama de producción | `main` |
-| Código desplegado | `214c641beb96e26c942c1904feed472eeacdc1c1` |
-| Marco | Astro, salida estática |
-| Directorio raíz | Raíz del repositorio |
+| Código fuente | `39b96f6` (textos legales de Ecuador y versión de privacidad) |
+| Marco / salida | Astro estático |
+| Raíz | Raíz del repositorio |
 | Compilación | `pnpm run build` |
-| Directorio de salida | `dist` |
+| Salida | `dist` |
 | `NODE_VERSION` | `24` |
 | `PNPM_VERSION` | `11.25.0` |
 | `PUBLIC_SITE_URL` | `https://sevielectro.com` |
+| Caché de compilación | Activada |
 
-Cloudflare ha instalado Node 24.13.1 y pnpm 11.25.0 y ha publicado correctamente el sitio y su Function. La integración Git queda preparada para compilar los próximos cambios de `main`.
+La integración Git compila las modificaciones de `main`. Los commits que solo incorporan documentación y pruebas de auditoría usan `[CF-Pages-Skip]` para evitar reconstrucciones innecesarias.
 
-## Comprobaciones públicas
+## Recursos y caché
 
-- `node scripts/check-indexability.mjs https://sevielectro.pages.dev/`: 42 solicitudes correctas, cuatro páginas canónicas y 18 imágenes anunciadas en el sitemap. Informe en [audits/indexability-public.json](audits/indexability-public.json).
-- Portada, páginas públicas, recursos de imagen, fuente y scripts accesibles. La ruta inexistente conserva HTTP 404.
-- Sin restricciones de indexación ni desafíos observados en las solicitudes con los User-Agent revisados. La prueba no reproduce las IP verificadas de los buscadores ni garantiza indexación.
-- `/api/contact` devuelve HTTP 405 y JSON al consultar por GET, confirmando que se ejecuta la Function y se rechaza un método no permitido.
-- La fuente mantiene `Cache-Control: public, max-age=604800`; las rutas antiguas `/wp-sitemap.xml` y `/sitemap_index.xml` redirigen con HTTP 301 a `/sitemap.xml`.
+El HTML utiliza `public, max-age=0, must-revalidate`: el navegador revalida en cada visita y puede recibir un 304. La CDN de Pages sirve los recursos estáticos directamente. Imágenes, fuente, iconos y sprite de clientes usan nombres con huella y `max-age=31536000, immutable`. Se conservan los recursos anteriores para no romper páginas que siguieran en caché.
 
-Las canónicas y el sitemap conservan `sevielectro.com` como dominio definitivo. La propiedad de Search Console y el estado real de indexación aún no se han verificado.
+La Function solo recibe `/api/contact`; todas sus respuestas usan `private, no-store`. No se ha añadido un Worker intermedio ni una regla global Cache Everything. Los archivos del formulario no se almacenan en la caché de recursos públicos.
+
+## Formulario y protección
+
+- Turnstile Managed configurado para `sevielectro.pages.dev` y `sevielectro.com`, sin pre-clearance. Su script se carga al interactuar con el formulario; ejecuta la comprobación al enviar. Si se supera automáticamente no se abre una ventana.
+- Variables de **producción** configuradas: clave pública de Turnstile, secreto cifrado, lista cerrada de hostnames y `TO_EMAIL=sevielectro81@gmail.com,sevielectro_81@hotmail.com`.
+- `RESEND_API_KEY` y `FROM_EMAIL` todavía no están configuradas. El servidor rechaza el envío con un error comprensible; no se ha enviado correo real ni confirmado su recepción.
+- La comprobación pública de Turnstile se superó automáticamente. El resultado posterior fue el error esperado por falta de configuración de correo. La prueba no acredita la entrega de Resend.
+- Adjuntos opcionales: hasta tres PDF, DOC, DOCX, JPG, PNG o WebP, 5 MB por archivo y 10 MB en conjunto. Validación de formato y tamaño en servidor; no se presenta como un antivirus. Un envío válido usa como máximo dos peticiones externas: Siteverify y Resend.
+- `Reply-To` toma el correo validado del visitante; ambos buzones reciben la consulta. El correo registra la aceptación y versión del aviso de privacidad. Las pruebas del backend verifican estos campos con proveedores simulados y la idempotencia de reintentos.
+- Las variables de protección anteriores se añadieron en producción; las vistas previas necesitan su propia configuración si se desea habilitar el formulario en ellas.
+
+## Comprobaciones
+
+- Compilación correcta y 22 pruebas automatizadas aprobadas.
+- [Auditoría pública de caché y formulario](audits/contact-public.json): HTML revalidable, recursos inmutables, respuestas 304, GET del endpoint 405, ausencia de token 400 y token inválido 403, sin enviar correos.
+- [Auditoría de indexabilidad](audits/indexability-public.json): cuatro páginas públicas, sitemap con 18 imágenes, robots sin restricciones generales y ruta inexistente con HTTP 404. Sin bloqueo observado con los User-Agent de los buscadores revisados. No reproduce las IP verificadas de los rastreadores ni garantiza indexación.
+- Portada pública: Lighthouse móvil **99/100/100/100**, escritorio **100/100/100/100**. La carga inicial móvil pasa de 21 peticiones y 242.263 bytes a 6 peticiones y 119.181 bytes; LCP 1,8 s, TBT 0 ms, CLS 0. [Informes](audits/README.md).
+- Política de privacidad: auditoría móvil local con 100 en las cuatro categorías; revisión visual de las tres páginas legales en móvil y escritorio.
 
 ## Pendiente para el lanzamiento con el dominio
 
-1. Verificar el dominio o subdominio remitente en Resend mediante los registros DNS facilitados por el servicio.
-2. Configurar `RESEND_API_KEY` como secreto y los valores `FROM_EMAIL` y `TO_EMAIL` en el proyecto Pages, volver a desplegar y comprobar un envío real y su recepción.
-3. Completar los datos y textos legales definitivos.
-4. Conectar el dominio personalizado cuando el titular prepare su gestión DNS, conservando los registros de otros servicios.
-5. Revisar HTTPS, redirecciones, caché, rastreo y mediciones sobre el dominio definitivo y dar de alta su sitemap en Search Console.
+1. Completar el nombre legal o razón social, RUC y domicilio del titular en `src/data/legal-identity.js`. Se han solicitado, sin inventar datos. Confirmar también la conservación efectiva de los buzones y los contratos y garantías de los proveedores descritos en [la revisión de Ecuador](LEGAL-ECUADOR.md).
+2. Verificar en Resend el dominio o subdominio remitente mediante sus registros DNS. Añadir `RESEND_API_KEY` como secreto y `FROM_EMAIL` con ese remitente verificado, y volver a desplegar.
+3. Realizar un envío real autorizado con adjunto y verificar recepción en los dos buzones y respuesta directa al visitante. Hasta entonces no está comprobada la entrega.
+4. Conectar `sevielectro.com` cuando se complete la gestión del dominio, conservando los registros del correo y demás servicios. No se ha cambiado DNS ni titularidad.
+5. Revisar HTTPS, redirecciones, caché y rastreo en el dominio definitivo, verificar su propiedad en Search Console y enviar `/sitemap.xml`. Las canónicas y el sitemap ya usan ese dominio.
 
-No se han introducido claves de Resend ni se ha probado el envío de correo real en este despliegue.
+Los textos ecuatorianos están redactados, pero la identificación legal y las verificaciones operativas indicadas impiden afirmar que toda la empresa esté jurídicamente regularizada solo por publicar estas páginas.
