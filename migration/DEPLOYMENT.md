@@ -4,7 +4,7 @@ Revisión: 17 de octubre de 2026.
 
 Sitio público: https://sevielectro.pages.dev/
 
-Código publicado y verificado: `87718657601ac14c096e391b7f906e9908323b8c`. Despliegue Pages `a94f0bfb-d404-4480-97b6-d96c7ed4be94` · https://a94f0bfb.sevielectro.pages.dev/. Reimplementación correcta con las nueve variables de producción, incluidas las dos de Resend.
+Código publicado y verificado: `1117da8133d1391513fc259179846e2bd2aa5cd4`. Despliegue Pages `e970b779-343c-4c69-b767-7659d6077675` · https://e970b779.sevielectro.pages.dev/. Implementación correcta con las nueve variables de producción, incluidas las dos de Resend.
 
 El sitio queda publicado en Pages. La cuenta de Resend ya está registrada y se ha confirmado su plan gratuito. Se ha preparado el dominio remitente `notificaciones.sevielectro.com`, todavía sin verificar porque el usuario no tiene acceso al DNS. La conexión del dominio web definitivo sigue pendiente. No se ha modificado el DNS.
 
@@ -14,7 +14,7 @@ Proyecto Pages `sevielectro`, en la cuenta **Sevielectro_81@hotmail.com's Accoun
 
 | Campo | Valor |
 | --- | --- |
-| Código fuente | `8771865` (incluye el retrato adaptable de René Mauricio) |
+| Código fuente | `1117da8` (galería de 23 trabajos con las seis fotos aportadas por el usuario) |
 | Marco / salida | Astro estático |
 | Raíz | Raíz del repositorio |
 | Compilación | `pnpm run build` |
@@ -47,7 +47,7 @@ La Function solo recibe `/api/contact`; todas sus respuestas usan `private, no-s
 - Compilación correcta y 24 pruebas automatizadas aprobadas.
 - Retrato de René Mauricio incorporado, con encuadre revisado en ordenador, tablet y móvil. Original conservado y versiones WebP adaptables con caché inmutable. Se ha verificado que el HTML y la fotografía de la URL pública corresponden a esta versión.
 - [Auditoría pública de caché y formulario](audits/contact-public.json): HTML revalidable, recursos inmutables, respuestas 304, GET del endpoint 405, ausencia de token 400 y token inválido 403, sin enviar correos.
-- [Auditoría de indexabilidad](audits/indexability-public.json): 62 solicitudes, cuatro páginas públicas, sitemap con 18 imágenes, once identificadores de rastreadores, robots sin restricciones generales y ruta inexistente con HTTP 404. Metadatos únicos y JSON-LD de negocio, web y páginas verificados. Sin bloqueo observado con esos User-Agent; no reproduce las IP verificadas ni pruebas desde cada país. La auditoría advierte que el dominio canónico todavía sirve WordPress.
+- [Auditoría de indexabilidad](audits/indexability-public.json): 68 solicitudes, cuatro páginas públicas, sitemap con 24 imágenes, once identificadores de rastreadores, robots sin restricciones generales y ruta inexistente con HTTP 404. Metadatos únicos y JSON-LD de negocio, web y páginas verificados. Se verifican las seis fotos nuevas en la URL pública: contenido WebP idéntico a los archivos locales y caché inmutable. Sin bloqueo observado con esos User-Agent; no reproduce las IP verificadas ni pruebas desde cada país. La auditoría advierte que el dominio canónico todavía sirve WordPress.
 - Portada pública: Lighthouse móvil **99/100/100/100**, escritorio **100/100/100/100**. La carga inicial móvil pasa de 21 peticiones y 242.263 bytes a 6 peticiones y 119.181 bytes; LCP 1,8 s, TBT 0 ms, CLS 0. [Informes](audits/README.md).
 - Revisión SEO pública posterior, sobre `61412f0`: Lighthouse móvil **100/100/100/100**, LCP 1,4 s, TBT 0 ms y CLS 0. Informe `seo-international-mobile.report.html/json`. Son valores de laboratorio de esta medición, no datos CrUX ni posiciones garantizadas en buscadores.
 - Política de privacidad: auditoría móvil local con 100 en las cuatro categorías; revisión visual de las tres páginas legales en móvil y escritorio.

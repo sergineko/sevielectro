@@ -1,12 +1,12 @@
 # SEO, rastreo internacional y puesta en servicio
 
-Revisión: 16 de octubre de 2026. Sitio nuevo: https://sevielectro.pages.dev/. Dominio definitivo: https://sevielectro.com/.
+Revisión: 17 de octubre de 2026. Sitio nuevo: https://sevielectro.pages.dev/. Dominio definitivo: https://sevielectro.com/.
 
 ## Resultado técnico
 
 - Cuatro páginas públicas estáticas, cada una con un título, descripción y canonical propios, un único H1 y el idioma `es-EC`. No dependen de ejecutar React para entregar el contenido principal.
 - `robots.txt` permite el acceso general con `User-agent: *` y `Allow: /`. No hay `Disallow`, retrasos de rastreo, `nosnippet`, `noimageindex` ni cabeceras restrictivas de indexación en las páginas públicas. La página inexistente responde 404 y queda fuera del sitemap.
-- Sitemap XML con cuatro páginas y 18 imágenes, incluidos los trabajos accesibles desde el visor. Canónicas, sitemap, OpenGraph, imagen social y referencias de Schema.org utilizan el dominio definitivo configurado mediante `PUBLIC_SITE_URL`.
+- Sitemap XML con cuatro páginas y 24 imágenes, incluidos los 23 trabajos accesibles desde el visor. Canónicas, sitemap, OpenGraph, imagen social y referencias de Schema.org utilizan el dominio definitivo configurado mediante `PUBLIC_SITE_URL`.
 - Datos estructurados enlazados `Electrician`, `WebSite` y `WebPage`, con dirección postal completa, teléfono con prefijo internacional, redes oficiales e idioma. El catálogo de cuatro servicios procede de los mismos datos que las tarjetas visibles. La dirección del contacto y la de los documentos legales proceden de una única fuente. No se han inventado reseñas, valoraciones, horarios, precios, coordenadas ni cobertura mundial.
 - Metadatos OpenGraph y Twitter, tipo y dimensiones de imagen social y texto alternativo. Fuentes e imágenes propias y optimizadas; recursos con huella y caché larga. No se añaden peticiones de terceros para generar SEO.
 - El sitio tiene una sola versión en español. No se han anunciado traducciones inexistentes mediante `hreflang`, ni se redirige a los visitantes por idioma o país. Su localización comercial en Quito es compatible con el descubrimiento desde otros países, sin afirmar que la empresa preste servicios en todo el mundo.
@@ -15,6 +15,8 @@ Revisión: 16 de octubre de 2026. Sitio nuevo: https://sevielectro.pages.dev/. D
 Compilación correcta y 24 pruebas automatizadas aprobadas. La auditoría HTTP comprueba 11 identificadores de rastreadores: Googlebot, Googlebot-Image, Bingbot, DuckDuckBot, Applebot, YandexBot, Baiduspider, Slurp, MojeekBot, OAI-SearchBot y PerplexityBot. Comprueba respuesta, metadatos, grafos JSON-LD, recursos y coherencia de contenido. Cambiar un User-Agent no reproduce las IP verificadas de los buscadores ni una prueba desde cada país; el acceso general no garantiza indexación ni posiciones en resultados.
 
 Sobre la compilación publicada `61412f0` en Pages, la auditoría realiza 62 solicitudes sin errores técnicos y registra una advertencia por el dominio pendiente. Lighthouse móvil público: **100 en rendimiento, accesibilidad, buenas prácticas y SEO**, con LCP 1,4 s, TBT 0 ms y CLS 0. Informes completos en `seo-international-mobile.report.html/json`. Es una medición de laboratorio, no una garantía de puntuaciones constantes, datos CrUX o ranking.
+
+Ampliación de galería publicada en `1117da8`: seis fotos nuevas optimizadas, 23 trabajos en total y 24 imágenes en el sitemap contando la portada. La auditoría pública actualizada completa 68 solicitudes sin errores técnicos y mantiene la advertencia por el dominio definitivo. Las seis versiones WebP comprobadas coinciden con los archivos locales y conservan caché inmutable. La medición Lighthouse anterior no se ha repetido para esta incorporación de contenido.
 
 ## Estado real del dominio y del formulario
 

@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-16T20:28:11.254Z",
+  "date": "2026-10-17T00:22:33.614Z",
   "target": "https://sevielectro.pages.dev/",
   "scope": "public",
   "passed": true,
@@ -65,7 +65,7 @@
       ]
     }
   ],
-  "images": 18,
+  "images": 24,
   "agents": [
     "Googlebot",
     "Googlebot-Image/1.0",
@@ -95,7 +95,7 @@
         "content-type": "text/plain; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cee49b3b99c4-MAD",
+        "cf-ray": "a4bb2639ee710148-MAD",
         "server": "cloudflare"
       }
     },
@@ -109,7 +109,7 @@
         "content-type": "application/xml",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cee64f7899c4-MAD",
+        "cf-ray": "a4bb263a3ecd0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -123,7 +123,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cee6882399c4-MAD",
+        "cf-ray": "a4bb263c18990148-MAD",
         "server": "cloudflare"
       }
     },
@@ -137,7 +137,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cee85d1299c4-MAD",
+        "cf-ray": "a4bb263c99180148-MAD",
         "server": "cloudflare"
       }
     },
@@ -151,7 +151,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9ceea1a5599c4-MAD",
+        "cf-ray": "a4bb263cf9620148-MAD",
         "server": "cloudflare"
       }
     },
@@ -165,7 +165,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9ceebbf4d99c4-MAD",
+        "cf-ray": "a4bb263d49a70148-MAD",
         "server": "cloudflare"
       }
     },
@@ -179,7 +179,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9ceedede399c4-MAD",
+        "cf-ray": "a4bb263d89ec0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -193,7 +193,7 @@
         "content-type": "text/plain; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9ceee3ed599c4-MAD",
+        "cf-ray": "a4bb263dba120148-MAD",
         "server": "cloudflare"
       }
     },
@@ -207,7 +207,7 @@
         "content-type": "application/xml",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9ceee6f4e99c4-MAD",
+        "cf-ray": "a4bb263dea2d0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -221,7 +221,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9ceee9fc599c4-MAD",
+        "cf-ray": "a4bb263e2a6f0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -235,7 +235,7 @@
         "content-type": "text/plain; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9ceeee89f99c4-MAD",
+        "cf-ray": "a4bb263e7aef0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -249,7 +249,7 @@
         "content-type": "application/xml",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9ceef398499c4-MAD",
+        "cf-ray": "a4bb263eab2d0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -263,7 +263,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9ceef69f099c4-MAD",
+        "cf-ray": "a4bb263edb640148-MAD",
         "server": "cloudflare"
       }
     },
@@ -277,7 +277,7 @@
         "content-type": "text/plain; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9ceefbad499c4-MAD",
+        "cf-ray": "a4bb263f1bb20148-MAD",
         "server": "cloudflare"
       }
     },
@@ -291,7 +291,7 @@
         "content-type": "application/xml",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9ceefeb5999c4-MAD",
+        "cf-ray": "a4bb263f6c0c0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -305,7 +305,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef00bc999c4-MAD",
+        "cf-ray": "a4bb263f9c420148-MAD",
         "server": "cloudflare"
       }
     },
@@ -319,7 +319,7 @@
         "content-type": "text/plain; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef05c6699c4-MAD",
+        "cf-ray": "a4bb263fcc620148-MAD",
         "server": "cloudflare"
       }
     },
@@ -333,7 +333,7 @@
         "content-type": "application/xml",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef09d2d99c4-MAD",
+        "cf-ray": "a4bb26401ca90148-MAD",
         "server": "cloudflare"
       }
     },
@@ -347,7 +347,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef0cdb499c4-MAD",
+        "cf-ray": "a4bb26406cf20148-MAD",
         "server": "cloudflare"
       }
     },
@@ -361,7 +361,7 @@
         "content-type": "text/plain; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef11e7499c4-MAD",
+        "cf-ray": "a4bb26409d260148-MAD",
         "server": "cloudflare"
       }
     },
@@ -375,7 +375,7 @@
         "content-type": "application/xml",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef14efd99c4-MAD",
+        "cf-ray": "a4bb2640cd580148-MAD",
         "server": "cloudflare"
       }
     },
@@ -389,7 +389,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef17f9b99c4-MAD",
+        "cf-ray": "a4bb2640fd7d0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -403,7 +403,7 @@
         "content-type": "text/plain; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef1c84e99c4-MAD",
+        "cf-ray": "a4bb26412daa0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -417,7 +417,7 @@
         "content-type": "application/xml",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef1f8ef99c4-MAD",
+        "cf-ray": "a4bb26417dec0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -431,7 +431,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef2398299c4-MAD",
+        "cf-ray": "a4bb2641be420148-MAD",
         "server": "cloudflare"
       }
     },
@@ -445,7 +445,7 @@
         "content-type": "text/plain; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef27a3899c4-MAD",
+        "cf-ray": "a4bb2641ee910148-MAD",
         "server": "cloudflare"
       }
     },
@@ -459,7 +459,7 @@
         "content-type": "application/xml",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef2aadf99c4-MAD",
+        "cf-ray": "a4bb26420ea70148-MAD",
         "server": "cloudflare"
       }
     },
@@ -473,7 +473,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef2ebcf99c4-MAD",
+        "cf-ray": "a4bb26423edd0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -487,7 +487,7 @@
         "content-type": "text/plain; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef35cfd99c4-MAD",
+        "cf-ray": "a4bb26428f300148-MAD",
         "server": "cloudflare"
       }
     },
@@ -501,7 +501,7 @@
         "content-type": "application/xml",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef38d6f99c4-MAD",
+        "cf-ray": "a4bb2642bf4e0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -515,7 +515,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef3bdf299c4-MAD",
+        "cf-ray": "a4bb2642ef7a0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -529,7 +529,7 @@
         "content-type": "text/plain; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef40ea299c4-MAD",
+        "cf-ray": "a4bb26431fac0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -543,7 +543,7 @@
         "content-type": "application/xml",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef43f1e99c4-MAD",
+        "cf-ray": "a4bb26434fe00148-MAD",
         "server": "cloudflare"
       }
     },
@@ -557,7 +557,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef46f8799c4-MAD",
+        "cf-ray": "a4bb264378360148-MAD",
         "server": "cloudflare"
       }
     },
@@ -571,7 +571,7 @@
         "content-type": "text/plain; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef4a81b99c4-MAD",
+        "cf-ray": "a4bb2643c8860148-MAD",
         "server": "cloudflare"
       }
     },
@@ -585,7 +585,7 @@
         "content-type": "application/xml",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef4e8ca99c4-MAD",
+        "cf-ray": "a4bb2643f8b10148-MAD",
         "server": "cloudflare"
       }
     },
@@ -599,7 +599,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef5194999c4-MAD",
+        "cf-ray": "a4bb264428f60148-MAD",
         "server": "cloudflare"
       }
     },
@@ -613,7 +613,7 @@
         "content-type": "text/plain; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef56a3f99c4-MAD",
+        "cf-ray": "a4bb264459170148-MAD",
         "server": "cloudflare"
       }
     },
@@ -627,7 +627,7 @@
         "content-type": "application/xml",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef59ada99c4-MAD",
+        "cf-ray": "a4bb264489370148-MAD",
         "server": "cloudflare"
       }
     },
@@ -641,7 +641,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef5db6e99c4-MAD",
+        "cf-ray": "a4bb2644b96d0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -655,7 +655,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef64bf8cfb5-MAD",
+        "cf-ray": "a4bb26451d01713d-MAD",
         "server": "cloudflare"
       }
     },
@@ -669,7 +669,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef6ee9499c4-MAD",
+        "cf-ray": "a4bb26456a050148-MAD",
         "server": "cloudflare"
       }
     },
@@ -683,7 +683,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef71ca2cfb5-MAD",
+        "cf-ray": "a4bb2645ce16713d-MAD",
         "server": "cloudflare"
       }
     },
@@ -697,7 +697,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef76fcf99c4-MAD",
+        "cf-ray": "a4bb26461aa80148-MAD",
         "server": "cloudflare"
       }
     },
@@ -711,7 +711,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef7dd2ccfb5-MAD",
+        "cf-ray": "a4bb26465ef8713d-MAD",
         "server": "cloudflare"
       }
     },
@@ -725,7 +725,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef809b599c4-MAD",
+        "cf-ray": "a4bb26468b270148-MAD",
         "server": "cloudflare"
       }
     },
@@ -739,7 +739,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef84d87cfb5-MAD",
+        "cf-ray": "a4bb2646cf96713d-MAD",
         "server": "cloudflare"
       }
     },
@@ -753,7 +753,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef88af499c4-MAD",
+        "cf-ray": "a4bb2646eb960148-MAD",
         "server": "cloudflare"
       }
     },
@@ -767,7 +767,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef8bdeacfb5-MAD",
+        "cf-ray": "a4bb26472827713d-MAD",
         "server": "cloudflare"
       }
     },
@@ -781,7 +781,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef92c8c99c4-MAD",
+        "cf-ray": "a4bb26475c0b0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -795,7 +795,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef96e87cfb5-MAD",
+        "cf-ray": "a4bb264788cc713d-MAD",
         "server": "cloudflare"
       }
     },
@@ -809,7 +809,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cef9be0c99c4-MAD",
+        "cf-ray": "a4bb2647bc750148-MAD",
         "server": "cloudflare"
       }
     },
@@ -823,7 +823,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cefa0f06cfb5-MAD",
+        "cf-ray": "a4bb2647e941713d-MAD",
         "server": "cloudflare"
       }
     },
@@ -837,7 +837,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cefa4f7a99c4-MAD",
+        "cf-ray": "a4bb26481cdd0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -851,7 +851,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cefa9f7fcfb5-MAD",
+        "cf-ray": "a4bb264859e2713d-MAD",
         "server": "cloudflare"
       }
     },
@@ -865,7 +865,7 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cefad8ce99c4-MAD",
+        "cf-ray": "a4bb26488d4d0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -879,7 +879,91 @@
         "content-type": "image/webp",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cefb2fd2cfb5-MAD",
+        "cf-ray": "a4bb2648ba5a713d-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "url": "https://sevielectro.pages.dev/media/responsive/c813cf75fa95-1536.webp",
+      "path": "/media/responsive/c813cf75fa95-1536.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/c813cf75fa95-1536.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4bb2648edac0148-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "url": "https://sevielectro.pages.dev/media/responsive/3f4d46885543-1280.webp",
+      "path": "/media/responsive/3f4d46885543-1280.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/3f4d46885543-1280.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4bb264a2d1d713d-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "url": "https://sevielectro.pages.dev/media/responsive/b22fe057c63b-960.webp",
+      "path": "/media/responsive/b22fe057c63b-960.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/b22fe057c63b-960.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4bb264b68130148-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "url": "https://sevielectro.pages.dev/media/responsive/101f3f93c88b-1280.webp",
+      "path": "/media/responsive/101f3f93c88b-1280.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/101f3f93c88b-1280.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4bb264d0a14713d-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "url": "https://sevielectro.pages.dev/media/responsive/f7f8a23a3e41-960.webp",
+      "path": "/media/responsive/f7f8a23a3e41-960.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/f7f8a23a3e41-960.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4bb264e1a670148-MAD",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "url": "https://sevielectro.pages.dev/media/responsive/e938ad21175a-960.webp",
+      "path": "/media/responsive/e938ad21175a-960.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "https://sevielectro.pages.dev/media/responsive/e938ad21175a-960.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": "a4bb264f2e36713d-MAD",
         "server": "cloudflare"
       }
     },
@@ -893,7 +977,7 @@
         "content-type": "font/woff2",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cefb7a4599c4-MAD",
+        "cf-ray": "a4bb26505c830148-MAD",
         "server": "cloudflare"
       }
     },
@@ -907,7 +991,7 @@
         "content-type": "image/svg+xml",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cefba83acfb5-MAD",
+        "cf-ray": "a4bb265088ce713d-MAD",
         "server": "cloudflare"
       }
     },
@@ -921,7 +1005,7 @@
         "content-type": "application/javascript",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cefbeb5b99c4-MAD",
+        "cf-ray": "a4bb2650bd0e0148-MAD",
         "server": "cloudflare"
       }
     },
@@ -935,7 +1019,7 @@
         "content-type": "text/html; charset=utf-8",
         "x-robots-tag": null,
         "cf-mitigated": null,
-        "cf-ray": "a4b9cefc6cca99c4-MAD",
+        "cf-ray": "a4bb2650dd2a0148-MAD",
         "server": "cloudflare"
       }
     },
