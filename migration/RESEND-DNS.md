@@ -9,6 +9,7 @@ Preparado el 17 de octubre de 2026 en la cuenta de SeviElectro, con el plan grat
 - Respuesta directa: email del visitante mediante `Reply-To`, ya implementado.
 - Recepción de correo en Resend: desactivada; los buzones actuales siguen siendo los destinatarios.
 - TLS obligatorio (`Enforced`) guardado en Resend: los envíos fallarán si el servidor destinatario no admite una conexión cifrada.
+- Clave `SeviElectro Pages - formulario` creada con autorización del usuario y permiso `Sending access`. Guardada exclusivamente como secreto `RESEND_API_KEY` en producción de Pages. Alcance `All domains`, única opción ofrecida por el panel al configurar la clave; revisar la restricción al dominio específico tras verificarlo.
 
 ## Registros pendientes
 

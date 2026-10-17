@@ -22,7 +22,7 @@ La comprobación pública del 16 de octubre confirma que `sevielectro.com` todav
 
 Mientras el dominio definitivo no sirva la compilación de Astro, no debe afirmarse que el nuevo SEO ya esté aplicado en `sevielectro.com`. Sus nuevas imágenes sociales y otros recursos absolutos también deben verificarse de nuevo allí al completar la migración. La auditoría pública registra esta transición como una advertencia separada del resultado técnico del sitio de Pages.
 
-En la configuración de producción de la cuenta de Cloudflare de SeviElectro siguen ausentes `RESEND_API_KEY` y `FROM_EMAIL`. El formulario conserva la protección antispam, pero la entrega real del correo requiere terminar esa configuración. No se ha enviado correo de prueba durante esta revisión. Los enlaces de teléfono, correo y WhatsApp permiten contacto directo.
+Actualización del 17 de octubre: `RESEND_API_KEY` (secreto cifrado) y `FROM_EMAIL` ya están configurados en producción y Pages se ha vuelto a desplegar. La cuenta de Resend utiliza el plan gratuito. El remitente `notificaciones.sevielectro.com` sigue sin verificar porque el usuario todavía no tiene acceso al DNS; sus [registros están preparados](../RESEND-DNS.md). El formulario conserva la protección antispam, pero la entrega real del correo requiere verificar ese dominio y probar la recepción. No se ha enviado correo de prueba durante esta revisión. Los enlaces de teléfono, correo y WhatsApp permiten contacto directo.
 
 ## Repetir y completar el lanzamiento
 

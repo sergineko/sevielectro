@@ -2,7 +2,7 @@
 
 Rediseño de https://sevielectro.com/ conservando su identidad y contenido. Astro 7 estático, React 18 para el formulario, Tailwind 4 y Cloudflare Pages Functions con Resend.
 
-Desplegado en [sevielectro.pages.dev](https://sevielectro.pages.dev/). La conexión del dominio definitivo y la configuración de envío con Resend siguen pendientes. Este despliegue no ha cambiado los DNS del dominio original. Configuración y verificaciones en [migration/DEPLOYMENT.md](migration/DEPLOYMENT.md).
+Desplegado en [sevielectro.pages.dev](https://sevielectro.pages.dev/). Resend está configurado en su plan gratuito, con clave de envío cifrada en Pages y remitente preparado. La entrega del correo sigue pendiente de verificar los [registros DNS de Resend](migration/RESEND-DNS.md) y probar la recepción. La conexión del dominio web definitivo también está pendiente. No se han cambiado los DNS del dominio original. Configuración y verificaciones en [migration/DEPLOYMENT.md](migration/DEPLOYMENT.md).
 
 ## Qué se conserva
 

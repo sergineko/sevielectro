@@ -4,7 +4,7 @@ Revisión: 17 de octubre de 2026.
 
 Sitio público: https://sevielectro.pages.dev/
 
-Código publicado y verificado: `87718657601ac14c096e391b7f906e9908323b8c`. Despliegue Pages `01f062ca-db4b-48d1-9083-64170f19bb30` · https://01f062ca.sevielectro.pages.dev/.
+Código publicado y verificado: `87718657601ac14c096e391b7f906e9908323b8c`. Despliegue Pages `a94f0bfb-d404-4480-97b6-d96c7ed4be94` · https://a94f0bfb.sevielectro.pages.dev/. Reimplementación correcta con las nueve variables de producción, incluidas las dos de Resend.
 
 El sitio queda publicado en Pages. La cuenta de Resend ya está registrada y se ha confirmado su plan gratuito. Se ha preparado el dominio remitente `notificaciones.sevielectro.com`, todavía sin verificar porque el usuario no tiene acceso al DNS. La conexión del dominio web definitivo sigue pendiente. No se ha modificado el DNS.
 
@@ -36,7 +36,7 @@ La Function solo recibe `/api/contact`; todas sus respuestas usan `private, no-s
 
 - Turnstile Managed configurado para `sevielectro.pages.dev` y `sevielectro.com`, sin pre-clearance. Su script se carga al interactuar con el formulario; ejecuta la comprobación al enviar. Si se supera automáticamente no se abre una ventana.
 - Variables de **producción** configuradas: clave pública de Turnstile, secreto cifrado, lista cerrada de hostnames y `TO_EMAIL=sevielectro81@gmail.com,sevielectro_81@hotmail.com`.
-- `FROM_EMAIL=SeviElectro <formulario@notificaciones.sevielectro.com>` guardado en la configuración de producción de Pages; requiere un nuevo despliegue para incorporarse al entorno publicado. `RESEND_API_KEY` aún está pendiente. El dominio de envío se ha creado en Resend, región Irlanda, con TLS obligatorio y recepción desactivada. Los [tres registros DNS](RESEND-DNS.md) están preparados. No se ha enviado correo real ni confirmado su recepción.
+- `FROM_EMAIL=SeviElectro <formulario@notificaciones.sevielectro.com>` y `RESEND_API_KEY` guardados en la configuración de producción de Pages, la clave como secreto cifrado. Clave creada con autorización expresa del usuario, nombre `SeviElectro Pages - formulario`, permiso `Sending access` y alcance `All domains` (única opción ofrecida por el panel antes de verificar el dominio). No se ha guardado su valor en archivos ni en Git. El dominio de envío se ha creado en Resend, región Irlanda, con TLS obligatorio y recepción desactivada. Los [tres registros DNS](RESEND-DNS.md) están preparados. No se ha enviado correo real ni confirmado su recepción.
 - La comprobación pública de Turnstile se superó automáticamente. El resultado posterior fue el error esperado por falta de configuración de correo. La prueba no acredita la entrega de Resend.
 - Adjuntos opcionales: hasta tres PDF, DOC, DOCX, JPG, PNG o WebP, 5 MB por archivo y 10 MB en conjunto. Validación de formato y tamaño en servidor; no se presenta como un antivirus. Un envío válido usa como máximo dos peticiones externas: Siteverify y Resend.
 - `Reply-To` toma el correo validado del visitante; ambos buzones reciben la consulta. El correo registra la aceptación y versión del aviso de privacidad. Las pruebas del backend verifican estos campos con proveedores simulados y la idempotencia de reintentos.
@@ -57,7 +57,7 @@ La Function solo recibe `/api/contact`; todas sus respuestas usan `private, no-s
 ## Pendiente para el lanzamiento con el dominio
 
 1. La identificación legal ya está incorporada con los datos facilitados por el usuario. Confirmar la conservación efectiva de los buzones y los contratos y garantías de los proveedores descritos en [la revisión de Ecuador](LEGAL-ECUADOR.md).
-2. Añadir los [registros DNS preparados](RESEND-DNS.md), verificar el dominio remitente en Resend, guardar `RESEND_API_KEY` como secreto y volver a desplegar Pages con sus variables de correo. La clave de envío está preparada en el panel, pendiente de confirmación antes de crearla.
+2. Añadir los [registros DNS preparados](RESEND-DNS.md) y verificar el dominio remitente en Resend. La clave de envío ya está guardada como secreto en Pages. Una vez verificado, restringir su alcance a este dominio si el panel ofrece esa opción, sin ampliar permisos.
 3. Realizar un envío real autorizado con adjunto y verificar recepción en los dos buzones y respuesta directa al visitante. Hasta entonces no está comprobada la entrega.
 4. Conectar `sevielectro.com` cuando se complete la gestión del dominio, conservando los registros del correo y demás servicios. No se ha cambiado DNS ni titularidad.
 5. Revisar HTTPS, redirecciones, caché y rastreo en el dominio definitivo, verificar su propiedad en Search Console y enviar `/sitemap.xml`. Las canónicas y el sitemap ya usan ese dominio.
