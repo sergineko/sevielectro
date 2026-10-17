@@ -310,5 +310,41 @@
     "width": 1536,
     "height": 2048,
     "original": "/media/social/facebook-bandejas-cableado.jpg"
+  },
+  "canalizaciones-electricas-en-obra.jpeg": {
+    "src": "/media/gallery/original/canalizaciones-electricas-en-obra.jpeg",
+    "width": 1536,
+    "height": 2048,
+    "original": "/media/gallery/original/canalizaciones-electricas-en-obra.jpeg"
+  },
+  "montaje-tableros-distribucion.jpeg": {
+    "src": "/media/gallery/original/montaje-tableros-distribucion.jpeg",
+    "width": 1280,
+    "height": 1191,
+    "original": "/media/gallery/original/montaje-tableros-distribucion.jpeg"
+  },
+  "conexion-tableros-electricos.jpeg": {
+    "src": "/media/gallery/original/conexion-tableros-electricos.jpeg",
+    "width": 960,
+    "height": 1280,
+    "original": "/media/gallery/original/conexion-tableros-electricos.jpeg"
+  },
+  "instalacion-luminarias-salon.jpeg": {
+    "src": "/media/gallery/original/instalacion-luminarias-salon.jpeg",
+    "width": 1280,
+    "height": 960,
+    "original": "/media/gallery/original/instalacion-luminarias-salon.jpeg"
+  },
+  "tendido-cableado-exterior.jpeg": {
+    "src": "/media/gallery/original/tendido-cableado-exterior.jpeg",
+    "width": 960,
+    "height": 1280,
+    "original": "/media/gallery/original/tendido-cableado-exterior.jpeg"
+  },
+  "instalacion-banco-pacifico.jpeg": {
+    "src": "/media/gallery/original/instalacion-banco-pacifico.jpeg",
+    "width": 960,
+    "height": 1280,
+    "original": "/media/gallery/original/instalacion-banco-pacifico.jpeg"
   }
 }

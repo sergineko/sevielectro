@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-16T20:23:09.153Z",
+  "date": "2026-10-17T00:17:49.737Z",
   "target": "http://127.0.0.1:4321/",
   "scope": "local",
   "passed": true,
@@ -65,7 +65,7 @@
       ]
     }
   ],
-  "images": 18,
+  "images": 24,
   "agents": [
     "Googlebot",
     "Googlebot-Image/1.0",
@@ -870,6 +870,90 @@
       "agent": "Googlebot",
       "status": 200,
       "finalUrl": "http://127.0.0.1:4321/media/responsive/a0810d5ec458-1536.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/media/responsive/c813cf75fa95-1536.webp",
+      "path": "/media/responsive/c813cf75fa95-1536.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/media/responsive/c813cf75fa95-1536.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/media/responsive/3f4d46885543-1280.webp",
+      "path": "/media/responsive/3f4d46885543-1280.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/media/responsive/3f4d46885543-1280.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/media/responsive/b22fe057c63b-960.webp",
+      "path": "/media/responsive/b22fe057c63b-960.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/media/responsive/b22fe057c63b-960.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/media/responsive/101f3f93c88b-1280.webp",
+      "path": "/media/responsive/101f3f93c88b-1280.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/media/responsive/101f3f93c88b-1280.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/media/responsive/f7f8a23a3e41-960.webp",
+      "path": "/media/responsive/f7f8a23a3e41-960.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/media/responsive/f7f8a23a3e41-960.webp",
+      "headers": {
+        "content-type": "image/webp",
+        "x-robots-tag": null,
+        "cf-mitigated": null,
+        "cf-ray": null,
+        "server": null
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4321/media/responsive/e938ad21175a-960.webp",
+      "path": "/media/responsive/e938ad21175a-960.webp",
+      "agent": "Googlebot",
+      "status": 200,
+      "finalUrl": "http://127.0.0.1:4321/media/responsive/e938ad21175a-960.webp",
       "headers": {
         "content-type": "image/webp",
         "x-robots-tag": null,

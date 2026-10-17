@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
+import { projects } from '../src/data/content.js';
 
 const read = file => readFileSync(new URL(`../${file}`, import.meta.url), 'utf8');
 const sitemap = read('dist/sitemap.xml');
@@ -27,7 +28,7 @@ test('robots permite cualquier crawler y el sitemap expone las fotografías real
   assert.ok(!/X-Robots-Tag:/i.test(read('dist/_headers')));
   assert.match(sitemap, /xmlns:image="http:\/\/www.google.com\/schemas\/sitemap-image\/1\.1"/);
   const images = [...sitemap.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map(([,url]) => url);
-  assert.equal(images.length,18);
+  assert.equal(images.length,projects.length+1);
   assert.equal(new Set(images).size,images.length);
   for (const image of images) {
     const url = new URL(image);

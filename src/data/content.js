@@ -30,8 +30,14 @@ export const projects=[
  {file:'facebook-luminarias-lineales.jpg',title:'Luminarias lineales',category:'Iluminación',alt:'Líneas de iluminación empotradas en un techo de doble altura'},
  {file:'facebook-recepcion-comercial.jpg',title:'Instalaciones en espacios comerciales',category:'Iluminación',alt:'Recepción comercial iluminada con focos y líneas LED',showcaseOrder:6},
  {file:'facebook-instalacion-industrial.jpg',title:'Instalaciones en obra',category:'Instalaciones',alt:'Canalizaciones y conducciones instaladas bajo una cubierta metálica'},
- {file:'facebook-canalizacion-electrica.jpg',title:'Canalización eléctrica',category:'Instalaciones',alt:'Red de bandejas y tuberías en una instalación industrial',showcaseOrder:7},
- {file:'facebook-bandejas-cableado.jpg',title:'Distribución y cableado',category:'Instalaciones',alt:'Bandejas de distribución eléctrica en un edificio en construcción'}
+ {file:'facebook-canalizacion-electrica.jpg',title:'Canalización eléctrica',category:'Instalaciones',alt:'Red de bandejas y tuberías en una instalación industrial'},
+ {file:'facebook-bandejas-cableado.jpg',title:'Distribución y cableado',category:'Instalaciones',alt:'Bandejas de distribución eléctrica en un edificio en construcción'},
+ {file:'canalizaciones-electricas-en-obra.jpeg',title:'Canalizaciones en obra',category:'Instalaciones',alt:'Técnico sobre una escalera junto a canalizaciones y bandejas eléctricas bajo una cubierta metálica',showcaseOrder:9},
+ {file:'montaje-tableros-distribucion.jpeg',title:'Montaje de tableros eléctricos',category:'Instalaciones',alt:'Técnico de SeviElectro junto a varios tableros de distribución abiertos, con protecciones y cableado durante una instalación',showcaseOrder:7},
+ {file:'conexion-tableros-electricos.jpeg',title:'Conexión de tableros eléctricos',category:'Instalaciones',alt:'Técnico preparando el cableado de un tablero eléctrico abierto con interruptores y barras de distribución',showcaseOrder:10},
+ {file:'instalacion-luminarias-salon.jpeg',title:'Iluminación en espacios de reunión',category:'Iluminación',alt:'Instalación de luminarias suspendidas en un salón con escenario mediante un andamio',showcaseOrder:8},
+ {file:'tendido-cableado-exterior.jpeg',title:'Cableado en zonas exteriores',category:'Instalaciones',alt:'Técnico tendiendo conductores por una canalización en un muro exterior, junto a rollos de cable',showcaseOrder:11},
+ {file:'instalacion-banco-pacifico.jpeg',title:'Instalaciones para Banco del Pacífico',category:'Instalaciones',alt:'Integrante de SeviElectro junto al acceso de Banco del Pacífico, con canalizaciones y cableado a la vista',showcaseOrder:12}
 ];
 export const team=[
  {name:'René Sevilla',role:'Gerente propietario',initials:'RS',photo:'/media/optimized/WhatsApp-Image-2023-06-17-at-7.21.06-PM.jpeg.webp',width:958,height:960,position:'50% 24%'},

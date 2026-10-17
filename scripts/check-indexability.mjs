@@ -1,4 +1,5 @@
 import { writeFile } from 'node:fs/promises';
+import { projects } from '../src/data/content.js';
 
 const target = new URL(process.argv[2] || 'http://127.0.0.1:4321/');
 if (!['http:', 'https:'].includes(target.protocol) || target.username || target.password) throw new Error('Indica una URL HTTP(S) pública sin credenciales.');
@@ -31,7 +32,7 @@ check(sitemap.status === 200, 'El sitemap no responde 200');
 const pageUrls = [...sitemap.body.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([,url]) => url);
 const imageUrls = [...sitemap.body.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map(([,url]) => url);
 check(pageUrls.length === 4 && new Set(pageUrls).size === 4, 'El sitemap no contiene las cuatro páginas públicas');
-check(imageUrls.length === 18, 'Faltan fotografías en el sitemap');
+check(imageUrls.length === projects.length+1, 'Faltan fotografías en el sitemap');
 const pages = [];
 const titles = new Set(), descriptions = new Set();
 let home;
